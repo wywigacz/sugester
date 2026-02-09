@@ -24,6 +24,8 @@ const EXTRACTORS = [
       'params.focal_length_min': parseInt(m[1], 10),
       'params.focal_length_max': parseInt(m[1], 10),
     }),
+    // Don't extract focal length in filter context — 77mm is a filter diameter, not focal length
+    excludePattern: /filtr|cpl|nd\b|uv\b|polaryz/i,
   },
   {
     name: 'video_resolution',
@@ -80,6 +82,10 @@ export function extractParams(query) {
   for (const extractor of EXTRACTORS) {
     // Skip context-dependent extractors if context not present
     if (extractor.contextPattern && !extractor.contextPattern.test(q)) {
+      continue;
+    }
+    // Skip extractors excluded by context (e.g. focal_single excluded in filter context)
+    if (extractor.excludePattern && extractor.excludePattern.test(q)) {
       continue;
     }
 

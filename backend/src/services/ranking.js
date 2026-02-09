@@ -53,6 +53,7 @@ export function wrapWithFunctionScore(baseQuery, intent = null) {
   const wantsAccessories = intent?.wantsAccessories === true;
   const isSKUQuery = intent?.type === 'SKU';
   const isBrandQuery = intent?.type === 'BRAND';
+  const isCompoundQuery = intent?.type === 'COMPOUND';
   const conditionPref = intent?.conditionPref || null; // 'used' | 'new' | null
 
   // Condition weights: default favors new, but flips when user asks for used/new
@@ -368,6 +369,19 @@ export function wrapWithFunctionScore(baseQuery, intent = null) {
                 category: LOW_PRIORITY_CATEGORIES,
               },
             },
+            weight: 0.15,
+          },
+        ] : isCompoundQuery ? [
+          // Compound query: "obiektyw Canon 50mm", "statyw Manfrotto" etc.
+          // Category is already hard-filtered in the query, so ranking here
+          // just ensures proper ordering within the filtered set.
+          // Penalize "pozostałe" subcategories and low-priority items.
+          {
+            filter: { terms: { category: ACCESSORY_CATEGORIES } },
+            weight: 0.2,
+          },
+          {
+            filter: { terms: { category: LOW_PRIORITY_CATEGORIES } },
             weight: 0.15,
           },
         ] : []),

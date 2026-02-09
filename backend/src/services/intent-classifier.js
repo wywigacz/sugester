@@ -1,7 +1,12 @@
 /**
- * Intent classifier — regex cascade (first match wins).
+ * Intent classifier — regex cascade with compound intent support.
  * Determines search intent from user query to route to optimal ES query strategy.
+ *
+ * Intent types: EAN, SKU, MODEL, BRAND, COMPOUND, PARAMETRIC, CATEGORY, PRICE, GENERAL
+ * COMPOUND = category word + brand + optional parameters (e.g. "obiektyw Canon 50 mm")
  */
+
+import { extractParams, stripParams } from './param-extractor.js';
 
 // Known brands for MODEL intent detection (from Cyfrowe.pl feed)
 const KNOWN_BRANDS = [
@@ -121,6 +126,109 @@ const CATEGORY_NAMES = new Map([
   ['papier', 'Papier fotograficzny'],
   ['używane', 'Używane aparaty cyfrowe'],
 ]);
+
+// Category words for COMPOUND intent detection — maps individual words to ES categories.
+// Unlike CATEGORY_NAMES (which matches the full query), this matches per-word within
+// compound queries like "obiektyw Canon 50 mm" or "statyw Manfrotto".
+const CATEGORY_WORD_MAP = new Map([
+  // Obiektywy
+  ['obiektyw', 'Obiektywy do bezlusterkowców'],
+  ['obiektywy', 'Obiektywy do bezlusterkowców'],
+  // Aparaty
+  ['aparat', 'Aparaty cyfrowe'],
+  ['aparaty', 'Aparaty cyfrowe'],
+  ['bezlusterkowiec', 'Aparaty cyfrowe'],
+  ['bezlusterkowce', 'Aparaty cyfrowe'],
+  ['lustrzanka', 'Aparaty cyfrowe'],
+  ['lustrzanki', 'Aparaty cyfrowe'],
+  // Statywy
+  ['statyw', 'Statywy i akcesoria'],
+  ['statywy', 'Statywy i akcesoria'],
+  // Oświetlenie
+  ['lampa', 'Lampy błyskowe'],
+  ['lampy', 'Lampy błyskowe'],
+  ['flesz', 'Lampy błyskowe'],
+  // Kamery
+  ['kamera', 'Kamery cyfrowe'],
+  ['kamery', 'Kamery cyfrowe'],
+  // Drony
+  ['dron', 'Drony'],
+  ['drony', 'Drony'],
+  // Torby/plecaki
+  ['plecak', 'Torby, plecaki, walizki'],
+  ['plecaki', 'Torby, plecaki, walizki'],
+  ['torba', 'Torby, plecaki, walizki'],
+  ['torby', 'Torby, plecaki, walizki'],
+  // Stabilizacja
+  ['gimbal', 'Systemy stabilizacji'],
+  ['gimbale', 'Systemy stabilizacji'],
+  // Audio
+  ['mikrofon', 'Audio'],
+  ['mikrofony', 'Audio'],
+  // Filtry
+  ['filtr', 'Filtry, pokrywki'],
+  ['filtry', 'Filtry, pokrywki'],
+  // Monitory
+  ['monitor', 'Monitory'],
+  ['monitory', 'Monitory'],
+  // Drukarki
+  ['drukarka', 'Drukarki'],
+  ['drukarki', 'Drukarki'],
+]);
+
+/**
+ * Detect a category word within the query (not just exact full-query match).
+ * Returns { categoryWord, esCategory } or null.
+ * "obiektyw Canon 50 mm" → { categoryWord: 'obiektyw', esCategory: 'Obiektywy do bezlusterkowców' }
+ */
+function detectCategoryWord(q) {
+  const words = q.toLowerCase().split(/\s+/);
+  for (const word of words) {
+    const cat = CATEGORY_WORD_MAP.get(word);
+    if (cat) {
+      return { categoryWord: word, esCategory: cat };
+    }
+  }
+  return null;
+}
+
+// Brand genitive forms (Polish declension) → nominative for brand detection
+// "do Canona" → "do Canon", "obiektywy Sigmy" → "obiektywy Sigma"
+const BRAND_GENITIVE_MAP = new Map([
+  ['canona', 'canon'], ['nikona', 'nikon'], ['sigmy', 'sigma'],
+  ['tamrona', 'tamron'], ['fujifilma', 'fujifilm'], ['panasonica', 'panasonic'],
+  ['olympusa', 'olympus'], ['leicę', 'leica'], ['leicy', 'leica'],
+  ['samyanga', 'samyang'], ['viltrox', 'viltrox'], ['zeissa', 'zeiss'],
+  ['tokiny', 'tokina'], ['hasselbla', 'hasselblad'],
+  ['pentaxa', 'pentax'], ['ricoha', 'ricoh'],
+]);
+
+/**
+ * Normalize Polish genitive brand forms to nominative for brand detection.
+ * "obiektyw do Canona" → "obiektyw do Canon"
+ */
+function normalizeBrandGenitive(q) {
+  return q.replace(/\b(\w+)\b/g, (match) => {
+    const replacement = BRAND_GENITIVE_MAP.get(match.toLowerCase());
+    return replacement || match;
+  });
+}
+
+// Brand → mount system mapping for compatibility searches
+const BRAND_MOUNT_MAP = {
+  canon: ['Canon RF', 'Canon EF'],
+  sony: ['Sony E', 'Sony FE'],
+  nikon: ['Nikon Z', 'Nikon F'],
+  fujifilm: ['Fujifilm X', 'Fujifilm GFX'],
+  fuji: ['Fujifilm X', 'Fujifilm GFX'],
+  panasonic: ['L-mount', 'Micro 4/3'],
+  lumix: ['L-mount', 'Micro 4/3'],
+  olympus: ['Micro 4/3'],
+  'om system': ['Micro 4/3'],
+  leica: ['L-mount'],
+  sigma: ['L-mount', 'Canon RF', 'Sony E', 'Nikon Z', 'Canon EF', 'Nikon F'],
+  tamron: ['Sony E', 'Nikon Z', 'Canon RF', 'Canon EF', 'Nikon F'],
+};
 
 // Camera/body model patterns per brand
 // When a user types "sony a7" or "canon eos r6", they want cameras, not accessories
@@ -279,76 +387,142 @@ function stripModifierWords(q) {
 }
 
 export function classifyIntent(query) {
-  const q = (query || '').trim();
+  const raw = (query || '').trim();
+  // Normalize Polish genitive brand forms before processing
+  const q = normalizeBrandGenitive(raw);
 
-  // Detect condition preference across all intent types
+  // Detect cross-intent modifiers
   const conditionPref = detectConditionPreference(q);
   const wantsAccessories = detectAccessoryPreference(q);
   const accessoryCategory = wantsAccessories ? detectAccessoryCategory(q) : null;
 
+  // Detect category word early — needed for COMPOUND intent
+  const categoryResult = detectCategoryWord(q);
+
+  // Extract params universally — available for all intent types
+  const params = extractParams(q);
+  const hasExtractedParams = Object.keys(params).length > 0;
+
+  // Detect compatibility pattern: "do Canon", "do Nikona" (after genitive normalization)
+  const compatMatch = /\bdo\s+/i.test(q);
+
   // RULE 1: EAN barcode (exact 8 or 13 digits)
   if (PATTERNS.EAN.test(q)) {
-    return { type: 'EAN', query: q, conditionPref, wantsAccessories };
+    return { type: 'EAN', query: q, params, conditionPref, wantsAccessories };
   }
 
   // RULE 2: SKU / manufacturer code pattern
   if (PATTERNS.SKU.test(q)) {
-    return { type: 'SKU', query: q, conditionPref, wantsAccessories };
+    return { type: 'SKU', query: q, params, conditionPref, wantsAccessories };
   }
 
-  // RULE 3: MODEL or BRAND — brand name detected
+  // RULE 3: MODEL, BRAND, or COMPOUND — brand name detected
   const brandMatch = BRAND_PATTERN.exec(q);
   if (brandMatch) {
+    const brand = brandMatch[1];
     const afterBrand = q.slice(brandMatch.index + brandMatch[0].length).trim();
-    // Has alphanumeric model identifier after brand → MODEL intent
-    if (/[a-z0-9]/i.test(afterBrand)) {
-      // wantsAccessories overrides isBodyQuery — user explicitly wants accessories
-      const isBodyQuery = wantsAccessories ? false : detectBodyQuery(brandMatch[1], afterBrand);
-      const modelQuery = stripModifierWords(q);
-      return { type: 'MODEL', query: q, modelQuery, brand: brandMatch[1], isBodyQuery, conditionPref, wantsAccessories, accessoryCategory };
+    const beforeBrand = q.slice(0, brandMatch.index).trim();
+
+    // RULE 3a: COMPOUND — category word + brand detected
+    // "obiektyw Canon 50 mm" → COMPOUND (category=Obiektywy, brand=Canon, focal=50)
+    // "statyw Manfrotto" → COMPOUND (category=Statywy, brand=Manfrotto)
+    // But NOT "Canon EOS R6" — that's MODEL (afterBrand is a body model)
+    if (categoryResult) {
+      const isBodyModel = detectBodyQuery(brand, afterBrand);
+      if (!isBodyModel) {
+        // Build text query: strip category word, brand, and params from original query
+        const textParts = q.toLowerCase()
+          .replace(new RegExp(`\\b${categoryResult.categoryWord}\\b`, 'i'), '')
+          .replace(BRAND_PATTERN, '')
+          .replace(/\s+/g, ' ')
+          .trim();
+        const textQuery = hasExtractedParams ? stripParams(textParts) : textParts;
+
+        // Detect compatibility mode: "obiektyw do Canon" → search by mount, not brand
+        const isCompatibility = compatMatch;
+        const compatMounts = isCompatibility ? (BRAND_MOUNT_MAP[brand.toLowerCase()] || null) : null;
+
+        return {
+          type: 'COMPOUND',
+          query: q,
+          brand,
+          detectedCategory: categoryResult.esCategory,
+          categoryWord: categoryResult.categoryWord,
+          params,
+          textQuery: textQuery || brand,
+          compatibilityMode: isCompatibility,
+          compatMounts,
+          conditionPref,
+          wantsAccessories,
+        };
+      }
     }
-    // Brand name alone (or brand + non-alphanumeric) → BRAND intent
-    return { type: 'BRAND', query: q, brand: brandMatch[1], conditionPref, wantsAccessories, accessoryCategory };
+
+    // RULE 3b: MODEL — brand + model identifier (e.g. "Canon EOS R6", "Sony A7 IV")
+    if (/[a-z0-9]/i.test(afterBrand)) {
+      const isBodyQuery = wantsAccessories ? false : detectBodyQuery(brand, afterBrand);
+      const modelQuery = stripModifierWords(q);
+      return { type: 'MODEL', query: q, modelQuery, brand, isBodyQuery, params, conditionPref, wantsAccessories, accessoryCategory };
+    }
+
+    // RULE 3c: BRAND — brand name alone (e.g. "canon", "sony")
+    return { type: 'BRAND', query: q, brand, params, conditionPref, wantsAccessories, accessoryCategory };
   }
 
-  // RULE 3b: MODEL without explicit brand — infer brand from model/series name
+  // RULE 3d: MODEL without explicit brand — infer brand from model/series name
   // e.g. "eos r6 używany" → brand: canon, "alpha 7 iv" → brand: sony
   const inferred = inferBrandFromModel(q);
   if (inferred) {
     const isBodyQuery = wantsAccessories ? false : inferred.isBodyQuery;
     const modelQuery = stripModifierWords(q);
-    return { type: 'MODEL', query: q, modelQuery, brand: inferred.brand, isBodyQuery, conditionPref, wantsAccessories, accessoryCategory };
+    return { type: 'MODEL', query: q, modelQuery, brand: inferred.brand, isBodyQuery, params, conditionPref, wantsAccessories, accessoryCategory };
   }
 
-  // RULE 4: PARAMETRIC — contains photo-video parameter patterns
-  const hasParam =
-    PATTERNS.PARAMETRIC_APERTURE.test(q) ||
-    PATTERNS.PARAMETRIC_FOCAL.test(q) ||
-    PATTERNS.PARAMETRIC_RES.test(q) ||
-    PATTERNS.PARAMETRIC_FPS.test(q) ||
-    PATTERNS.PARAMETRIC_SENSOR.test(q) ||
-    PATTERNS.PARAMETRIC_MOUNT.test(q);
-  if (hasParam) {
-    return { type: 'PARAMETRIC', query: q, conditionPref, wantsAccessories };
+  // RULE 4: COMPOUND without brand — category word + parameters
+  // e.g. "obiektyw 50mm" → COMPOUND (category=Obiektywy, focal=50)
+  if (categoryResult && hasExtractedParams) {
+    const textParts = q.toLowerCase()
+      .replace(new RegExp(`\\b${categoryResult.categoryWord}\\b`, 'i'), '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    const textQuery = stripParams(textParts);
+    return {
+      type: 'COMPOUND',
+      query: q,
+      brand: null,
+      detectedCategory: categoryResult.esCategory,
+      categoryWord: categoryResult.categoryWord,
+      params,
+      textQuery: textQuery || q,
+      compatibilityMode: false,
+      compatMounts: null,
+      conditionPref,
+      wantsAccessories,
+    };
   }
 
-  // RULE 5: CATEGORY — exact match to known category
+  // RULE 5: PARAMETRIC — contains photo-video parameter patterns (no category word)
+  if (hasExtractedParams) {
+    return { type: 'PARAMETRIC', query: q, params, conditionPref, wantsAccessories };
+  }
+
+  // RULE 6: CATEGORY — exact match to known category
   const qLower = q.toLowerCase();
   const mappedCategory = CATEGORY_NAMES.get(qLower);
   if (mappedCategory) {
-    return { type: 'CATEGORY', query: q, category: mappedCategory, conditionPref, wantsAccessories };
+    return { type: 'CATEGORY', query: q, category: mappedCategory, params, conditionPref, wantsAccessories };
   }
 
-  // RULE 6: PRICE — contains price constraint
+  // RULE 7: PRICE — contains price constraint
   const priceMatch = PATTERNS.PRICE.exec(q);
   if (priceMatch) {
     const maxPrice = parseInt(priceMatch[1] || priceMatch[2], 10) || null;
     const cleanQuery = q.replace(PATTERNS.PRICE, '').trim();
-    return { type: 'PRICE', query: cleanQuery || q, maxPrice, conditionPref, wantsAccessories };
+    return { type: 'PRICE', query: cleanQuery || q, maxPrice, params, conditionPref, wantsAccessories };
   }
 
   // DEFAULT: GENERAL — full hybrid search
-  return { type: 'GENERAL', query: q, conditionPref, wantsAccessories };
+  return { type: 'GENERAL', query: q, params, conditionPref, wantsAccessories };
 }
 
-export { KNOWN_BRANDS, CATEGORY_NAMES };
+export { KNOWN_BRANDS, CATEGORY_NAMES, BRAND_MOUNT_MAP };

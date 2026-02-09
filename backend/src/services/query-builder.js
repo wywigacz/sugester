@@ -157,7 +157,9 @@ export function buildAutocompleteQuery(q, intent, limit = 5) {
 export function buildSearchQuery(q, intent, { filters = {}, page = 1, perPage = 20, sort = 'relevance' } = {}) {
   const from = (page - 1) * perPage;
   const filterClauses = buildFilterClauses(filters);
-  const params = intent.type === 'PARAMETRIC' ? extractParams(q) : {};
+  // COMPOUND handles its own param filters inside buildIntentQuery, skip here.
+  // For all other intents, use params from intent (universally extracted) or extract on the fly.
+  const params = intent.type === 'COMPOUND' ? {} : (intent.params || (intent.type === 'PARAMETRIC' ? extractParams(q) : {}));
   const paramFilters = buildParamFilters(params);
 
   const baseQuery = buildIntentQuery(q, intent);
@@ -304,6 +306,13 @@ function buildIntentQuery(q, intent) {
       // match_phrase on name.morfologik (no word_delimiter_graph, no split search analyzer)
       // rewards products where query tokens appear as a contiguous phrase,
       // so "sony a7 iv" ranks A7 IV above A7R III.
+      //
+      // If params were extracted (e.g. "sony 50mm" → focal=50), strip them from text query
+      // so "50mm" doesn't create noise in the text match. Params are applied as filters
+      // in buildSearchQuery.
+      const hasParams = intent.params && Object.keys(intent.params).length > 0;
+      const textQ = hasParams ? stripParams(q) : q;
+
       const shouldClauses = [
         // Exact phrase boost — strong reward for precise model sequence
         {
@@ -350,7 +359,7 @@ function buildIntentQuery(q, intent) {
           must: [
             {
               multi_match: {
-                query: q,
+                query: textQ,
                 fields: ['name.exact^10', 'model_code^8', 'name.folded^5', 'name.prefix^3'],
                 type: 'best_fields',
                 fuzziness: 1,
@@ -391,6 +400,64 @@ function buildIntentQuery(q, intent) {
               },
             },
           ],
+        },
+      };
+    }
+
+    case 'COMPOUND': {
+      // Compound intent: category word + brand + optional parameters.
+      // e.g. "obiektyw Canon 50 mm" → category=Obiektywy, brand=Canon, focal=50
+      // e.g. "statyw Manfrotto" → category=Statywy, brand=Manfrotto
+      // e.g. "obiektyw do Canon R6" → category=Obiektywy, compatible_mounts=Canon RF
+      const brandNorm = intent.brand ? normalizeBrandCase(intent.brand) : null;
+      const paramFilters = buildParamFilters(intent.params || {});
+      const textQuery = intent.textQuery || q;
+
+      // Category filter is always a hard constraint
+      const mustClauses = [
+        { term: { category: intent.detectedCategory } },
+      ];
+
+      // Mount compatibility filter: "obiektyw do Canon" → filter by Canon RF/EF mounts
+      if (intent.compatibilityMode && intent.compatMounts) {
+        mustClauses.push({
+          terms: { compatible_mounts: intent.compatMounts },
+        });
+      }
+
+      const shouldClauses = [
+        // Full query phrase match for ordering
+        {
+          match_phrase: {
+            'name.morfologik': {
+              query: q,
+              slop: 3,
+              boost: 20,
+            },
+          },
+        },
+        // Text relevance on remaining terms
+        {
+          multi_match: {
+            query: textQuery,
+            fields: NAME_FIELDS,
+            type: 'best_fields',
+          },
+        },
+      ];
+
+      // Brand boost (not hard filter — allows third-party lenses for the mount)
+      if (brandNorm && !intent.compatibilityMode) {
+        shouldClauses.push({
+          term: { brand: { value: brandNorm, boost: 10 } },
+        });
+      }
+
+      return {
+        bool: {
+          must: mustClauses,
+          should: shouldClauses,
+          filter: paramFilters,
         },
       };
     }
@@ -496,16 +563,20 @@ function buildIntentQuery(q, intent) {
     }
 
     case 'GENERAL':
-    default:
+    default: {
+      // If params were extracted (e.g. "50mm f/1.4"), strip them from text
+      const generalHasParams = intent.params && Object.keys(intent.params).length > 0;
+      const generalTextQ = generalHasParams ? stripParams(q) : q;
       return {
         multi_match: {
-          query: q,
+          query: generalTextQ || q,
           fields: NAME_FIELDS,
           type: 'best_fields',
           fuzziness: 'AUTO',
           prefix_length: 1,
         },
       };
+    }
   }
 }
 
@@ -518,6 +589,17 @@ function buildBaseMatchQuery(q, intent) {
   }
   if (intent.type === 'CATEGORY') {
     return { term: { category: intent.category } };
+  }
+  if (intent.type === 'COMPOUND') {
+    // Scope aggregations to the detected category for relevant facets
+    return {
+      bool: {
+        must: [{ term: { category: intent.detectedCategory } }],
+        should: [
+          { multi_match: { query: q, fields: ['name.prefix^3', 'name.folded^2', 'name.morfologik'], type: 'best_fields' } },
+        ],
+      },
+    };
   }
   return {
     multi_match: {
