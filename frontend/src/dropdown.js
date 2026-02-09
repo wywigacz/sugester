@@ -94,7 +94,7 @@ export class Dropdown {
       html += '</div>'; // end col-center
 
       // Column 3: Product grid (remaining products)
-      const gridProducts = data.products.slice(1);
+      const gridProducts = data.products.slice(1, 7);
       html += '<div class="sugester-col-right">';
       html += '<div class="sugester-section__label">Produkty</div>';
       if (gridProducts.length > 0) {
