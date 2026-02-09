@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: sugester-api
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && cd frontend && npm install --include=dev && node build.js
+    startCommand: node backend/src/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: INDEX_NAME
+        value: products
+      - key: ES_CLOUD_ID
+        sync: false
+      - key: ES_USERNAME
+        sync: false
+      - key: ES_PASSWORD
+        sync: false
+      - key: REDIS_URL
+        sync: false
