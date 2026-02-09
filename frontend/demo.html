@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugester Demo — Sklep Foto-Video</title>
+  <link rel="preconnect" href="http://localhost:3000">
+  <link rel="stylesheet" href="src/sugester.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    /* Header */
+    .demo-header {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      padding: 20px 24px;
+      color: #fff;
+    }
+    .demo-header__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto 20px;
+    }
+    .demo-header__logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .demo-header__logo span { color: #38bdf8; }
+    .demo-header__status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .demo-header__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ef4444;
+    }
+    .demo-header__dot--connected { background: #22c55e; }
+
+    /* Search bar */
+    .demo-search {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .demo-search form {
+      display: flex;
+      gap: 8px;
+    }
+    .demo-search__input {
+      flex: 1;
+    }
+    .demo-search__btn {
+      padding: 12px 24px;
+      background: #0ea5e9;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+    .demo-search__btn:hover { background: #0284c7; }
+
+    /* Main content */
+    .demo-main {
+      max-width: 1200px;
+      margin: 24px auto;
+      padding: 0 24px;
+    }
+
+    /* Search results header */
+    .demo-results-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .demo-results-header__title {
+      font-size: 16px;
+      color: #374151;
+    }
+    .demo-results-header__title strong {
+      color: #0ea5e9;
+    }
+    .demo-results-header__count {
+      color: #6b7280;
+      font-weight: 400;
+    }
+
+    /* Sort bar */
+    .demo-sort {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .demo-sort__label {
+      font-size: 13px;
+      color: #6b7280;
+    }
+    .demo-sort__select {
+      padding: 6px 12px;
+      font-size: 13px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      background: #fff;
+      color: #374151;
+      cursor: pointer;
+    }
+
+    /* Did you mean / fallback messages */
+    .demo-results__message {
+      margin-bottom: 16px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .demo-results__message a {
+      color: #0ea5e9;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .demo-results__message a:hover {
+      text-decoration: underline;
+    }
+
+    /* Layout: sidebar + content */
+    .demo-layout {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    /* ===================== Filter sidebar ===================== */
+    .demo-filters {
+      width: 250px;
+      flex-shrink: 0;
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      padding: 20px;
+      position: sticky;
+      top: 24px;
+    }
+    .demo-filters__group {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .demo-filters__group:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .demo-filters__title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #374151;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 10px;
+    }
+    .demo-filters__item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 0;
+      font-size: 14px;
+      color: #4b5563;
+      cursor: pointer;
+    }
+    .demo-filters__item:hover {
+      color: #0ea5e9;
+    }
+    .demo-filters__checkbox {
+      width: 16px;
+      height: 16px;
+      accent-color: #0ea5e9;
+      cursor: pointer;
+    }
+    .demo-filters__name {
+      flex: 1;
+    }
+    .demo-filters__count {
+      color: #9ca3af;
+      font-size: 12px;
+    }
+    .demo-filters__price-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .demo-filters__price-input {
+      width: 80px;
+      padding: 6px 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .demo-filters__price-sep {
+      color: #9ca3af;
+    }
+    .demo-filters__price-btn {
+      padding: 6px 14px;
+      background: #0ea5e9;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .demo-filters__price-btn:hover {
+      background: #0284c7;
+    }
+    .demo-filters__clear {
+      display: block;
+      text-align: center;
+      margin-top: 16px;
+      font-size: 13px;
+      color: #0ea5e9;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .demo-filters__clear:hover {
+      text-decoration: underline;
+    }
+
+    /* ===================== Product list ===================== */
+    .demo-products {
+      flex: 1;
+      min-width: 0;
+    }
+    .demo-product-card {
+      display: flex;
+      gap: 20px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+      transition: box-shadow 0.15s ease;
+      align-items: flex-start;
+    }
+    .demo-product-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Product image */
+    .demo-product-card__img-wrap {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f9fafb;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .demo-product-card__img {
+      max-width: 110px;
+      max-height: 110px;
+      object-fit: contain;
+    }
+
+    /* Product info (middle) */
+    .demo-product-card__info {
+      flex: 1;
+      min-width: 0;
+    }
+    .demo-product-card__name {
+      font-size: 15px;
+      font-weight: 600;
+      color: #0ea5e9;
+      line-height: 1.4;
+      margin-bottom: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+    }
+    .demo-product-card__name:hover {
+      text-decoration: underline;
+    }
+    .demo-product-card__rating {
+      margin-bottom: 4px;
+    }
+    .demo-product-card__brand {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+    .demo-product-card__desc {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+    .demo-product-card__badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    /* Price column (right) */
+    .demo-product-card__price-col {
+      flex-shrink: 0;
+      text-align: right;
+      min-width: 140px;
+    }
+    .demo-product-card__price {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+    .demo-product-card__price--sale {
+      color: #dc2626;
+    }
+    .demo-product-card__price-old {
+      font-size: 14px;
+      color: #9ca3af;
+      text-decoration: line-through;
+      font-weight: 400;
+    }
+    .demo-product-card__avail {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .demo-product-card__avail--green { color: #16a34a; }
+    .demo-product-card__avail--yellow { color: #ca8a04; }
+    .demo-product-card__avail--gray { color: #9ca3af; }
+    .demo-product-card__cart-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #0ea5e9;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+    .demo-product-card__cart-btn:hover {
+      background: #0284c7;
+    }
+
+    /* Badges */
+    .demo-badge {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .demo-badge--promo {
+      background: #fef3c7;
+      color: #92400e;
+      font-style: italic;
+    }
+    .demo-badge--new {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .demo-badge--sale {
+      background: #fce7f3;
+      color: #be185d;
+    }
+
+    /* ===================== Pagination ===================== */
+    .demo-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      margin-top: 24px;
+      padding-bottom: 32px;
+    }
+    .demo-pagination__btn {
+      padding: 8px 14px;
+      background: #fff;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #374151;
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+    .demo-pagination__btn:hover {
+      background: #f3f4f6;
+      border-color: #9ca3af;
+    }
+    .demo-pagination__btn--active {
+      background: #0ea5e9;
+      color: #fff;
+      border-color: #0ea5e9;
+    }
+    .demo-pagination__btn--disabled {
+      opacity: 0.4;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* Empty / loading state */
+    .demo-empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: #9ca3af;
+      font-size: 15px;
+    }
+
+    /* ===================== Responsive ===================== */
+    @media (max-width: 768px) {
+      .demo-layout { flex-direction: column; }
+      .demo-filters {
+        width: 100%;
+        position: static;
+      }
+      .demo-product-card {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .demo-product-card__img-wrap {
+        width: 100%;
+        height: 160px;
+      }
+      .demo-product-card__img {
+        max-width: 140px;
+        max-height: 140px;
+      }
+      .demo-product-card__price-col {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .demo-search__btn { padding: 12px 16px; font-size: 14px; }
+      .demo-results-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="demo-header">
+    <div class="demo-header__top">
+      <div class="demo-header__logo">Foto<span>Sklep</span>.pl</div>
+      <div class="demo-header__status">
+        <div class="demo-header__dot" id="statusDot"></div>
+        <span id="statusText">Connecting...</span>
+      </div>
+    </div>
+    <div class="demo-search">
+      <form id="searchForm">
+        <input
+          id="search-input"
+          class="demo-search__input"
+          type="search"
+          placeholder="Szukaj aparat&oacute;w, obiektyw&oacute;w, akcesori&oacute;w..."
+          autocomplete="off"
+        >
+        <button type="submit" class="demo-search__btn">Szukaj</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="demo-main" id="mainContent">
+    <div class="demo-empty">
+      Wpisz zapytanie w polu wyszukiwania, aby zobaczy&cacute; wyniki.
+    </div>
+  </main>
+
+  <script type="module">
+    import { SugesterWidget } from './src/sugester.js';
+
+    const API_URL = 'http://localhost:3000/api';
+    const mainContent = document.getElementById('mainContent');
+    const statusDot = document.getElementById('statusDot');
+    const statusText = document.getElementById('statusText');
+
+    // State
+    let currentFilters = {};
+    let currentQuery = '';
+    let currentSort = 'relevance';
+    let currentPage = 1;
+
+    // Check backend health
+    async function checkHealth() {
+      try {
+        const res = await fetch('http://localhost:3000/health');
+        const data = await res.json();
+        if (data.status === 'ok') {
+          statusDot.classList.add('demo-header__dot--connected');
+          statusText.textContent = 'Backend connected';
+        } else {
+          statusText.textContent = 'Backend degraded';
+        }
+      } catch {
+        statusText.textContent = 'Backend offline';
+      }
+    }
+    checkHealth();
+
+    // Initialize widget
+    const widget = new SugesterWidget({
+      inputSelector: '#search-input',
+      apiUrl: API_URL,
+      debounceMs: 200,
+      minChars: 1,
+      maxSuggestions: 10,
+      onProductClick: (product) => {
+        if (product.product_url) {
+          window.open(product.product_url, '_blank');
+        }
+      },
+      onSearch: async (query) => {
+        currentQuery = query;
+        currentFilters = {};
+        currentSort = 'relevance';
+        currentPage = 1;
+        await doSearch();
+      },
+      onCategoryClick: async (categoryName) => {
+        currentQuery = categoryName;
+        currentFilters = { category: categoryName };
+        currentSort = 'relevance';
+        currentPage = 1;
+        document.getElementById('search-input').value = categoryName;
+        await doSearch();
+      },
+    });
+
+    async function doSearch() {
+      mainContent.innerHTML = '<div class="demo-empty">Szukam...</div>';
+      try {
+        const params = new URLSearchParams({ q: currentQuery, page: currentPage, sort: currentSort });
+        for (const [key, val] of Object.entries(currentFilters)) {
+          if (val) params.set(key, val);
+        }
+        const res = await fetch(`${API_URL}/search?${params}`);
+        const data = await res.json();
+        renderSearchResults(data);
+      } catch (err) {
+        mainContent.innerHTML = `<div class="demo-empty">B\u0142\u0105d: ${err.message}</div>`;
+      }
+    }
+
+    function renderSearchResults(data) {
+      let html = '';
+
+      // Header row: title + sort
+      html += '<div class="demo-results-header">';
+      html += `<div class="demo-results-header__title">Szukasz <strong>&bdquo;${escapeHtml(data.query)}&rdquo;</strong> <span class="demo-results-header__count">&mdash; ${data.total} produkt${pluralize(data.total)}</span></div>`;
+      html += '<div class="demo-sort">';
+      html += '<span class="demo-sort__label">Sortuj:</span>';
+      html += '<select class="demo-sort__select" id="sortSelect">';
+      html += `<option value="relevance" ${currentSort === 'relevance' ? 'selected' : ''}>Trafno\u015B\u0107</option>`;
+      html += `<option value="price_asc" ${currentSort === 'price_asc' ? 'selected' : ''}>Cena rosn\u0105co</option>`;
+      html += `<option value="price_desc" ${currentSort === 'price_desc' ? 'selected' : ''}>Cena malej\u0105co</option>`;
+      html += `<option value="popular" ${currentSort === 'popular' ? 'selected' : ''}>Popularno\u015B\u0107</option>`;
+      html += `<option value="newest" ${currentSort === 'newest' ? 'selected' : ''}>Nowo\u015Bci</option>`;
+      html += '</select>';
+      html += '</div>';
+      html += '</div>';
+
+      // Did you mean / fallback messages
+      if (data.did_you_mean) {
+        html += `<div class="demo-results__message">Czy chodzi\u0142e\u015B o: <a href="#" data-didyoumean="${escapeHtml(data.did_you_mean)}">${escapeHtml(data.did_you_mean)}</a>?</div>`;
+      }
+      if (data.fallback_type === 'bestsellers') {
+        html += '<div class="demo-results__message">Nie znaleziono wynik\u00F3w. Oto nasze bestsellery:</div>';
+      }
+
+      // Layout: filters + products
+      html += '<div class="demo-layout">';
+
+      // Filter sidebar
+      html += renderFilterSidebar(data.facets || {});
+
+      // Products
+      html += '<div class="demo-products">';
+      if (data.products && data.products.length > 0) {
+        data.products.forEach(p => {
+          html += renderProductCard(p);
+        });
+
+        // Pagination
+        const totalPages = Math.ceil((data.total || 0) / (data.per_page || 20));
+        if (totalPages > 1) {
+          html += renderPagination(currentPage, totalPages);
+        }
+      } else {
+        html += '<div class="demo-empty">Brak produkt\u00F3w</div>';
+      }
+      html += '</div>'; // end products
+
+      html += '</div>'; // end layout
+
+      mainContent.innerHTML = html;
+      bindResultEvents();
+    }
+
+    function renderFilterSidebar(facets) {
+      let html = '<aside class="demo-filters">';
+
+      // Category facet
+      if (facets.category && facets.category.length > 0) {
+        html += '<div class="demo-filters__group">';
+        html += '<div class="demo-filters__title">Kategoria</div>';
+        facets.category.slice(0, 8).forEach(f => {
+          const checked = currentFilters.category === f.name ? 'checked' : '';
+          html += `<label class="demo-filters__item">`;
+          html += `<input type="checkbox" class="demo-filters__checkbox" data-filter="category" data-value="${escapeHtml(f.name)}" ${checked}>`;
+          html += `<span class="demo-filters__name">${escapeHtml(f.name)}</span>`;
+          html += `<span class="demo-filters__count">${f.count}</span>`;
+          html += `</label>`;
+        });
+        html += '</div>';
+      }
+
+      // Brand facet
+      if (facets.brand && facets.brand.length > 0) {
+        html += '<div class="demo-filters__group">';
+        html += '<div class="demo-filters__title">Producent</div>';
+        facets.brand.slice(0, 8).forEach(f => {
+          const checked = currentFilters.brand === f.name ? 'checked' : '';
+          html += `<label class="demo-filters__item">`;
+          html += `<input type="checkbox" class="demo-filters__checkbox" data-filter="brand" data-value="${escapeHtml(f.name)}" ${checked}>`;
+          html += `<span class="demo-filters__name">${escapeHtml(f.name)}</span>`;
+          html += `<span class="demo-filters__count">${f.count}</span>`;
+          html += `</label>`;
+        });
+        html += '</div>';
+      }
+
+      // Price range
+      html += '<div class="demo-filters__group">';
+      html += '<div class="demo-filters__title">Cena</div>';
+      html += '<div class="demo-filters__price-row">';
+      html += `<input type="number" class="demo-filters__price-input" id="priceMin" placeholder="od" value="${currentFilters.price_min || ''}">`;
+      html += '<span class="demo-filters__price-sep">&mdash;</span>';
+      html += `<input type="number" class="demo-filters__price-input" id="priceMax" placeholder="do" value="${currentFilters.price_max || ''}">`;
+      html += '</div>';
+      html += '<button class="demo-filters__price-btn" id="priceFilterBtn">Filtruj</button>';
+      html += '</div>';
+
+      // Availability facet
+      html += '<div class="demo-filters__group">';
+      html += '<div class="demo-filters__title">Dost\u0119pno\u015B\u0107</div>';
+      const availOpts = [
+        { value: 'in_stock', label: 'Dost\u0119pny' },
+        { value: 'na_zamowienie', label: 'Na zam\u00F3wienie' },
+        { value: 'out_of_stock', label: 'Niedost\u0119pny' },
+      ];
+      availOpts.forEach(opt => {
+        const checked = currentFilters.availability === opt.value ? 'checked' : '';
+        html += `<label class="demo-filters__item">`;
+        html += `<input type="checkbox" class="demo-filters__checkbox" data-filter="availability" data-value="${opt.value}" ${checked}>`;
+        html += `<span class="demo-filters__name">${opt.label}</span>`;
+        html += `</label>`;
+      });
+      html += '</div>';
+
+      // Clear filters
+      const hasFilters = Object.keys(currentFilters).length > 0;
+      if (hasFilters) {
+        html += '<a href="#" class="demo-filters__clear" id="clearFilters">Wyczy\u015B\u0107 filtry</a>';
+      }
+
+      html += '</aside>';
+      return html;
+    }
+
+    function renderProductCard(p) {
+      const productUrl = p.product_url ? escapeHtml(p.product_url) : '#';
+      let html = '<div class="demo-product-card">';
+
+      // Image (linked)
+      html += `<a href="${productUrl}" target="_blank" rel="noopener" class="demo-product-card__img-wrap">`;
+      if (p.image_url) {
+        html += `<img class="demo-product-card__img" src="${escapeHtml(p.image_url)}" alt="${escapeHtml(p.name)}" loading="lazy">`;
+      } else {
+        html += '<span style="font-size:36px;color:#d1d5db;">&#128247;</span>';
+      }
+      html += '</a>';
+
+      // Info
+      html += '<div class="demo-product-card__info">';
+      html += `<a href="${productUrl}" target="_blank" rel="noopener" class="demo-product-card__name">${escapeHtml(p.name)}</a>`;
+
+      // Star rating
+      html += '<div class="demo-product-card__rating">';
+      html += renderStars(p.avg_rating || 0);
+      if (p.review_count) {
+        html += `<span class="stars__count">(${p.review_count} ${reviewWord(p.review_count)})</span>`;
+      }
+      html += '</div>';
+
+      html += `<div class="demo-product-card__brand">${escapeHtml(p.brand || '')}</div>`;
+
+      if (p.description) {
+        html += `<div class="demo-product-card__desc">${escapeHtml(p.description)}</div>`;
+      }
+
+      // Badges
+      html += '<div class="demo-product-card__badges">';
+      if (p.is_pinned) {
+        html += '<span class="demo-badge demo-badge--promo">Wynik promowany</span>';
+      }
+      if (p.is_new) {
+        html += '<span class="demo-badge demo-badge--new">Nowo\u015B\u0107</span>';
+      }
+      if (p.is_promo) {
+        html += '<span class="demo-badge demo-badge--sale">Promocja</span>';
+      }
+      html += '</div>';
+      html += '</div>'; // end info
+
+      // Price column
+      html += '<div class="demo-product-card__price-col">';
+      if (p.is_promo && p.sale_price) {
+        html += `<div class="demo-product-card__price-old">${formatPrice(p.price)}</div>`;
+        html += `<div class="demo-product-card__price demo-product-card__price--sale">${formatPrice(p.sale_price)}</div>`;
+      } else {
+        html += `<div class="demo-product-card__price">${formatPrice(p.price)}</div>`;
+      }
+
+      // Availability
+      if (p.availability === 'in_stock') {
+        html += '<div class="demo-product-card__avail demo-product-card__avail--green">&#10003; Dost\u0119pny</div>';
+      } else if (p.availability === 'na_zamowienie') {
+        html += '<div class="demo-product-card__avail demo-product-card__avail--yellow">&#9200; Na zam\u00F3wienie</div>';
+      } else {
+        html += '<div class="demo-product-card__avail demo-product-card__avail--gray">Niedost\u0119pny</div>';
+      }
+
+      html += '<button class="demo-product-card__cart-btn">Do koszyka</button>';
+      html += '</div>'; // end price-col
+
+      html += '</div>'; // end product-card
+      return html;
+    }
+
+    function renderStars(rating) {
+      const full = Math.round(rating);
+      let html = '<span class="stars">';
+      for (let i = 1; i <= 5; i++) {
+        if (i <= full) {
+          html += '<span class="stars__filled">&#9733;</span>';
+        } else {
+          html += '<span class="stars__empty">&#9733;</span>';
+        }
+      }
+      html += '</span>';
+      return html;
+    }
+
+    function renderPagination(page, totalPages) {
+      let html = '<div class="demo-pagination">';
+
+      // Prev
+      html += `<button class="demo-pagination__btn ${page <= 1 ? 'demo-pagination__btn--disabled' : ''}" data-page="${page - 1}">&laquo; Poprz.</button>`;
+
+      // Page numbers
+      const start = Math.max(1, page - 2);
+      const end = Math.min(totalPages, page + 2);
+      if (start > 1) {
+        html += `<button class="demo-pagination__btn" data-page="1">1</button>`;
+        if (start > 2) html += '<span style="padding:0 4px;color:#9ca3af;">...</span>';
+      }
+      for (let i = start; i <= end; i++) {
+        html += `<button class="demo-pagination__btn ${i === page ? 'demo-pagination__btn--active' : ''}" data-page="${i}">${i}</button>`;
+      }
+      if (end < totalPages) {
+        if (end < totalPages - 1) html += '<span style="padding:0 4px;color:#9ca3af;">...</span>';
+        html += `<button class="demo-pagination__btn" data-page="${totalPages}">${totalPages}</button>`;
+      }
+
+      // Next
+      html += `<button class="demo-pagination__btn ${page >= totalPages ? 'demo-pagination__btn--disabled' : ''}" data-page="${page + 1}">Nast. &raquo;</button>`;
+
+      html += '</div>';
+      return html;
+    }
+
+    function bindResultEvents() {
+      // Sort change
+      const sortSelect = document.getElementById('sortSelect');
+      if (sortSelect) {
+        sortSelect.addEventListener('change', async () => {
+          currentSort = sortSelect.value;
+          currentPage = 1;
+          await doSearch();
+        });
+      }
+
+      // Filter checkboxes
+      document.querySelectorAll('.demo-filters__checkbox').forEach(cb => {
+        cb.addEventListener('change', async () => {
+          const filterKey = cb.dataset.filter;
+          const filterVal = cb.dataset.value;
+          if (cb.checked) {
+            currentFilters[filterKey] = filterVal;
+          } else {
+            delete currentFilters[filterKey];
+          }
+          currentPage = 1;
+          await doSearch();
+        });
+      });
+
+      // Price filter
+      const priceBtn = document.getElementById('priceFilterBtn');
+      if (priceBtn) {
+        priceBtn.addEventListener('click', async () => {
+          const min = document.getElementById('priceMin')?.value;
+          const max = document.getElementById('priceMax')?.value;
+          if (min) currentFilters.price_min = min;
+          else delete currentFilters.price_min;
+          if (max) currentFilters.price_max = max;
+          else delete currentFilters.price_max;
+          currentPage = 1;
+          await doSearch();
+        });
+      }
+
+      // Clear filters
+      const clearBtn = document.getElementById('clearFilters');
+      if (clearBtn) {
+        clearBtn.addEventListener('click', async (e) => {
+          e.preventDefault();
+          currentFilters = {};
+          currentPage = 1;
+          await doSearch();
+        });
+      }
+
+      // Pagination
+      document.querySelectorAll('.demo-pagination__btn:not(.demo-pagination__btn--disabled)').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const page = parseInt(btn.dataset.page, 10);
+          if (page >= 1) {
+            currentPage = page;
+            await doSearch();
+            mainContent.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Did you mean
+      const dymLink = document.querySelector('[data-didyoumean]');
+      if (dymLink) {
+        dymLink.addEventListener('click', async (e) => {
+          e.preventDefault();
+          const suggestion = dymLink.dataset.didyoumean;
+          document.getElementById('search-input').value = suggestion;
+          currentQuery = suggestion;
+          currentFilters = {};
+          currentPage = 1;
+          await doSearch();
+        });
+      }
+    }
+
+    // Helpers
+    function formatPrice(price) {
+      if (price == null) return '';
+      return new Intl.NumberFormat('pl-PL', { style: 'currency', currency: 'PLN' }).format(price);
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function pluralize(n) {
+      if (n === 1) return '';
+      if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) return 'y';
+      return '\u00F3w';
+    }
+
+    function reviewWord(n) {
+      if (n === 1) return 'opinia';
+      if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) return 'opinie';
+      return 'opinii';
+    }
+  </script>
+</body>
+</html>

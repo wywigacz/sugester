@@ -1,0 +1,43 @@
+# Synonimy jednokierunkowe — cross-language, slang, skróty
+# Format: term => expansion (ale NIE odwrotnie)
+
+# Angielski -> Polski
+lens => obiektyw
+tripod => statyw
+flash => lampa blyskowa
+camera => aparat fotograficzny
+viewfinder => wizjer
+shutter => migawka
+aperture => przeslona
+sensor => matryca
+body => aparat
+memory card => karta pamieci
+battery => akumulator
+charger => ladowarka
+filter => filtr
+bag => torba fotograficzna
+backpack => plecak fotograficzny
+strap => pasek do aparatu
+remote => pilot zdalny
+cleaning kit => zestaw czyszczacy
+lens cap => dekielek
+lens hood => oslona przeciwsloneczna
+drone => dron
+
+# Slang fotograficzny PL
+lufa => teleobiektyw
+puszka => aparat
+szkilko => obiektyw
+spacerzoom => obiektyw uniwersalny
+rybie oko => fisheye
+bezlustro => bezlusterkowiec
+lustro => lustrzanka
+kamerka => kamera sportowa
+
+# Skróty do pełnych nazw
+is => stabilizacja obrazu
+vr => stabilizacja obrazu
+oss => stabilizacja obrazu
+usm => ultrasonic motor
+stm => stepping motor
+gm => g master

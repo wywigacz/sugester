@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude
+.claude/
+
+# Dev files
+docker/docker-compose.yml
+*.md
+nul
+C:tempsony_test.json
+
+# Secrets (will be handled via .env.production)
+ga4-key.json
+.env
+.env.example
+
+# Build artifacts we don't need in context
+frontend/dist/*.map

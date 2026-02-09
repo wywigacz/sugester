@@ -1,0 +1,302 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0,
+      "max_ngram_diff": 20,
+      "similarity": {
+        "custom_bm25": {
+          "type": "BM25",
+          "k1": 0.9,
+          "b": 0.55
+        }
+      }
+    },
+    "analysis": {
+      "char_filter": {
+        "alpha_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "α",
+          "replacement": "Alpha"
+        },
+        "aperture_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "(?i)[Ff]\\s*[/:]\\s*(\\d)",
+          "replacement": "f/$1"
+        },
+        "focal_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "(\\d+)\\s*[–—-]\\s*(\\d+)\\s*mm\\b",
+          "replacement": "$1-$2mm"
+        },
+        "mark_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "(?i)\\b(?:Mark|Mk)\\s*(II|III|IV|V|2|3|4|5)\\b",
+          "replacement": "Mark$1"
+        },
+        "resolution_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "(?i)\\b(\\d+(?:\\.\\d+)?)\\s*(?:Mpx|megapixel[si]?|megapiksel[i]?)\\b",
+          "replacement": "$1MP"
+        },
+        "unicode_normalizer": {
+          "type": "mapping",
+          "mappings": [
+            "\\u2013 => -",
+            "\\u2014 => -",
+            "\\u201C => \\\"",
+            "\\u201D => \\\"",
+            "\\u201E => \\\"",
+            "\\u00A0 => \\u0020"
+          ]
+        }
+      },
+      "tokenizer": {
+        "edge_ngram_tokenizer": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 20,
+          "token_chars": ["letter", "digit"]
+        }
+      },
+      "filter": {
+        "polish_stem": {
+          "type": "polish_stem"
+        },
+        "icu_folding_preserve": {
+          "type": "icu_folding",
+          "preserve_original": true
+        },
+        "word_delimiter_custom": {
+          "type": "word_delimiter_graph",
+          "preserve_original": true,
+          "split_on_numerics": false,
+          "split_on_case_change": true,
+          "catenate_words": false,
+          "catenate_numbers": false,
+          "stem_english_possessive": false
+        },
+        "edge_ngram_filter": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 20
+        },
+        "truncate_20": {
+          "type": "truncate",
+          "length": 20
+        },
+        "synonym_search_filter": {
+          "type": "synonym_graph",
+          "synonyms": [
+            "lustrzanka, dslr, lustrzanka cyfrowa, aparat lustrzankowy",
+            "bezlusterkowiec, mirrorless, aparat bezlusterkowy, aparat systemowy",
+            "kompakt, aparat kompaktowy, compact",
+            "obiektyw, szklo",
+            "obiektyw staloogniskowy, stalka, prime, fix, staloogniskowy",
+            "obiektyw zmiennoogniskowy, zoom",
+            "obiektyw makro, makro, macro",
+            "lampa blyskowa, flesz, flash, blysk, speedlight",
+            "lampa studyjna, studio flash, monolight",
+            "softbox, soft box",
+            "stripbox, strip box",
+            "parasol fotograficzny, parasol oswietleniowy",
+            "statyw, tripod, trojnog",
+            "monopod, jednonog",
+            "gimbal, stabilizator obrazu, stabilizator kamerowy",
+            "pelna klatka, full frame, ff",
+            "apsc, aps-c, crop",
+            "micro four thirds, m43, mft, micro 4/3",
+            "filtr polaryzacyjny, cpl, polaryzator, filtr cpl",
+            "filtr szary, nd, filtr nd",
+            "filtr uv, filtr ochronny, uv",
+            "karta pamieci, memory card",
+            "karta sd, sdcard, sd card",
+            "cfexpress, cf express",
+            "karta microsd, microsd, micro sd",
+            "torba fotograficzna, torba na aparat, pokrowiec, case, futeral",
+            "plecak fotograficzny, plecak na aparat, plecak foto",
+            "oslona przeciwsloneczna, lens hood, tulipan",
+            "dekielek, zaslonka obiektywu, lens cap",
+            "pasek do aparatu, camera strap",
+            "pilot zdalny, wyzwalacz, remote, wyzwalacz zdalny",
+            "akumulator, bateria",
+            "ladowarka, charger",
+            "kamera sportowa, action camera, actioncam",
+            "kamera internetowa, webcam, kamerka internetowa"
+          ],
+          "updateable": true,
+          "lenient": true
+        },
+        "synonym_model_filter": {
+          "type": "synonym_graph",
+          "synonyms": [
+            "a7iii, a7 iii, a7m3, a7 mark 3, a7 mark iii, alpha 7 iii, alpha7iii, ilce7m3, ilce-7m3 => sony alpha 7 iii",
+            "a7iv, a7 iv, a7m4, a7 mark 4, a7 mark iv, alpha 7 iv, alpha7iv, ilce7m4, ilce-7m4 => sony alpha 7 iv",
+            "a7rv, a7r v, a7r5, a7r mark 5, a7r mark v, alpha 7r v, ilce7rm5, ilce-7rm5 => sony alpha 7r v",
+            "a7siii, a7s iii, a7s3, a7s mark 3, alpha 7s iii, ilce7sm3, ilce-7sm3 => sony alpha 7s iii",
+            "a1, alpha 1, alpha1, ilce1, ilce-1 => sony alpha 1",
+            "a6700, alpha 6700, ilce6700, ilce-6700 => sony alpha 6700",
+            "a6400, alpha 6400, ilce6400, ilce-6400 => sony alpha 6400",
+            "r5ii, r5 ii, r5 mark 2, r5 mark ii, r5 markii, eos r5 ii, eos r5 mark ii, canon r5 ii => canon eos r5 mark ii",
+            "r5, eos r5, canon r5 => canon eos r5",
+            "r6iii, r6 iii, r6 mark 3, r6 mark iii, eos r6 iii, eos r6 mark iii, canon r6 iii => canon eos r6 mark iii",
+            "r6ii, r6 ii, r6 mark 2, r6 mark ii, eos r6 ii, canon r6 ii => canon eos r6 mark ii",
+            "r8, eos r8, canon r8 => canon eos r8",
+            "r1, eos r1, canon r1 => canon eos r1",
+            "5d4, 5d mark 4, 5d mark iv, 5dmk4, 5dmarkiv, eos 5d mark iv => canon eos 5d mark iv",
+            "z6iii, z6 iii, z6 mark 3, z6 mark iii, z 6 iii, nikon z 6 iii => nikon z6 iii",
+            "z8, nikon z 8 => nikon z8",
+            "zf, nikon z f => nikon zf",
+            "z50ii, z50 ii, z 50 ii, nikon z 50 ii => nikon z50 ii",
+            "xt5, x t5, x-t 5, fuji xt5, fuji x-t5 => fujifilm x-t5",
+            "xh2s, x h2s, x-h2 s, fuji xh2s, fuji x-h2s => fujifilm x-h2s",
+            "xs20, x s20, x-s 20, fuji xs20 => fujifilm x-s20",
+            "mini 4 pro, mini4pro, mini 4pro, dji mini4 pro => dji mini 4 pro",
+            "air 3s, air3s, dji air3s => dji air 3s",
+            "mavic 3 pro, mavic3pro, dji mavic3 pro => dji mavic 3 pro",
+            "hero 13, hero13, gopro 13, gopro hero13 => gopro hero 13 black"
+          ],
+          "updateable": true,
+          "lenient": true
+        },
+        "synonym_uni_filter": {
+          "type": "synonym_graph",
+          "synonyms": [
+            "lens => obiektyw",
+            "tripod => statyw",
+            "flash => lampa blyskowa",
+            "camera => aparat fotograficzny",
+            "viewfinder => wizjer",
+            "shutter => migawka",
+            "aperture => przeslona",
+            "sensor => matryca",
+            "body => aparat",
+            "memory card => karta pamieci",
+            "battery => akumulator",
+            "charger => ladowarka",
+            "filter => filtr",
+            "bag => torba fotograficzna",
+            "backpack => plecak fotograficzny",
+            "strap => pasek do aparatu",
+            "remote => pilot zdalny",
+            "cleaning kit => zestaw czyszczacy",
+            "lens cap => dekielek",
+            "lens hood => oslona przeciwsloneczna",
+            "drone => dron",
+            "lufa => teleobiektyw",
+            "puszka => aparat",
+            "szkilko => obiektyw",
+            "spacerzoom => obiektyw uniwersalny",
+            "rybie oko => fisheye",
+            "bezlustro => bezlusterkowiec",
+            "lustro => lustrzanka",
+            "kamerka => kamera sportowa",
+            "is => stabilizacja obrazu",
+            "vr => stabilizacja obrazu",
+            "oss => stabilizacja obrazu",
+            "usm => ultrasonic motor",
+            "stm => stepping motor",
+            "gm => g master"
+          ],
+          "updateable": true,
+          "lenient": true
+        }
+      },
+      "analyzer": {
+        "polish_morfologik": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "char_filter": [
+            "alpha_normalizer",
+            "aperture_normalizer",
+            "focal_normalizer",
+            "mark_normalizer",
+            "resolution_normalizer",
+            "unicode_normalizer"
+          ],
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "polish_stem"
+          ]
+        },
+        "polish_stempel": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "char_filter": [
+            "alpha_normalizer",
+            "aperture_normalizer",
+            "focal_normalizer",
+            "mark_normalizer",
+            "resolution_normalizer",
+            "unicode_normalizer"
+          ],
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "polish_stem"
+          ]
+        },
+        "polish_prefix": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "char_filter": [
+            "alpha_normalizer",
+            "aperture_normalizer",
+            "focal_normalizer",
+            "mark_normalizer",
+            "unicode_normalizer"
+          ],
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "edge_ngram_filter"
+          ]
+        },
+        "polish_prefix_search": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "truncate_20"
+          ]
+        },
+        "polish_folded": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "char_filter": [
+            "alpha_normalizer",
+            "aperture_normalizer",
+            "focal_normalizer",
+            "mark_normalizer",
+            "resolution_normalizer",
+            "unicode_normalizer"
+          ],
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "word_delimiter_custom"
+          ]
+        },
+        "polish_folded_search": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "synonym_search_filter",
+            "synonym_model_filter",
+            "synonym_uni_filter"
+          ]
+        }
+      },
+      "normalizer": {
+        "keyword_lowercase": {
+          "type": "custom",
+          "filter": ["lowercase"]
+        }
+      }
+    }
+  }
+}

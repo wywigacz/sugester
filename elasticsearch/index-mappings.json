@@ -1,0 +1,160 @@
+{
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "sku": { "type": "keyword" },
+      "ean": { "type": "keyword" },
+      "manufacturer_code": { "type": "keyword" },
+      "model_code": { "type": "keyword" },
+
+      "name": {
+        "type": "text",
+        "analyzer": "polish_folded",
+        "search_analyzer": "polish_folded_search",
+        "similarity": "custom_bm25",
+        "fields": {
+          "exact": {
+            "type": "keyword",
+            "normalizer": "keyword_lowercase"
+          },
+          "prefix": {
+            "type": "text",
+            "analyzer": "polish_prefix",
+            "search_analyzer": "polish_prefix_search",
+            "similarity": "custom_bm25"
+          },
+          "folded": {
+            "type": "text",
+            "analyzer": "polish_folded",
+            "search_analyzer": "polish_folded_search",
+            "similarity": "custom_bm25"
+          },
+          "morfologik": {
+            "type": "text",
+            "analyzer": "polish_morfologik",
+            "similarity": "custom_bm25"
+          },
+          "stempel": {
+            "type": "text",
+            "analyzer": "polish_stempel",
+            "similarity": "custom_bm25"
+          }
+        }
+      },
+
+      "description": {
+        "type": "text",
+        "analyzer": "polish_morfologik",
+        "similarity": "custom_bm25"
+      },
+
+      "brand": { "type": "keyword" },
+      "brand_logo_url": { "type": "keyword", "index": false },
+
+      "category": { "type": "keyword" },
+      "subcategory": { "type": "keyword" },
+      "section_name": { "type": "keyword" },
+      "category_path": { "type": "keyword" },
+      "category_id": { "type": "keyword" },
+      "subcategory_id": { "type": "keyword" },
+      "google_category": { "type": "text", "index": false },
+
+      "tags": { "type": "keyword" },
+
+      "price": { "type": "float" },
+      "sale_price": { "type": "float" },
+      "is_promo": { "type": "boolean" },
+      "currency": { "type": "keyword" },
+
+      "availability": { "type": "keyword" },
+
+      "image_url": { "type": "keyword", "index": false },
+      "product_url": { "type": "keyword", "index": false },
+      "has_image": { "type": "boolean" },
+      "condition": { "type": "keyword" },
+      "id_erp": { "type": "keyword" },
+
+      "sales_30d": { "type": "integer" },
+      "sales_365d": { "type": "integer" },
+      "revenue_30d": { "type": "float" },
+      "revenue_365d": { "type": "float" },
+      "margin_pct": { "type": "float" },
+      "is_new": { "type": "boolean" },
+      "is_high_margin": { "type": "boolean" },
+      "is_bestseller": { "type": "boolean" },
+      "is_highlighted": { "type": "boolean" },
+
+      "avg_rating": { "type": "float" },
+      "review_count": { "type": "integer" },
+
+      "ga4": {
+        "type": "object",
+        "properties": {
+          "pageviews_30d": { "type": "integer" },
+          "pageviews_365d": { "type": "integer" },
+          "sessions_30d": { "type": "integer" },
+          "sessions_365d": { "type": "integer" },
+          "bounce_rate_30d": { "type": "float" },
+          "engagement_rate_30d": { "type": "float" },
+          "avg_session_duration_30d": { "type": "float" },
+          "add_to_carts_30d": { "type": "integer" },
+          "add_to_carts_365d": { "type": "integer" },
+          "ecommerce_purchases_30d": { "type": "integer" },
+          "ecommerce_purchases_365d": { "type": "integer" },
+          "purchase_revenue_30d": { "type": "float" },
+          "purchase_revenue_365d": { "type": "float" },
+          "item_views_30d": { "type": "integer" },
+          "item_views_365d": { "type": "integer" },
+          "items_purchased_30d": { "type": "integer" },
+          "items_purchased_365d": { "type": "integer" },
+          "item_revenue_30d": { "type": "float" },
+          "item_revenue_365d": { "type": "float" },
+          "cart_to_view_rate_30d": { "type": "float" },
+          "popularity_score": { "type": "float" },
+          "conversion_score": { "type": "float" },
+          "trending_score": { "type": "float" },
+          "last_synced": { "type": "date" }
+        }
+      },
+
+      "created_at": { "type": "date" },
+      "updated_at": { "type": "date" },
+
+      "params": {
+        "type": "object",
+        "properties": {
+          "aperture": { "type": "keyword" },
+          "focal_length_min": { "type": "integer" },
+          "focal_length_max": { "type": "integer" },
+          "resolution": { "type": "keyword" },
+          "sensor_size": { "type": "keyword" },
+          "mount": { "type": "keyword" },
+          "filter_diameter": { "type": "integer" },
+          "video_resolution": { "type": "keyword" },
+          "video_fps": { "type": "integer" },
+          "max_load_kg": { "type": "float" },
+          "max_height_cm": { "type": "integer" },
+          "material": { "type": "keyword" },
+          "megapixels": { "type": "float" }
+        }
+      },
+
+      "compatible_with": { "type": "keyword" },
+      "compatible_mounts": { "type": "keyword" },
+
+      "suggest": {
+        "type": "completion",
+        "analyzer": "polish_folded",
+        "preserve_separators": true,
+        "preserve_position_increments": true,
+        "max_input_length": 50,
+        "contexts": [
+          {
+            "name": "category",
+            "type": "category"
+          }
+        ]
+      }
+    }
+  }
+}

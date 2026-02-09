@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(node -e \"\nlet d='''';process.stdin.on\\(''data'',c=>d+=c\\);process.stdin.on\\(''end'',\\(\\)=>{\n  const j=JSON.parse\\(d\\);\n  console.log\\(''=== BEZ function_score \\(czysty BM25\\) ===''\\);\n  j.hits.hits.forEach\\(\\(h,i\\)=>console.log\\(\\(i+1\\)+''. [score:''+h._score.toFixed\\(2\\)+''] ''+h._source.name+'' | GA4pop:''+\\( h._source.ga4?.popularity_score||0\\)+'' conv:''+\\(h._source.ga4?.conversion_score||0\\)+'' trend:''+\\(h._source.ga4?.trending_score||0\\)\\)\\);\n}\\)\")",
+      "Bash(node -e:*)",
+      "Bash(redis-cli:*)",
+      "Bash(netstat:*)",
+      "Bash(tasklist:*)",
+      "Bash(docker exec:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(ping:*)",
+      "Bash(python:*)"
+    ]
+  }
+}

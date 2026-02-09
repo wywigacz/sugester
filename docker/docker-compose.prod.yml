@@ -1,0 +1,44 @@
+# Production Docker Compose for Sugester
+# ES hosted on Elastic Cloud — only Redis + Backend on VPS
+# Optimized for mikr.us VPS Mikrus 2.1 (1GB RAM)
+# Usage: docker compose -f docker/docker-compose.prod.yml up -d
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: sugester-redis
+    command: redis-server --maxmemory 64mb --maxmemory-policy allkeys-lru --save ""
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sugester-net
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/backend/Dockerfile
+    container_name: sugester-backend
+    env_file:
+      - ../.env.production
+    ports:
+      - "30345:3000"
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - sugester-net
+    restart: unless-stopped
+
+volumes:
+  redis-data:
+    driver: local
+
+networks:
+  sugester-net:
+    driver: bridge

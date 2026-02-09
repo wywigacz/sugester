@@ -1,0 +1,646 @@
+/* ==========================================================================
+   Sugester Widget — Cyfrowe.pl-style, BEM, responsive
+   ========================================================================== */
+
+/* Screen reader only */
+.sugester-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Container */
+.sugester-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+}
+
+/* Input */
+.sugester-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s ease;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+.sugester-input:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+/* ==========================================================================
+   Dropdown — 3-column Cyfrowe.pl style
+   ========================================================================== */
+
+.sugester-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: min(820px, calc(100vw - 32px));
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  overflow: hidden;
+}
+
+.sugester-dropdown--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Close button */
+.sugester-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #9ca3af;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, color 0.15s ease;
+  z-index: 2;
+}
+
+.sugester-close:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* 3-column body */
+.sugester-body {
+  display: flex;
+  min-height: 200px;
+}
+
+/* Column 1: Zapytania + Kategorie */
+.sugester-col-left {
+  width: 25%;
+  min-width: 180px;
+  padding: 16px;
+  border-right: 1px solid #f0f0f0;
+  overflow-y: auto;
+}
+
+/* Column 2: Popularny produkt */
+.sugester-col-center {
+  width: 30%;
+  padding: 16px;
+  border-right: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Column 3: Produkty */
+.sugester-col-right {
+  width: 45%;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* Section labels */
+.sugester-section__label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   Column 1: Query Suggestion Pills
+   ========================================================================== */
+
+.sugester-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.sugester-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  background: #f0f0f0;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sugester-pill:hover,
+.sugester-pill.sugester-item--active {
+  background: #e0e7ff;
+  border-color: #818cf8;
+  color: #1e40af;
+}
+
+.sugester-pill strong {
+  font-weight: 700;
+}
+
+/* Category links */
+.sugester-cat-links {
+  margin-top: 4px;
+}
+
+.sugester-cat-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 0;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  transition: color 0.12s ease;
+}
+
+.sugester-cat-link:hover,
+.sugester-cat-link.sugester-item--active {
+  color: #0ea5e9;
+}
+
+.sugester-cat-link__arrow {
+  color: #9ca3af;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.sugester-cat-link__name {
+  flex: 1;
+}
+
+.sugester-cat-link__count {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Brand link */
+.sugester-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  transition: color 0.12s ease;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 10px;
+}
+
+.sugester-brand-link:hover,
+.sugester-brand-link.sugester-item--active {
+  color: #0ea5e9;
+}
+
+/* ==========================================================================
+   Column 2: Featured product
+   ========================================================================== */
+
+.sugester-featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.12s ease;
+  width: 100%;
+}
+
+.sugester-featured:hover,
+.sugester-featured.sugester-item--active {
+  background: #f8fafc;
+}
+
+.sugester-featured__img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.sugester-featured__img--placeholder {
+  width: 180px;
+  height: 180px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1d5db;
+  font-size: 36px;
+}
+
+.sugester-featured__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.sugester-featured__name strong {
+  font-weight: 800;
+}
+
+.sugester-featured__brand {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.sugester-featured__price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.sugester-featured__meta {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Column 3: Product grid
+   ========================================================================== */
+
+.sugester-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.sugester-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.12s ease;
+}
+
+.sugester-grid-item:hover,
+.sugester-grid-item.sugester-item--active {
+  background: #f8fafc;
+}
+
+.sugester-grid-item__img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+.sugester-grid-item__img--placeholder {
+  width: 80px;
+  height: 80px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1d5db;
+  font-size: 20px;
+}
+
+.sugester-grid-item__name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.sugester-grid-item__name strong {
+  font-weight: 700;
+}
+
+.sugester-grid-item__price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ==========================================================================
+   Prices
+   ========================================================================== */
+
+.sugester-price {
+  font-weight: 700;
+  color: #111827;
+}
+
+.sugester-price-old {
+  text-decoration: line-through;
+  color: #9ca3af;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+.sugester-price-sale {
+  font-weight: 700;
+  color: #dc2626;
+}
+
+/* ==========================================================================
+   Badges
+   ========================================================================== */
+
+.sugester-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.sugester-badge--green {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.sugester-badge--yellow {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.sugester-badge--gray {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.sugester-badge--promo {
+  background: #dbeafe;
+  color: #1e40af;
+  font-style: italic;
+}
+
+/* ==========================================================================
+   Show all link (footer)
+   ========================================================================== */
+
+.sugester-show-all {
+  padding: 12px 16px;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.sugester-show-all__link {
+  font-size: 13px;
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sugester-show-all__link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Recent searches (single-column, shown on empty focus)
+   ========================================================================== */
+
+.sugester-recent-list {
+  padding: 12px 16px;
+}
+
+.sugester-recent-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  gap: 10px;
+  transition: color 0.12s ease;
+}
+
+.sugester-recent-item:hover,
+.sugester-recent-item.sugester-item--active {
+  color: #0ea5e9;
+}
+
+.sugester-recent-item__icon {
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.sugester-recent-item__text {
+  flex: 1;
+  font-size: 14px;
+  color: inherit;
+}
+
+.sugester-recent-item__time {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.sugester-recent-item__remove {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+.sugester-recent-item__remove:hover {
+  color: #ef4444;
+}
+
+/* ==========================================================================
+   Mobile: Full-screen overlay
+   ========================================================================== */
+
+.sugester-mobile-header {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sugester-wrapper--mobile-open {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: #fff;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sugester-wrapper--mobile-open .sugester-mobile-header {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 8px;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+  }
+
+  .sugester-mobile-back {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px;
+    color: #374151;
+    flex-shrink: 0;
+  }
+
+  .sugester-wrapper--mobile-open .sugester-input {
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .sugester-wrapper--mobile-open .sugester-input:focus {
+    box-shadow: none;
+  }
+
+  .sugester-wrapper--mobile-open .sugester-dropdown {
+    position: relative;
+    top: 0;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    max-height: none;
+    flex: 1;
+    overflow-y: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Stack columns vertically on mobile */
+  .sugester-body {
+    flex-direction: column;
+  }
+
+  .sugester-col-left,
+  .sugester-col-center,
+  .sugester-col-right {
+    width: 100%;
+    min-width: auto;
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .sugester-col-right:last-child {
+    border-bottom: none;
+  }
+
+  .sugester-featured__img,
+  .sugester-featured__img--placeholder {
+    width: 140px;
+    height: 140px;
+  }
+
+  .sugester-grid-item__img,
+  .sugester-grid-item__img--placeholder {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sugester-pill {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .sugester-recent-item {
+    min-height: 44px;
+    padding: 10px 0;
+  }
+}
+
+/* ==========================================================================
+   Search Results Page Styles (used in demo.html)
+   ========================================================================== */
+
+/* Star ratings */
+.stars {
+  display: inline-flex;
+  gap: 1px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.stars__filled {
+  color: #f59e0b;
+}
+
+.stars__empty {
+  color: #d1d5db;
+}
+
+.stars__count {
+  font-size: 12px;
+  color: #6b7280;
+  margin-left: 6px;
+  vertical-align: middle;
+}

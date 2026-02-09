@@ -1,0 +1,5838 @@
+[
+  {
+    "id": "prod_0001",
+    "sku": "CANON-R5-II",
+    "ean": "6986023643582",
+    "manufacturer_code": "EOS R5 Mark II",
+    "model_code": "EOS R5 Mark II",
+    "name": "Canon EOS R5 Mark II",
+    "description": "Canon EOS R5 Mark II - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "nowość",
+      "profesjonalny",
+      "pełna klatka"
+    ],
+    "price": 17999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-r5-ii.jpg",
+    "product_url": "https://example-store.pl/product/canon-r5-ii",
+    "has_image": true,
+    "sales_30d": 9,
+    "margin_pct": 8.63,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4,
+    "review_count": 100,
+    "created_at": "2024-05-01T09:32:02.138Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 45,
+      "sensor_size": "Full Frame",
+      "mount": "Canon RF",
+      "video_resolution": "8K",
+      "video_fps": 60
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon EOS R5 Mark II",
+        "Canon",
+        "CANON-R5-II",
+        "EOS R5 Mark II"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0002",
+    "sku": "CANON-R6-III",
+    "ean": "8826979235401",
+    "manufacturer_code": "EOS R6 Mark III",
+    "model_code": "EOS R6 Mark III",
+    "name": "Canon EOS R6 Mark III",
+    "description": "Canon EOS R6 Mark III - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "nowość",
+      "pełna klatka"
+    ],
+    "price": 12499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-r6-iii.jpg",
+    "product_url": "https://example-store.pl/product/canon-r6-iii",
+    "has_image": true,
+    "sales_30d": 84,
+    "margin_pct": 35.34,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.9,
+    "review_count": 85,
+    "created_at": "2024-09-02T09:32:02.147Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 24.2,
+      "sensor_size": "Full Frame",
+      "mount": "Canon RF",
+      "video_resolution": "4K",
+      "video_fps": 120
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon EOS R6 Mark III",
+        "Canon",
+        "CANON-R6-III",
+        "EOS R6 Mark III"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0003",
+    "sku": "CANON-R8",
+    "ean": "4704825596729",
+    "manufacturer_code": "EOS R8",
+    "model_code": "EOS R8",
+    "name": "Canon EOS R8",
+    "description": "Canon EOS R8 - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "pełna klatka",
+      "budżetowy"
+    ],
+    "price": 7499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-r8.jpg",
+    "product_url": "https://example-store.pl/product/canon-r8",
+    "has_image": true,
+    "sales_30d": 385,
+    "margin_pct": 36.05,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.5,
+    "review_count": 29,
+    "created_at": "2024-07-25T09:32:02.147Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 24.2,
+      "sensor_size": "Full Frame",
+      "mount": "Canon RF",
+      "video_resolution": "4K",
+      "video_fps": 60
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon EOS R8",
+        "Canon",
+        "CANON-R8",
+        "EOS R8"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0004",
+    "sku": "CANON-R1",
+    "ean": "0381138123589",
+    "manufacturer_code": "EOS R1",
+    "model_code": "EOS R1",
+    "name": "Canon EOS R1",
+    "description": "Canon EOS R1 - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "profesjonalny",
+      "flagowiec"
+    ],
+    "price": 29999,
+    "sale_price": 24599,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-r1.jpg",
+    "product_url": "https://example-store.pl/product/canon-r1",
+    "has_image": true,
+    "sales_30d": 299,
+    "margin_pct": 25.17,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.9,
+    "review_count": 94,
+    "created_at": "2025-11-24T10:32:02.147Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 24.2,
+      "sensor_size": "Full Frame",
+      "mount": "Canon RF",
+      "video_resolution": "6K",
+      "video_fps": 60
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon EOS R1",
+        "Canon",
+        "CANON-R1",
+        "EOS R1"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0005",
+    "sku": "CANON-R50",
+    "ean": "3619388026426",
+    "manufacturer_code": "EOS R50",
+    "model_code": "EOS R50",
+    "name": "Canon EOS R50",
+    "description": "Canon EOS R50 - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "dla początkującego",
+      "APS-C"
+    ],
+    "price": 3499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-r50.jpg",
+    "product_url": "https://example-store.pl/product/canon-r50",
+    "has_image": true,
+    "sales_30d": 367,
+    "margin_pct": 36.31,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.7,
+    "review_count": 143,
+    "created_at": "2024-08-03T09:32:02.147Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 24.2,
+      "sensor_size": "APS-C",
+      "mount": "Canon RF",
+      "video_resolution": "4K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon EOS R50",
+        "Canon",
+        "CANON-R50",
+        "EOS R50"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0006",
+    "sku": "CANON-R100",
+    "ean": "5735017778837",
+    "manufacturer_code": "EOS R100",
+    "model_code": "EOS R100",
+    "name": "Canon EOS R100",
+    "description": "Canon EOS R100 - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "entry-level",
+      "APS-C"
+    ],
+    "price": 2499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/canon-r100.jpg",
+    "product_url": "https://example-store.pl/product/canon-r100",
+    "has_image": true,
+    "sales_30d": 9,
+    "margin_pct": 32.34,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.2,
+    "review_count": 0,
+    "created_at": "2024-10-22T09:32:02.147Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 24.1,
+      "sensor_size": "APS-C",
+      "mount": "Canon RF",
+      "video_resolution": "4K",
+      "video_fps": 24
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon EOS R100",
+        "Canon",
+        "CANON-R100",
+        "EOS R100"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0007",
+    "sku": "CANON-5D4",
+    "ean": "8202405087248",
+    "manufacturer_code": "EOS 5D Mark IV",
+    "model_code": "EOS 5D Mark IV",
+    "name": "Canon EOS 5D Mark IV",
+    "description": "Canon EOS 5D Mark IV - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Lustrzanki cyfrowe",
+    "category_path": "Lustrzanki cyfrowe",
+    "category_id": "lustrzanki-cyfrowe",
+    "tags": [
+      "profesjonalny",
+      "pełna klatka",
+      "DSLR"
+    ],
+    "price": 9999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-5d4.jpg",
+    "product_url": "https://example-store.pl/product/canon-5d4",
+    "has_image": true,
+    "sales_30d": 144,
+    "margin_pct": 18.36,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 5,
+    "review_count": 66,
+    "created_at": "2024-07-30T09:32:02.147Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 30.4,
+      "sensor_size": "Full Frame",
+      "mount": "Canon EF",
+      "video_resolution": "4K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon EF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon EOS 5D Mark IV",
+        "Canon",
+        "CANON-5D4",
+        "EOS 5D Mark IV"
+      ],
+      "contexts": {
+        "category": [
+          "Lustrzanki cyfrowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0008",
+    "sku": "SONY-A7IV",
+    "ean": "2838116085462",
+    "manufacturer_code": "ILCE-7M4",
+    "model_code": "ILCE-7M4",
+    "name": "Sony Alpha 7 IV",
+    "description": "Sony Alpha 7 IV - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "pełna klatka",
+      "uniwersalny"
+    ],
+    "price": 11999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-a7iv.jpg",
+    "product_url": "https://example-store.pl/product/sony-a7iv",
+    "has_image": true,
+    "sales_30d": 144,
+    "margin_pct": 13.45,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.7,
+    "review_count": 121,
+    "created_at": "2024-04-29T09:32:02.147Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 33,
+      "sensor_size": "Full Frame",
+      "mount": "Sony E",
+      "video_resolution": "4K",
+      "video_fps": 60
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony Alpha 7 IV",
+        "Sony",
+        "SONY-A7IV",
+        "ILCE-7M4"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0009",
+    "sku": "SONY-A7RV",
+    "ean": "4307204891950",
+    "manufacturer_code": "ILCE-7RM5",
+    "model_code": "ILCE-7RM5",
+    "name": "Sony Alpha 7R V",
+    "description": "Sony Alpha 7R V - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "wysoka rozdzielczość",
+      "pełna klatka"
+    ],
+    "price": 18499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/sony-a7rv.jpg",
+    "product_url": "https://example-store.pl/product/sony-a7rv",
+    "has_image": true,
+    "sales_30d": 3,
+    "margin_pct": 35.24,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.1,
+    "review_count": 192,
+    "created_at": "2025-07-27T09:32:02.147Z",
+    "updated_at": "2026-02-08T10:32:02.147Z",
+    "params": {
+      "megapixels": 61,
+      "sensor_size": "Full Frame",
+      "mount": "Sony E",
+      "video_resolution": "8K",
+      "video_fps": 24
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony Alpha 7R V",
+        "Sony",
+        "SONY-A7RV",
+        "ILCE-7RM5"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0010",
+    "sku": "SONY-A1",
+    "ean": "0754381446956",
+    "manufacturer_code": "ILCE-1",
+    "model_code": "ILCE-1",
+    "name": "Sony Alpha 1",
+    "description": "Sony Alpha 1 - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "flagowiec",
+      "pełna klatka"
+    ],
+    "price": 28999,
+    "sale_price": 25519,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-a1.jpg",
+    "product_url": "https://example-store.pl/product/sony-a1",
+    "has_image": true,
+    "sales_30d": 6,
+    "margin_pct": 39.65,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.4,
+    "review_count": 90,
+    "created_at": "2025-05-09T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 50.1,
+      "sensor_size": "Full Frame",
+      "mount": "Sony E",
+      "video_resolution": "8K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony Alpha 1",
+        "Sony",
+        "SONY-A1",
+        "ILCE-1"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0011",
+    "sku": "SONY-A7SIII",
+    "ean": "2954707042840",
+    "manufacturer_code": "ILCE-7SM3",
+    "model_code": "ILCE-7SM3",
+    "name": "Sony Alpha 7S III",
+    "description": "Sony Alpha 7S III - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "wideo",
+      "niska światłość",
+      "pełna klatka"
+    ],
+    "price": 14999,
+    "sale_price": 13049,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/sony-a7siii.jpg",
+    "product_url": "https://example-store.pl/product/sony-a7siii",
+    "has_image": true,
+    "sales_30d": 50,
+    "margin_pct": 23.1,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 5,
+    "review_count": 118,
+    "created_at": "2026-01-13T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 12.1,
+      "sensor_size": "Full Frame",
+      "mount": "Sony E",
+      "video_resolution": "4K",
+      "video_fps": 120
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony Alpha 7S III",
+        "Sony",
+        "SONY-A7SIII",
+        "ILCE-7SM3"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0012",
+    "sku": "SONY-A6700",
+    "ean": "3187682944215",
+    "manufacturer_code": "ILCE-6700",
+    "model_code": "ILCE-6700",
+    "name": "Sony Alpha 6700",
+    "description": "Sony Alpha 6700 - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "APS-C",
+      "wideo"
+    ],
+    "price": 6499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-a6700.jpg",
+    "product_url": "https://example-store.pl/product/sony-a6700",
+    "has_image": true,
+    "sales_30d": 346,
+    "margin_pct": 18.9,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 4.5,
+    "review_count": 91,
+    "created_at": "2026-01-21T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 26,
+      "sensor_size": "APS-C",
+      "mount": "Sony E",
+      "video_resolution": "4K",
+      "video_fps": 120
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony Alpha 6700",
+        "Sony",
+        "SONY-A6700",
+        "ILCE-6700"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0013",
+    "sku": "SONY-A6400",
+    "ean": "5702429012538",
+    "manufacturer_code": "ILCE-6400",
+    "model_code": "ILCE-6400",
+    "name": "Sony Alpha 6400",
+    "description": "Sony Alpha 6400 - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "APS-C",
+      "vlog"
+    ],
+    "price": 3999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-a6400.jpg",
+    "product_url": "https://example-store.pl/product/sony-a6400",
+    "has_image": true,
+    "sales_30d": 92,
+    "margin_pct": 35.42,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.1,
+    "review_count": 61,
+    "created_at": "2024-06-02T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 24.2,
+      "sensor_size": "APS-C",
+      "mount": "Sony E",
+      "video_resolution": "4K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony Alpha 6400",
+        "Sony",
+        "SONY-A6400",
+        "ILCE-6400"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0014",
+    "sku": "SONY-ZVE10II",
+    "ean": "5101456874063",
+    "manufacturer_code": "ZV-E10M2",
+    "model_code": "ZV-E10M2",
+    "name": "Sony ZV-E10 II",
+    "description": "Sony ZV-E10 II - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "vlog",
+      "APS-C"
+    ],
+    "price": 4299,
+    "sale_price": 3697,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-zve10ii.jpg",
+    "product_url": "https://example-store.pl/product/sony-zve10ii",
+    "has_image": true,
+    "sales_30d": 44,
+    "margin_pct": 17.55,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.1,
+    "review_count": 163,
+    "created_at": "2025-06-19T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 26,
+      "sensor_size": "APS-C",
+      "mount": "Sony E",
+      "video_resolution": "4K",
+      "video_fps": 60
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony ZV-E10 II",
+        "Sony",
+        "SONY-ZVE10II",
+        "ZV-E10M2"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0015",
+    "sku": "NIKON-Z6III",
+    "ean": "0745305497796",
+    "manufacturer_code": "Z6 III",
+    "model_code": "Z6 III",
+    "name": "Nikon Z6 III",
+    "description": "Nikon Z6 III - profesjonalny sprzęt fotograficzny marki Nikon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Nikon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "nowość",
+      "pełna klatka"
+    ],
+    "price": 12499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nikon-z6iii.jpg",
+    "product_url": "https://example-store.pl/product/nikon-z6iii",
+    "has_image": true,
+    "sales_30d": 5,
+    "margin_pct": 24.83,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.5,
+    "review_count": 129,
+    "created_at": "2025-08-17T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 24.5,
+      "sensor_size": "Full Frame",
+      "mount": "Nikon Z",
+      "video_resolution": "6K",
+      "video_fps": 60
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Nikon Z"
+    ],
+    "suggest": {
+      "input": [
+        "Nikon Z6 III",
+        "Nikon",
+        "NIKON-Z6III",
+        "Z6 III"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0016",
+    "sku": "NIKON-Z8",
+    "ean": "7299694150969",
+    "manufacturer_code": "Z8",
+    "model_code": "Z8",
+    "name": "Nikon Z8",
+    "description": "Nikon Z8 - profesjonalny sprzęt fotograficzny marki Nikon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Nikon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "profesjonalny",
+      "pełna klatka"
+    ],
+    "price": 17999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nikon-z8.jpg",
+    "product_url": "https://example-store.pl/product/nikon-z8",
+    "has_image": true,
+    "sales_30d": 457,
+    "margin_pct": 9.51,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.9,
+    "review_count": 192,
+    "created_at": "2025-02-07T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 45.7,
+      "sensor_size": "Full Frame",
+      "mount": "Nikon Z",
+      "video_resolution": "8K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Nikon Z"
+    ],
+    "suggest": {
+      "input": [
+        "Nikon Z8",
+        "Nikon",
+        "NIKON-Z8",
+        "Z8"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0017",
+    "sku": "NIKON-ZF",
+    "ean": "6223783091162",
+    "manufacturer_code": "Zf",
+    "model_code": "Zf",
+    "name": "Nikon Zf",
+    "description": "Nikon Zf - profesjonalny sprzęt fotograficzny marki Nikon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Nikon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "retro",
+      "pełna klatka",
+      "styl"
+    ],
+    "price": 9999,
+    "sale_price": 9299,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nikon-zf.jpg",
+    "product_url": "https://example-store.pl/product/nikon-zf",
+    "has_image": true,
+    "sales_30d": 137,
+    "margin_pct": 12.63,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4,
+    "review_count": 190,
+    "created_at": "2024-03-30T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 24.5,
+      "sensor_size": "Full Frame",
+      "mount": "Nikon Z",
+      "video_resolution": "4K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Nikon Z"
+    ],
+    "suggest": {
+      "input": [
+        "Nikon Zf",
+        "Nikon",
+        "NIKON-ZF",
+        "Zf"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0018",
+    "sku": "NIKON-Z50II",
+    "ean": "3055601550079",
+    "manufacturer_code": "Z50 II",
+    "model_code": "Z50 II",
+    "name": "Nikon Z50 II",
+    "description": "Nikon Z50 II - profesjonalny sprzęt fotograficzny marki Nikon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Nikon",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "APS-C",
+      "nowość"
+    ],
+    "price": 4999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nikon-z50ii.jpg",
+    "product_url": "https://example-store.pl/product/nikon-z50ii",
+    "has_image": true,
+    "sales_30d": 395,
+    "margin_pct": 24.81,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.8,
+    "review_count": 69,
+    "created_at": "2025-03-10T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 20.9,
+      "sensor_size": "APS-C",
+      "mount": "Nikon Z",
+      "video_resolution": "4K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Nikon Z"
+    ],
+    "suggest": {
+      "input": [
+        "Nikon Z50 II",
+        "Nikon",
+        "NIKON-Z50II",
+        "Z50 II"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0019",
+    "sku": "FUJI-XT5",
+    "ean": "9106310300203",
+    "manufacturer_code": "X-T5",
+    "model_code": "X-T5",
+    "name": "Fujifilm X-T5",
+    "description": "Fujifilm X-T5 - profesjonalny sprzęt fotograficzny marki Fujifilm. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Fujifilm",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "retro",
+      "APS-C",
+      "wysoka rozdzielczość"
+    ],
+    "price": 7999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/fuji-xt5.jpg",
+    "product_url": "https://example-store.pl/product/fuji-xt5",
+    "has_image": true,
+    "sales_30d": 470,
+    "margin_pct": 20.92,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.1,
+    "review_count": 110,
+    "created_at": "2025-08-08T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 40.2,
+      "sensor_size": "APS-C",
+      "mount": "Fujifilm X",
+      "video_resolution": "6.2K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Fujifilm X"
+    ],
+    "suggest": {
+      "input": [
+        "Fujifilm X-T5",
+        "Fujifilm",
+        "FUJI-XT5",
+        "X-T5"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0020",
+    "sku": "FUJI-XH2S",
+    "ean": "5838417662994",
+    "manufacturer_code": "X-H2S",
+    "model_code": "X-H2S",
+    "name": "Fujifilm X-H2S",
+    "description": "Fujifilm X-H2S - profesjonalny sprzęt fotograficzny marki Fujifilm. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Fujifilm",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "wideo",
+      "szybki AF"
+    ],
+    "price": 10999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/fuji-xh2s.jpg",
+    "product_url": "https://example-store.pl/product/fuji-xh2s",
+    "has_image": true,
+    "sales_30d": 461,
+    "margin_pct": 39.04,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.9,
+    "review_count": 64,
+    "created_at": "2024-09-10T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 26.1,
+      "sensor_size": "APS-C",
+      "mount": "Fujifilm X",
+      "video_resolution": "6.2K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Fujifilm X"
+    ],
+    "suggest": {
+      "input": [
+        "Fujifilm X-H2S",
+        "Fujifilm",
+        "FUJI-XH2S",
+        "X-H2S"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0021",
+    "sku": "FUJI-XS20",
+    "ean": "8661574777082",
+    "manufacturer_code": "X-S20",
+    "model_code": "X-S20",
+    "name": "Fujifilm X-S20",
+    "description": "Fujifilm X-S20 - profesjonalny sprzęt fotograficzny marki Fujifilm. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Fujifilm",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "vlog",
+      "APS-C"
+    ],
+    "price": 5999,
+    "sale_price": 5279,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/fuji-xs20.jpg",
+    "product_url": "https://example-store.pl/product/fuji-xs20",
+    "has_image": true,
+    "sales_30d": 281,
+    "margin_pct": 9.26,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.8,
+    "review_count": 82,
+    "created_at": "2026-01-11T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 26.1,
+      "sensor_size": "APS-C",
+      "mount": "Fujifilm X",
+      "video_resolution": "6.2K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Fujifilm X"
+    ],
+    "suggest": {
+      "input": [
+        "Fujifilm X-S20",
+        "Fujifilm",
+        "FUJI-XS20",
+        "X-S20"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0022",
+    "sku": "PANA-S5IIX",
+    "ean": "9942249761131",
+    "manufacturer_code": "DC-S5M2X",
+    "model_code": "DC-S5M2X",
+    "name": "Panasonic Lumix S5 IIX",
+    "description": "Panasonic Lumix S5 IIX - profesjonalny sprzęt fotograficzny marki Panasonic. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Panasonic",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "wideo",
+      "pełna klatka"
+    ],
+    "price": 10499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/pana-s5iix.jpg",
+    "product_url": "https://example-store.pl/product/pana-s5iix",
+    "has_image": true,
+    "sales_30d": 252,
+    "margin_pct": 13.48,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.3,
+    "review_count": 74,
+    "created_at": "2024-07-31T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 24.2,
+      "sensor_size": "Full Frame",
+      "mount": "L-mount",
+      "video_resolution": "6K",
+      "video_fps": 30
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "L-mount"
+    ],
+    "suggest": {
+      "input": [
+        "Panasonic Lumix S5 IIX",
+        "Panasonic",
+        "PANA-S5IIX",
+        "DC-S5M2X"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0023",
+    "sku": "OMS-OM5",
+    "ean": "1002183651627",
+    "manufacturer_code": "OM-5",
+    "model_code": "OM-5",
+    "name": "OM System OM-5",
+    "description": "OM System OM-5 - profesjonalny sprzęt fotograficzny marki OM System. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "OM System",
+    "category": "Aparaty bezlusterkowe",
+    "category_path": "Aparaty bezlusterkowe",
+    "category_id": "aparaty-bezlusterkowe",
+    "tags": [
+      "kompaktowy",
+      "odporny"
+    ],
+    "price": 5499,
+    "sale_price": 4894,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/oms-om5.jpg",
+    "product_url": "https://example-store.pl/product/oms-om5",
+    "has_image": true,
+    "sales_30d": 221,
+    "margin_pct": 31.38,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.5,
+    "review_count": 107,
+    "created_at": "2025-12-09T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "megapixels": 20,
+      "sensor_size": "Micro 4/3",
+      "mount": "Micro 4/3",
+      "video_resolution": "4K",
+      "video_fps": 60
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Micro 4/3"
+    ],
+    "suggest": {
+      "input": [
+        "OM System OM-5",
+        "OM System",
+        "OMS-OM5",
+        "OM-5"
+      ],
+      "contexts": {
+        "category": [
+          "Aparaty bezlusterkowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0024",
+    "sku": "CANON-RF70200",
+    "ean": "6021398877634",
+    "manufacturer_code": "CANON-RF70200",
+    "model_code": null,
+    "name": "Canon RF 70-200mm f/2.8L IS USM",
+    "description": "Canon RF 70-200mm f/2.8L IS USM - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "profesjonalny",
+      "teleobiektyw",
+      "L-series"
+    ],
+    "price": 11999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-rf70200.jpg",
+    "product_url": "https://example-store.pl/product/canon-rf70200",
+    "has_image": true,
+    "sales_30d": 445,
+    "margin_pct": 26.55,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.5,
+    "review_count": 100,
+    "created_at": "2024-06-16T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 70,
+      "focal_length_max": 200,
+      "aperture": "2.8",
+      "mount": "Canon RF",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon RF 70-200mm f/2.8L IS USM",
+        "Canon",
+        "CANON-RF70200"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0025",
+    "sku": "CANON-RF2470",
+    "ean": "0072813267031",
+    "manufacturer_code": "CANON-RF2470",
+    "model_code": null,
+    "name": "Canon RF 24-70mm f/2.8L IS USM",
+    "description": "Canon RF 24-70mm f/2.8L IS USM - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "profesjonalny",
+      "uniwersalny",
+      "L-series"
+    ],
+    "price": 10499,
+    "sale_price": 9239,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-rf2470.jpg",
+    "product_url": "https://example-store.pl/product/canon-rf2470",
+    "has_image": true,
+    "sales_30d": 5,
+    "margin_pct": 27.13,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.7,
+    "review_count": 167,
+    "created_at": "2025-11-10T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 24,
+      "focal_length_max": 70,
+      "aperture": "2.8",
+      "mount": "Canon RF",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon RF 24-70mm f/2.8L IS USM",
+        "Canon",
+        "CANON-RF2470"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0026",
+    "sku": "CANON-RF50",
+    "ean": "9786700227862",
+    "manufacturer_code": "CANON-RF50",
+    "model_code": null,
+    "name": "Canon RF 50mm f/1.8 STM",
+    "description": "Canon RF 50mm f/1.8 STM - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "portret",
+      "budżetowy",
+      "nifty fifty"
+    ],
+    "price": 999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": null,
+    "product_url": "https://example-store.pl/product/canon-rf50",
+    "has_image": false,
+    "sales_30d": 40,
+    "margin_pct": 6.24,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 3.6,
+    "review_count": 84,
+    "created_at": "2026-01-23T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 50,
+      "focal_length_max": 50,
+      "aperture": "1.8",
+      "mount": "Canon RF",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon RF 50mm f/1.8 STM",
+        "Canon",
+        "CANON-RF50"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0027",
+    "sku": "CANON-RF85",
+    "ean": "3669965643683",
+    "manufacturer_code": "CANON-RF85",
+    "model_code": null,
+    "name": "Canon RF 85mm f/1.2L USM",
+    "description": "Canon RF 85mm f/1.2L USM - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "portret",
+      "profesjonalny"
+    ],
+    "price": 12999,
+    "sale_price": 11699,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-rf85.jpg",
+    "product_url": "https://example-store.pl/product/canon-rf85",
+    "has_image": true,
+    "sales_30d": 280,
+    "margin_pct": 27.57,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.5,
+    "review_count": 109,
+    "created_at": "2024-04-16T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 85,
+      "focal_length_max": 85,
+      "aperture": "1.2",
+      "mount": "Canon RF",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon RF 85mm f/1.2L USM",
+        "Canon",
+        "CANON-RF85"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0028",
+    "sku": "CANON-RF1535",
+    "ean": "0649533683948",
+    "manufacturer_code": "CANON-RF1535",
+    "model_code": null,
+    "name": "Canon RF 15-35mm f/2.8L IS USM",
+    "description": "Canon RF 15-35mm f/2.8L IS USM - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "szeroki kąt",
+      "L-series"
+    ],
+    "price": 10299,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/canon-rf1535.jpg",
+    "product_url": "https://example-store.pl/product/canon-rf1535",
+    "has_image": true,
+    "sales_30d": 32,
+    "margin_pct": 20.38,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 3.6,
+    "review_count": 82,
+    "created_at": "2026-01-22T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 15,
+      "focal_length_max": 35,
+      "aperture": "2.8",
+      "mount": "Canon RF",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon RF 15-35mm f/2.8L IS USM",
+        "Canon",
+        "CANON-RF1535"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0029",
+    "sku": "CANON-RFS18150",
+    "ean": "3483090400641",
+    "manufacturer_code": "CANON-RFS18150",
+    "model_code": null,
+    "name": "Canon RF-S 18-150mm f/3.5-6.3 IS STM",
+    "description": "Canon RF-S 18-150mm f/3.5-6.3 IS STM - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "uniwersalny",
+      "APS-C",
+      "travel"
+    ],
+    "price": 2199,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": null,
+    "product_url": "https://example-store.pl/product/canon-rfs18150",
+    "has_image": false,
+    "sales_30d": 89,
+    "margin_pct": 26.76,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.2,
+    "review_count": 3,
+    "created_at": "2025-08-10T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 18,
+      "focal_length_max": 150,
+      "aperture": "3.5",
+      "mount": "Canon RF",
+      "sensor_size": "APS-C"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Canon RF"
+    ],
+    "suggest": {
+      "input": [
+        "Canon RF-S 18-150mm f/3.5-6.3 IS STM",
+        "Canon",
+        "CANON-RFS18150"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0030",
+    "sku": "SONY-FE2470GM2",
+    "ean": "2984215429598",
+    "manufacturer_code": "SONY-FE2470GM2",
+    "model_code": null,
+    "name": "Sony FE 24-70mm f/2.8 GM II",
+    "description": "Sony FE 24-70mm f/2.8 GM II - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "G Master",
+      "profesjonalny"
+    ],
+    "price": 10499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-fe2470gm2.jpg",
+    "product_url": "https://example-store.pl/product/sony-fe2470gm2",
+    "has_image": true,
+    "sales_30d": 468,
+    "margin_pct": 12.23,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 4.4,
+    "review_count": 58,
+    "created_at": "2026-01-21T10:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 24,
+      "focal_length_max": 70,
+      "aperture": "2.8",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony FE 24-70mm f/2.8 GM II",
+        "Sony",
+        "SONY-FE2470GM2"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0031",
+    "sku": "SONY-FE70200GM2",
+    "ean": "5281170508298",
+    "manufacturer_code": "SONY-FE70200GM2",
+    "model_code": null,
+    "name": "Sony FE 70-200mm f/2.8 GM OSS II",
+    "description": "Sony FE 70-200mm f/2.8 GM OSS II - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "G Master",
+      "teleobiektyw"
+    ],
+    "price": 12999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-fe70200gm2.jpg",
+    "product_url": "https://example-store.pl/product/sony-fe70200gm2",
+    "has_image": true,
+    "sales_30d": 203,
+    "margin_pct": 36.46,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 5,
+    "review_count": 159,
+    "created_at": "2024-04-13T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 70,
+      "focal_length_max": 200,
+      "aperture": "2.8",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony FE 70-200mm f/2.8 GM OSS II",
+        "Sony",
+        "SONY-FE70200GM2"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0032",
+    "sku": "SONY-FE85GM",
+    "ean": "8161875049463",
+    "manufacturer_code": "SONY-FE85GM",
+    "model_code": null,
+    "name": "Sony FE 85mm f/1.4 GM",
+    "description": "Sony FE 85mm f/1.4 GM - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "portret",
+      "G Master"
+    ],
+    "price": 7999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-fe85gm.jpg",
+    "product_url": "https://example-store.pl/product/sony-fe85gm",
+    "has_image": true,
+    "sales_30d": 458,
+    "margin_pct": 6.03,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.6,
+    "review_count": 124,
+    "created_at": "2025-04-15T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.148Z",
+    "params": {
+      "focal_length_min": 85,
+      "focal_length_max": 85,
+      "aperture": "1.4",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony FE 85mm f/1.4 GM",
+        "Sony",
+        "SONY-FE85GM"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0033",
+    "sku": "SONY-FE50",
+    "ean": "4472559913579",
+    "manufacturer_code": "SONY-FE50",
+    "model_code": null,
+    "name": "Sony FE 50mm f/1.8",
+    "description": "Sony FE 50mm f/1.8 - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "portret",
+      "budżetowy"
+    ],
+    "price": 1099,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-fe50.jpg",
+    "product_url": "https://example-store.pl/product/sony-fe50",
+    "has_image": true,
+    "sales_30d": 109,
+    "margin_pct": 6.7,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 5,
+    "review_count": 131,
+    "created_at": "2025-06-01T09:32:02.148Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 50,
+      "focal_length_max": 50,
+      "aperture": "1.8",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony FE 50mm f/1.8",
+        "Sony",
+        "SONY-FE50"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0034",
+    "sku": "SONY-FE35GM",
+    "ean": "1487400922627",
+    "manufacturer_code": "SONY-FE35GM",
+    "model_code": null,
+    "name": "Sony FE 35mm f/1.4 GM",
+    "description": "Sony FE 35mm f/1.4 GM - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "reportaż",
+      "G Master"
+    ],
+    "price": 6499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-fe35gm.jpg",
+    "product_url": "https://example-store.pl/product/sony-fe35gm",
+    "has_image": true,
+    "sales_30d": 384,
+    "margin_pct": 16.19,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.4,
+    "review_count": 191,
+    "created_at": "2025-08-23T09:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 35,
+      "focal_length_max": 35,
+      "aperture": "1.4",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony FE 35mm f/1.4 GM",
+        "Sony",
+        "SONY-FE35GM"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0035",
+    "sku": "SONY-E1018",
+    "ean": "6558520941623",
+    "manufacturer_code": "SONY-E1018",
+    "model_code": null,
+    "name": "Sony E 10-18mm f/4 OSS",
+    "description": "Sony E 10-18mm f/4 OSS - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "ultraszeroki",
+      "APS-C"
+    ],
+    "price": 3499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-e1018.jpg",
+    "product_url": "https://example-store.pl/product/sony-e1018",
+    "has_image": true,
+    "sales_30d": 379,
+    "margin_pct": 28.48,
+    "is_new": true,
+    "is_high_margin": true,
+    "avg_rating": 3.9,
+    "review_count": 171,
+    "created_at": "2026-01-30T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 10,
+      "focal_length_max": 18,
+      "aperture": "4",
+      "mount": "Sony E",
+      "sensor_size": "APS-C"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sony E 10-18mm f/4 OSS",
+        "Sony",
+        "SONY-E1018"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0036",
+    "sku": "NIKON-Z2470",
+    "ean": "1283859991937",
+    "manufacturer_code": "NIKON-Z2470",
+    "model_code": null,
+    "name": "Nikon NIKKOR Z 24-70mm f/2.8 S",
+    "description": "Nikon NIKKOR Z 24-70mm f/2.8 S - profesjonalny sprzęt fotograficzny marki Nikon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Nikon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "S-line",
+      "profesjonalny"
+    ],
+    "price": 9499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nikon-z2470.jpg",
+    "product_url": "https://example-store.pl/product/nikon-z2470",
+    "has_image": true,
+    "sales_30d": 167,
+    "margin_pct": 35.07,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.9,
+    "review_count": 41,
+    "created_at": "2024-03-06T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 24,
+      "focal_length_max": 70,
+      "aperture": "2.8",
+      "mount": "Nikon Z",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Nikon Z"
+    ],
+    "suggest": {
+      "input": [
+        "Nikon NIKKOR Z 24-70mm f/2.8 S",
+        "Nikon",
+        "NIKON-Z2470"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0037",
+    "sku": "NIKON-Z70200",
+    "ean": "2881640292141",
+    "manufacturer_code": "NIKON-Z70200",
+    "model_code": null,
+    "name": "Nikon NIKKOR Z 70-200mm f/2.8 VR S",
+    "description": "Nikon NIKKOR Z 70-200mm f/2.8 VR S - profesjonalny sprzęt fotograficzny marki Nikon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Nikon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "S-line",
+      "teleobiektyw"
+    ],
+    "price": 11499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nikon-z70200.jpg",
+    "product_url": "https://example-store.pl/product/nikon-z70200",
+    "has_image": true,
+    "sales_30d": 375,
+    "margin_pct": 20.37,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.6,
+    "review_count": 47,
+    "created_at": "2024-03-27T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 70,
+      "focal_length_max": 200,
+      "aperture": "2.8",
+      "mount": "Nikon Z",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Nikon Z"
+    ],
+    "suggest": {
+      "input": [
+        "Nikon NIKKOR Z 70-200mm f/2.8 VR S",
+        "Nikon",
+        "NIKON-Z70200"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0038",
+    "sku": "NIKON-Z50F18",
+    "ean": "6934822002635",
+    "manufacturer_code": "NIKON-Z50F18",
+    "model_code": null,
+    "name": "Nikon NIKKOR Z 50mm f/1.8 S",
+    "description": "Nikon NIKKOR Z 50mm f/1.8 S - profesjonalny sprzęt fotograficzny marki Nikon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Nikon",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "S-line",
+      "portret"
+    ],
+    "price": 2499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nikon-z50f18.jpg",
+    "product_url": "https://example-store.pl/product/nikon-z50f18",
+    "has_image": true,
+    "sales_30d": 79,
+    "margin_pct": 6.28,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.9,
+    "review_count": 120,
+    "created_at": "2024-07-28T09:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 50,
+      "focal_length_max": 50,
+      "aperture": "1.8",
+      "mount": "Nikon Z",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Nikon Z"
+    ],
+    "suggest": {
+      "input": [
+        "Nikon NIKKOR Z 50mm f/1.8 S",
+        "Nikon",
+        "NIKON-Z50F18"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0039",
+    "sku": "SIGMA-35ART-SE",
+    "ean": "1328858246692",
+    "manufacturer_code": "SIGMA-35ART-SE",
+    "model_code": null,
+    "name": "Sigma 35mm f/1.4 DG DN Art Sony E",
+    "description": "Sigma 35mm f/1.4 DG DN Art Sony E - profesjonalny sprzęt fotograficzny marki Sigma. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sigma",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "Art",
+      "reportaż"
+    ],
+    "price": 3499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sigma-35art-se.jpg",
+    "product_url": "https://example-store.pl/product/sigma-35art-se",
+    "has_image": true,
+    "sales_30d": 361,
+    "margin_pct": 26.16,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.4,
+    "review_count": 95,
+    "created_at": "2025-12-25T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 35,
+      "focal_length_max": 35,
+      "aperture": "1.4",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sigma 35mm f/1.4 DG DN Art Sony E",
+        "Sigma",
+        "SIGMA-35ART-SE"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0040",
+    "sku": "SIGMA-2470-SE",
+    "ean": "7480721094510",
+    "manufacturer_code": "SIGMA-2470-SE",
+    "model_code": null,
+    "name": "Sigma 24-70mm f/2.8 DG DN Art Sony E",
+    "description": "Sigma 24-70mm f/2.8 DG DN Art Sony E - profesjonalny sprzęt fotograficzny marki Sigma. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sigma",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "Art",
+      "uniwersalny"
+    ],
+    "price": 4999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sigma-2470-se.jpg",
+    "product_url": "https://example-store.pl/product/sigma-2470-se",
+    "has_image": true,
+    "sales_30d": 284,
+    "margin_pct": 20.91,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 4,
+    "review_count": 144,
+    "created_at": "2026-01-24T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 24,
+      "focal_length_max": 70,
+      "aperture": "2.8",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sigma 24-70mm f/2.8 DG DN Art Sony E",
+        "Sigma",
+        "SIGMA-2470-SE"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0041",
+    "sku": "SIGMA-70200-SE",
+    "ean": "6641248274125",
+    "manufacturer_code": "SIGMA-70200-SE",
+    "model_code": null,
+    "name": "Sigma 70-200mm f/2.8 DG DN OS Sports Sony E",
+    "description": "Sigma 70-200mm f/2.8 DG DN OS Sports Sony E - profesjonalny sprzęt fotograficzny marki Sigma. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sigma",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "Sports",
+      "teleobiektyw"
+    ],
+    "price": 6499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/sigma-70200-se.jpg",
+    "product_url": "https://example-store.pl/product/sigma-70200-se",
+    "has_image": true,
+    "sales_30d": 38,
+    "margin_pct": 38.75,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.8,
+    "review_count": 161,
+    "created_at": "2024-07-20T09:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 70,
+      "focal_length_max": 200,
+      "aperture": "2.8",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sigma 70-200mm f/2.8 DG DN OS Sports Sony E",
+        "Sigma",
+        "SIGMA-70200-SE"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0042",
+    "sku": "SIGMA-150600-SE",
+    "ean": "5429633128809",
+    "manufacturer_code": "SIGMA-150600-SE",
+    "model_code": null,
+    "name": "Sigma 150-600mm f/5-6.3 DG DN OS Sports Sony E",
+    "description": "Sigma 150-600mm f/5-6.3 DG DN OS Sports Sony E - profesjonalny sprzęt fotograficzny marki Sigma. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sigma",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "Sports",
+      "supertelephoto",
+      "wildlife"
+    ],
+    "price": 6999,
+    "sale_price": 6439,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sigma-150600-se.jpg",
+    "product_url": "https://example-store.pl/product/sigma-150600-se",
+    "has_image": true,
+    "sales_30d": 286,
+    "margin_pct": 38.62,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.3,
+    "review_count": 24,
+    "created_at": "2026-01-15T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 150,
+      "focal_length_max": 600,
+      "aperture": "5",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sigma 150-600mm f/5-6.3 DG DN OS Sports Sony E",
+        "Sigma",
+        "SIGMA-150600-SE"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0043",
+    "sku": "SIGMA-35ART-L",
+    "ean": "1997612019973",
+    "manufacturer_code": "SIGMA-35ART-L",
+    "model_code": null,
+    "name": "Sigma 35mm f/1.4 DG DN Art L-mount",
+    "description": "Sigma 35mm f/1.4 DG DN Art L-mount - profesjonalny sprzęt fotograficzny marki Sigma. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sigma",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "Art",
+      "reportaż"
+    ],
+    "price": 3499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sigma-35art-l.jpg",
+    "product_url": "https://example-store.pl/product/sigma-35art-l",
+    "has_image": true,
+    "sales_30d": 466,
+    "margin_pct": 39.21,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.7,
+    "review_count": 90,
+    "created_at": "2025-07-18T09:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 35,
+      "focal_length_max": 35,
+      "aperture": "1.4",
+      "mount": "L-mount",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "L-mount"
+    ],
+    "suggest": {
+      "input": [
+        "Sigma 35mm f/1.4 DG DN Art L-mount",
+        "Sigma",
+        "SIGMA-35ART-L"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0044",
+    "sku": "SIGMA-1850-SE",
+    "ean": "5919532597016",
+    "manufacturer_code": "SIGMA-1850-SE",
+    "model_code": null,
+    "name": "Sigma 18-50mm f/2.8 DC DN Contemporary Sony E",
+    "description": "Sigma 18-50mm f/2.8 DC DN Contemporary Sony E - profesjonalny sprzęt fotograficzny marki Sigma. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sigma",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "Contemporary",
+      "APS-C"
+    ],
+    "price": 2299,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sigma-1850-se.jpg",
+    "product_url": "https://example-store.pl/product/sigma-1850-se",
+    "has_image": true,
+    "sales_30d": 136,
+    "margin_pct": 12.34,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.8,
+    "review_count": 192,
+    "created_at": "2025-02-24T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 18,
+      "focal_length_max": 50,
+      "aperture": "2.8",
+      "mount": "Sony E",
+      "sensor_size": "APS-C"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Sigma 18-50mm f/2.8 DC DN Contemporary Sony E",
+        "Sigma",
+        "SIGMA-1850-SE"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0045",
+    "sku": "TAMRON-2875-G2",
+    "ean": "0113367013665",
+    "manufacturer_code": "TAMRON-2875-G2",
+    "model_code": null,
+    "name": "Tamron 28-75mm f/2.8 Di III VXD G2 Sony E",
+    "description": "Tamron 28-75mm f/2.8 Di III VXD G2 Sony E - profesjonalny sprzęt fotograficzny marki Tamron. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Tamron",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "uniwersalny",
+      "budżetowy"
+    ],
+    "price": 3999,
+    "sale_price": 3759,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/tamron-2875-g2.jpg",
+    "product_url": "https://example-store.pl/product/tamron-2875-g2",
+    "has_image": true,
+    "sales_30d": 404,
+    "margin_pct": 31.36,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.1,
+    "review_count": 138,
+    "created_at": "2024-11-22T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 28,
+      "focal_length_max": 75,
+      "aperture": "2.8",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Tamron 28-75mm f/2.8 Di III VXD G2 Sony E",
+        "Tamron",
+        "TAMRON-2875-G2"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0046",
+    "sku": "TAMRON-70180-G2",
+    "ean": "6228715821442",
+    "manufacturer_code": "TAMRON-70180-G2",
+    "model_code": null,
+    "name": "Tamron 70-180mm f/2.8 Di III VC VXD G2 Sony E",
+    "description": "Tamron 70-180mm f/2.8 Di III VC VXD G2 Sony E - profesjonalny sprzęt fotograficzny marki Tamron. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Tamron",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "teleobiektyw",
+      "kompaktowy"
+    ],
+    "price": 5499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/tamron-70180-g2.jpg",
+    "product_url": "https://example-store.pl/product/tamron-70180-g2",
+    "has_image": true,
+    "sales_30d": 15,
+    "margin_pct": 28.33,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.8,
+    "review_count": 48,
+    "created_at": "2025-04-03T09:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 70,
+      "focal_length_max": 180,
+      "aperture": "2.8",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Tamron 70-180mm f/2.8 Di III VC VXD G2 Sony E",
+        "Tamron",
+        "TAMRON-70180-G2"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0047",
+    "sku": "VILTROX-85-SE",
+    "ean": "5353998862514",
+    "manufacturer_code": "VILTROX-85-SE",
+    "model_code": null,
+    "name": "Viltrox AF 85mm f/1.8 II Sony E",
+    "description": "Viltrox AF 85mm f/1.8 II Sony E - profesjonalny sprzęt fotograficzny marki Viltrox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Viltrox",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "portret",
+      "budżetowy"
+    ],
+    "price": 1299,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/viltrox-85-se.jpg",
+    "product_url": "https://example-store.pl/product/viltrox-85-se",
+    "has_image": true,
+    "sales_30d": 5,
+    "margin_pct": 22.66,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.8,
+    "review_count": 84,
+    "created_at": "2025-08-24T09:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 85,
+      "focal_length_max": 85,
+      "aperture": "1.8",
+      "mount": "Sony E",
+      "sensor_size": "Full Frame"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Sony E"
+    ],
+    "suggest": {
+      "input": [
+        "Viltrox AF 85mm f/1.8 II Sony E",
+        "Viltrox",
+        "VILTROX-85-SE"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0048",
+    "sku": "VILTROX-56-FX",
+    "ean": "8742349204832",
+    "manufacturer_code": "VILTROX-56-FX",
+    "model_code": null,
+    "name": "Viltrox AF 56mm f/1.4 Fuji X",
+    "description": "Viltrox AF 56mm f/1.4 Fuji X - profesjonalny sprzęt fotograficzny marki Viltrox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Viltrox",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "portret",
+      "budżetowy",
+      "APS-C"
+    ],
+    "price": 999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/viltrox-56-fx.jpg",
+    "product_url": "https://example-store.pl/product/viltrox-56-fx",
+    "has_image": true,
+    "sales_30d": 134,
+    "margin_pct": 7.31,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.3,
+    "review_count": 32,
+    "created_at": "2024-03-15T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 56,
+      "focal_length_max": 56,
+      "aperture": "1.4",
+      "mount": "Fujifilm X",
+      "sensor_size": "APS-C"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Fujifilm X"
+    ],
+    "suggest": {
+      "input": [
+        "Viltrox AF 56mm f/1.4 Fuji X",
+        "Viltrox",
+        "VILTROX-56-FX"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0049",
+    "sku": "FUJI-XF56",
+    "ean": "9425648198642",
+    "manufacturer_code": "FUJI-XF56",
+    "model_code": null,
+    "name": "Fujifilm XF 56mm f/1.2 R WR",
+    "description": "Fujifilm XF 56mm f/1.2 R WR - profesjonalny sprzęt fotograficzny marki Fujifilm. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Fujifilm",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "portret",
+      "premium"
+    ],
+    "price": 4999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/fuji-xf56.jpg",
+    "product_url": "https://example-store.pl/product/fuji-xf56",
+    "has_image": true,
+    "sales_30d": 41,
+    "margin_pct": 37.68,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.7,
+    "review_count": 27,
+    "created_at": "2024-02-14T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 56,
+      "focal_length_max": 56,
+      "aperture": "1.2",
+      "mount": "Fujifilm X",
+      "sensor_size": "APS-C"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Fujifilm X"
+    ],
+    "suggest": {
+      "input": [
+        "Fujifilm XF 56mm f/1.2 R WR",
+        "Fujifilm",
+        "FUJI-XF56"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0050",
+    "sku": "FUJI-XF1855",
+    "ean": "7259242652598",
+    "manufacturer_code": "FUJI-XF1855",
+    "model_code": null,
+    "name": "Fujifilm XF 18-55mm f/2.8-4 R LM OIS",
+    "description": "Fujifilm XF 18-55mm f/2.8-4 R LM OIS - profesjonalny sprzęt fotograficzny marki Fujifilm. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Fujifilm",
+    "category": "Obiektywy",
+    "category_path": "Obiektywy",
+    "category_id": "obiektywy",
+    "tags": [
+      "kit",
+      "uniwersalny"
+    ],
+    "price": 3299,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/fuji-xf1855.jpg",
+    "product_url": "https://example-store.pl/product/fuji-xf1855",
+    "has_image": true,
+    "sales_30d": 283,
+    "margin_pct": 32.42,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.4,
+    "review_count": 19,
+    "created_at": "2024-04-14T09:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "focal_length_min": 18,
+      "focal_length_max": 55,
+      "aperture": "2.8",
+      "mount": "Fujifilm X",
+      "sensor_size": "APS-C"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [
+      "Fujifilm X"
+    ],
+    "suggest": {
+      "input": [
+        "Fujifilm XF 18-55mm f/2.8-4 R LM OIS",
+        "Fujifilm",
+        "FUJI-XF1855"
+      ],
+      "contexts": {
+        "category": [
+          "Obiektywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0051",
+    "sku": "MAN-055CX",
+    "ean": "6282157317352",
+    "manufacturer_code": "MAN-055CX",
+    "model_code": null,
+    "name": "Manfrotto MT055CXPRO4 statyw karbonowy",
+    "description": "Manfrotto MT055CXPRO4 statyw karbonowy - profesjonalny sprzęt fotograficzny marki Manfrotto. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Manfrotto",
+    "category": "Statywy",
+    "category_path": "Statywy",
+    "category_id": "statywy",
+    "tags": [
+      "karbonowy",
+      "profesjonalny"
+    ],
+    "price": 2999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/man-055cx.jpg",
+    "product_url": "https://example-store.pl/product/man-055cx",
+    "has_image": true,
+    "sales_30d": 32,
+    "margin_pct": 10.48,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.6,
+    "review_count": 147,
+    "created_at": "2025-11-16T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "max_load_kg": 9,
+      "max_height_cm": 170,
+      "material": "Carbon"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Manfrotto MT055CXPRO4 statyw karbonowy",
+        "Manfrotto",
+        "MAN-055CX"
+      ],
+      "contexts": {
+        "category": [
+          "Statywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0052",
+    "sku": "MAN-190X",
+    "ean": "1700987850986",
+    "manufacturer_code": "MAN-190X",
+    "model_code": null,
+    "name": "Manfrotto MT190XPRO4 statyw aluminiowy",
+    "description": "Manfrotto MT190XPRO4 statyw aluminiowy - profesjonalny sprzęt fotograficzny marki Manfrotto. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Manfrotto",
+    "category": "Statywy",
+    "category_path": "Statywy",
+    "category_id": "statywy",
+    "tags": [
+      "aluminiowy"
+    ],
+    "price": 1499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/man-190x.jpg",
+    "product_url": "https://example-store.pl/product/man-190x",
+    "has_image": true,
+    "sales_30d": 108,
+    "margin_pct": 16.12,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 4.9,
+    "review_count": 177,
+    "created_at": "2025-12-31T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "max_load_kg": 7,
+      "max_height_cm": 160,
+      "material": "Aluminium"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Manfrotto MT190XPRO4 statyw aluminiowy",
+        "Manfrotto",
+        "MAN-190X"
+      ],
+      "contexts": {
+        "category": [
+          "Statywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0053",
+    "sku": "MAN-BEFREE",
+    "ean": "8362243228385",
+    "manufacturer_code": "MAN-BEFREE",
+    "model_code": null,
+    "name": "Manfrotto Befree Advanced statyw podróżny",
+    "description": "Manfrotto Befree Advanced statyw podróżny - profesjonalny sprzęt fotograficzny marki Manfrotto. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Manfrotto",
+    "category": "Statywy",
+    "category_path": "Statywy",
+    "category_id": "statywy",
+    "tags": [
+      "podróżny",
+      "kompaktowy"
+    ],
+    "price": 999,
+    "sale_price": 869,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/man-befree.jpg",
+    "product_url": "https://example-store.pl/product/man-befree",
+    "has_image": true,
+    "sales_30d": 496,
+    "margin_pct": 35.78,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.8,
+    "review_count": 115,
+    "created_at": "2026-02-02T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "max_load_kg": 8,
+      "max_height_cm": 150,
+      "material": "Aluminium"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Manfrotto Befree Advanced statyw podróżny",
+        "Manfrotto",
+        "MAN-BEFREE"
+      ],
+      "contexts": {
+        "category": [
+          "Statywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0054",
+    "sku": "BENRO-TMA38",
+    "ean": "8375503217579",
+    "manufacturer_code": "BENRO-TMA38",
+    "model_code": null,
+    "name": "Benro Mach3 TMA38CL statyw karbonowy",
+    "description": "Benro Mach3 TMA38CL statyw karbonowy - profesjonalny sprzęt fotograficzny marki Benro. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Benro",
+    "category": "Statywy",
+    "category_path": "Statywy",
+    "category_id": "statywy",
+    "tags": [
+      "karbonowy",
+      "wytrzymały"
+    ],
+    "price": 2499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/benro-tma38.jpg",
+    "product_url": "https://example-store.pl/product/benro-tma38",
+    "has_image": true,
+    "sales_30d": 28,
+    "margin_pct": 20.75,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.7,
+    "review_count": 81,
+    "created_at": "2024-10-28T10:32:02.149Z",
+    "updated_at": "2026-02-08T10:32:02.149Z",
+    "params": {
+      "max_load_kg": 16,
+      "max_height_cm": 175,
+      "material": "Carbon"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Benro Mach3 TMA38CL statyw karbonowy",
+        "Benro",
+        "BENRO-TMA38"
+      ],
+      "contexts": {
+        "category": [
+          "Statywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0055",
+    "sku": "GITZO-GT3543",
+    "ean": "0616085982843",
+    "manufacturer_code": "GITZO-GT3543",
+    "model_code": null,
+    "name": "Gitzo Mountaineer GT3543LS statyw karbonowy",
+    "description": "Gitzo Mountaineer GT3543LS statyw karbonowy - profesjonalny sprzęt fotograficzny marki Gitzo. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Gitzo",
+    "category": "Statywy",
+    "category_path": "Statywy",
+    "category_id": "statywy",
+    "tags": [
+      "karbonowy",
+      "premium",
+      "profesjonalny"
+    ],
+    "price": 5999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/gitzo-gt3543.jpg",
+    "product_url": "https://example-store.pl/product/gitzo-gt3543",
+    "has_image": true,
+    "sales_30d": 195,
+    "margin_pct": 19.78,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.4,
+    "review_count": 133,
+    "created_at": "2026-01-22T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {
+      "max_load_kg": 21,
+      "max_height_cm": 164,
+      "material": "Carbon"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Gitzo Mountaineer GT3543LS statyw karbonowy",
+        "Gitzo",
+        "GITZO-GT3543"
+      ],
+      "contexts": {
+        "category": [
+          "Statywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0056",
+    "sku": "SIRUI-T2204",
+    "ean": "4344113123192",
+    "manufacturer_code": "SIRUI-T2204",
+    "model_code": null,
+    "name": "Sirui T-2204X statyw karbonowy",
+    "description": "Sirui T-2204X statyw karbonowy - profesjonalny sprzęt fotograficzny marki Sirui. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sirui",
+    "category": "Statywy",
+    "category_path": "Statywy",
+    "category_id": "statywy",
+    "tags": [
+      "karbonowy",
+      "budżetowy"
+    ],
+    "price": 1799,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sirui-t2204.jpg",
+    "product_url": "https://example-store.pl/product/sirui-t2204",
+    "has_image": true,
+    "sales_30d": 323,
+    "margin_pct": 28.88,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.9,
+    "review_count": 32,
+    "created_at": "2025-03-31T09:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {
+      "max_load_kg": 12,
+      "max_height_cm": 152,
+      "material": "Carbon"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Sirui T-2204X statyw karbonowy",
+        "Sirui",
+        "SIRUI-T2204"
+      ],
+      "contexts": {
+        "category": [
+          "Statywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0057",
+    "sku": "PD-TRAVEL-C",
+    "ean": "8135892217099",
+    "manufacturer_code": "PD-TRAVEL-C",
+    "model_code": null,
+    "name": "Peak Design Travel Tripod statyw karbonowy",
+    "description": "Peak Design Travel Tripod statyw karbonowy - profesjonalny sprzęt fotograficzny marki Peak Design. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Peak Design",
+    "category": "Statywy",
+    "category_path": "Statywy",
+    "category_id": "statywy",
+    "tags": [
+      "podróżny",
+      "kompaktowy",
+      "premium"
+    ],
+    "price": 3299,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/pd-travel-c.jpg",
+    "product_url": "https://example-store.pl/product/pd-travel-c",
+    "has_image": true,
+    "sales_30d": 117,
+    "margin_pct": 22.16,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4,
+    "review_count": 26,
+    "created_at": "2025-04-29T09:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {
+      "max_load_kg": 9.1,
+      "max_height_cm": 152,
+      "material": "Carbon"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Peak Design Travel Tripod statyw karbonowy",
+        "Peak Design",
+        "PD-TRAVEL-C"
+      ],
+      "contexts": {
+        "category": [
+          "Statywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0058",
+    "sku": "MAN-502AH",
+    "ean": "8739081976912",
+    "manufacturer_code": "MAN-502AH",
+    "model_code": null,
+    "name": "Manfrotto MVH502AH głowica wideo",
+    "description": "Manfrotto MVH502AH głowica wideo - profesjonalny sprzęt fotograficzny marki Manfrotto. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Manfrotto",
+    "category": "Głowice statywowe",
+    "category_path": "Głowice statywowe",
+    "category_id": "glowice-statywowe",
+    "tags": [
+      "wideo",
+      "głowica"
+    ],
+    "price": 999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/man-502ah.jpg",
+    "product_url": "https://example-store.pl/product/man-502ah",
+    "has_image": true,
+    "sales_30d": 25,
+    "margin_pct": 19.55,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 5,
+    "review_count": 120,
+    "created_at": "2024-11-26T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {
+      "max_load_kg": 7,
+      "max_height_cm": 0,
+      "material": "Aluminium"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Manfrotto MVH502AH głowica wideo",
+        "Manfrotto",
+        "MAN-502AH"
+      ],
+      "contexts": {
+        "category": [
+          "Głowice statywowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0059",
+    "sku": "BENRO-S8",
+    "ean": "7761658983956",
+    "manufacturer_code": "BENRO-S8",
+    "model_code": null,
+    "name": "Benro S8 głowica wideo",
+    "description": "Benro S8 głowica wideo - profesjonalny sprzęt fotograficzny marki Benro. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Benro",
+    "category": "Głowice statywowe",
+    "category_path": "Głowice statywowe",
+    "category_id": "glowice-statywowe",
+    "tags": [
+      "wideo",
+      "głowica"
+    ],
+    "price": 1299,
+    "sale_price": 1117,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/benro-s8.jpg",
+    "product_url": "https://example-store.pl/product/benro-s8",
+    "has_image": true,
+    "sales_30d": 209,
+    "margin_pct": 11.32,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.6,
+    "review_count": 147,
+    "created_at": "2025-11-24T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {
+      "max_load_kg": 8,
+      "max_height_cm": 0,
+      "material": "Aluminium"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Benro S8 głowica wideo",
+        "Benro",
+        "BENRO-S8"
+      ],
+      "contexts": {
+        "category": [
+          "Głowice statywowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0060",
+    "sku": "SIRUI-P326S",
+    "ean": "6556225930102",
+    "manufacturer_code": "SIRUI-P326S",
+    "model_code": null,
+    "name": "Sirui Monopod P-326S monopod karbonowy",
+    "description": "Sirui Monopod P-326S monopod karbonowy - profesjonalny sprzęt fotograficzny marki Sirui. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sirui",
+    "category": "Statywy",
+    "category_path": "Statywy",
+    "category_id": "statywy",
+    "tags": [
+      "monopod",
+      "karbonowy"
+    ],
+    "price": 599,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/sirui-p326s.jpg",
+    "product_url": "https://example-store.pl/product/sirui-p326s",
+    "has_image": true,
+    "sales_30d": 30,
+    "margin_pct": 23.96,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 3.6,
+    "review_count": 157,
+    "created_at": "2026-02-07T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {
+      "max_load_kg": 10,
+      "max_height_cm": 155,
+      "material": "Carbon"
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Sirui Monopod P-326S monopod karbonowy",
+        "Sirui",
+        "SIRUI-P326S"
+      ],
+      "contexts": {
+        "category": [
+          "Statywy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0061",
+    "sku": "GODOX-V1C",
+    "ean": "2770807855247",
+    "manufacturer_code": "GODOX-V1C",
+    "model_code": null,
+    "name": "Godox V1-C lampa błyskowa Canon",
+    "description": "Godox V1-C lampa błyskowa Canon - profesjonalny sprzęt fotograficzny marki Godox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Godox",
+    "category": "Lampy błyskowe",
+    "category_path": "Lampy błyskowe",
+    "category_id": "lampy-blyskowe",
+    "tags": [
+      "reporterska",
+      "TTL",
+      "HSS"
+    ],
+    "price": 1199,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/godox-v1c.jpg",
+    "product_url": "https://example-store.pl/product/godox-v1c",
+    "has_image": true,
+    "sales_30d": 474,
+    "margin_pct": 8.56,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.6,
+    "review_count": 94,
+    "created_at": "2024-03-05T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Godox V1-C lampa błyskowa Canon",
+        "Godox",
+        "GODOX-V1C"
+      ],
+      "contexts": {
+        "category": [
+          "Lampy błyskowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0062",
+    "sku": "GODOX-V1S",
+    "ean": "0903686034676",
+    "manufacturer_code": "GODOX-V1S",
+    "model_code": null,
+    "name": "Godox V1-S lampa błyskowa Sony",
+    "description": "Godox V1-S lampa błyskowa Sony - profesjonalny sprzęt fotograficzny marki Godox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Godox",
+    "category": "Lampy błyskowe",
+    "category_path": "Lampy błyskowe",
+    "category_id": "lampy-blyskowe",
+    "tags": [
+      "reporterska",
+      "TTL",
+      "HSS"
+    ],
+    "price": 1199,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/godox-v1s.jpg",
+    "product_url": "https://example-store.pl/product/godox-v1s",
+    "has_image": true,
+    "sales_30d": 135,
+    "margin_pct": 11.13,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.5,
+    "review_count": 40,
+    "created_at": "2024-07-30T09:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Godox V1-S lampa błyskowa Sony",
+        "Godox",
+        "GODOX-V1S"
+      ],
+      "contexts": {
+        "category": [
+          "Lampy błyskowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0063",
+    "sku": "GODOX-V1N",
+    "ean": "4261877533619",
+    "manufacturer_code": "GODOX-V1N",
+    "model_code": null,
+    "name": "Godox V1-N lampa błyskowa Nikon",
+    "description": "Godox V1-N lampa błyskowa Nikon - profesjonalny sprzęt fotograficzny marki Godox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Godox",
+    "category": "Lampy błyskowe",
+    "category_path": "Lampy błyskowe",
+    "category_id": "lampy-blyskowe",
+    "tags": [
+      "reporterska",
+      "TTL",
+      "HSS"
+    ],
+    "price": 1199,
+    "sale_price": 1103,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/godox-v1n.jpg",
+    "product_url": "https://example-store.pl/product/godox-v1n",
+    "has_image": true,
+    "sales_30d": 30,
+    "margin_pct": 34.21,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.4,
+    "review_count": 178,
+    "created_at": "2024-10-16T09:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Godox V1-N lampa błyskowa Nikon",
+        "Godox",
+        "GODOX-V1N"
+      ],
+      "contexts": {
+        "category": [
+          "Lampy błyskowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0064",
+    "sku": "GODOX-V860C",
+    "ean": "4699172304519",
+    "manufacturer_code": "GODOX-V860C",
+    "model_code": null,
+    "name": "Godox V860III-C lampa błyskowa Canon",
+    "description": "Godox V860III-C lampa błyskowa Canon - profesjonalny sprzęt fotograficzny marki Godox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Godox",
+    "category": "Lampy błyskowe",
+    "category_path": "Lampy błyskowe",
+    "category_id": "lampy-blyskowe",
+    "tags": [
+      "reporterska",
+      "TTL"
+    ],
+    "price": 899,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/godox-v860c.jpg",
+    "product_url": "https://example-store.pl/product/godox-v860c",
+    "has_image": true,
+    "sales_30d": 312,
+    "margin_pct": 7.45,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.4,
+    "review_count": 155,
+    "created_at": "2024-09-29T09:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Godox V860III-C lampa błyskowa Canon",
+        "Godox",
+        "GODOX-V860C"
+      ],
+      "contexts": {
+        "category": [
+          "Lampy błyskowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0065",
+    "sku": "GODOX-AD200P",
+    "ean": "3915188552142",
+    "manufacturer_code": "GODOX-AD200P",
+    "model_code": null,
+    "name": "Godox AD200 Pro lampa studyjna przenośna",
+    "description": "Godox AD200 Pro lampa studyjna przenośna - profesjonalny sprzęt fotograficzny marki Godox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Godox",
+    "category": "Lampy błyskowe",
+    "category_path": "Lampy błyskowe",
+    "category_id": "lampy-blyskowe",
+    "tags": [
+      "studyjna",
+      "przenośna"
+    ],
+    "price": 1599,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/godox-ad200p.jpg",
+    "product_url": "https://example-store.pl/product/godox-ad200p",
+    "has_image": true,
+    "sales_30d": 100,
+    "margin_pct": 20.15,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.7,
+    "review_count": 31,
+    "created_at": "2025-12-20T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Godox AD200 Pro lampa studyjna przenośna",
+        "Godox",
+        "GODOX-AD200P"
+      ],
+      "contexts": {
+        "category": [
+          "Lampy błyskowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0066",
+    "sku": "GODOX-AD600P",
+    "ean": "5151411862833",
+    "manufacturer_code": "GODOX-AD600P",
+    "model_code": null,
+    "name": "Godox AD600 Pro lampa studyjna",
+    "description": "Godox AD600 Pro lampa studyjna - profesjonalny sprzęt fotograficzny marki Godox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Godox",
+    "category": "Oświetlenie studyjne",
+    "category_path": "Oświetlenie studyjne",
+    "category_id": "oswietlenie-studyjne",
+    "tags": [
+      "studyjna",
+      "profesjonalny"
+    ],
+    "price": 4999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/godox-ad600p.jpg",
+    "product_url": "https://example-store.pl/product/godox-ad600p",
+    "has_image": true,
+    "sales_30d": 15,
+    "margin_pct": 5.1,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 4.9,
+    "review_count": 59,
+    "created_at": "2026-02-07T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Godox AD600 Pro lampa studyjna",
+        "Godox",
+        "GODOX-AD600P"
+      ],
+      "contexts": {
+        "category": [
+          "Oświetlenie studyjne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0067",
+    "sku": "PROFOTO-A2",
+    "ean": "1635893749324",
+    "manufacturer_code": "PROFOTO-A2",
+    "model_code": null,
+    "name": "Profoto A2 lampa błyskowa",
+    "description": "Profoto A2 lampa błyskowa - profesjonalny sprzęt fotograficzny marki Profoto. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Profoto",
+    "category": "Lampy błyskowe",
+    "category_path": "Lampy błyskowe",
+    "category_id": "lampy-blyskowe",
+    "tags": [
+      "premium",
+      "studyjna"
+    ],
+    "price": 5999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/profoto-a2.jpg",
+    "product_url": "https://example-store.pl/product/profoto-a2",
+    "has_image": true,
+    "sales_30d": 17,
+    "margin_pct": 31.64,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.4,
+    "review_count": 105,
+    "created_at": "2024-11-25T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Profoto A2 lampa błyskowa",
+        "Profoto",
+        "PROFOTO-A2"
+      ],
+      "contexts": {
+        "category": [
+          "Lampy błyskowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0068",
+    "sku": "GODOX-SL150III",
+    "ean": "5459649017422",
+    "manufacturer_code": "GODOX-SL150III",
+    "model_code": null,
+    "name": "Godox SL-150 III świetło ciągłe LED",
+    "description": "Godox SL-150 III świetło ciągłe LED - profesjonalny sprzęt fotograficzny marki Godox. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Godox",
+    "category": "Oświetlenie studyjne",
+    "category_path": "Oświetlenie studyjne",
+    "category_id": "oswietlenie-studyjne",
+    "tags": [
+      "LED",
+      "światło ciągłe",
+      "wideo"
+    ],
+    "price": 1299,
+    "sale_price": 1039,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/godox-sl150iii.jpg",
+    "product_url": "https://example-store.pl/product/godox-sl150iii",
+    "has_image": true,
+    "sales_30d": 47,
+    "margin_pct": 22.91,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.4,
+    "review_count": 66,
+    "created_at": "2025-05-07T09:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.150Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Godox SL-150 III świetło ciągłe LED",
+        "Godox",
+        "GODOX-SL150III"
+      ],
+      "contexts": {
+        "category": [
+          "Oświetlenie studyjne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0069",
+    "sku": "APUTURE-60X",
+    "ean": "9191606328207",
+    "manufacturer_code": "APUTURE-60X",
+    "model_code": null,
+    "name": "Aputure 60x softbox",
+    "description": "Aputure 60x softbox - profesjonalny sprzęt fotograficzny marki Aputure. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Aputure",
+    "category": "Akcesoria oświetleniowe",
+    "category_path": "Akcesoria oświetleniowe",
+    "category_id": "akcesoria-oswietleniowe",
+    "tags": [
+      "softbox",
+      "modyfikator"
+    ],
+    "price": 699,
+    "sale_price": 636,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/aputure-60x.jpg",
+    "product_url": "https://example-store.pl/product/aputure-60x",
+    "has_image": true,
+    "sales_30d": 17,
+    "margin_pct": 9.72,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.4,
+    "review_count": 70,
+    "created_at": "2024-03-18T10:32:02.150Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Aputure 60x softbox",
+        "Aputure",
+        "APUTURE-60X"
+      ],
+      "contexts": {
+        "category": [
+          "Akcesoria oświetleniowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0070",
+    "sku": "SDISK-EP128",
+    "ean": "8253361466646",
+    "manufacturer_code": "SDISK-EP128",
+    "model_code": null,
+    "name": "SanDisk Extreme Pro SDXC 128GB 200MB/s",
+    "description": "SanDisk Extreme Pro SDXC 128GB 200MB/s - profesjonalny sprzęt fotograficzny marki SanDisk. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "SanDisk",
+    "category": "Karty pamięci",
+    "category_path": "Karty pamięci",
+    "category_id": "karty-pamieci",
+    "tags": [
+      "SD",
+      "UHS-I"
+    ],
+    "price": 129,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sdisk-ep128.jpg",
+    "product_url": "https://example-store.pl/product/sdisk-ep128",
+    "has_image": true,
+    "sales_30d": 57,
+    "margin_pct": 39.39,
+    "is_new": true,
+    "is_high_margin": true,
+    "avg_rating": 4.2,
+    "review_count": 135,
+    "created_at": "2025-12-10T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "SanDisk Extreme Pro SDXC 128GB 200MB/s",
+        "SanDisk",
+        "SDISK-EP128"
+      ],
+      "contexts": {
+        "category": [
+          "Karty pamięci"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0071",
+    "sku": "SDISK-EP256",
+    "ean": "2203087907400",
+    "manufacturer_code": "SDISK-EP256",
+    "model_code": null,
+    "name": "SanDisk Extreme Pro SDXC 256GB 200MB/s",
+    "description": "SanDisk Extreme Pro SDXC 256GB 200MB/s - profesjonalny sprzęt fotograficzny marki SanDisk. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "SanDisk",
+    "category": "Karty pamięci",
+    "category_path": "Karty pamięci",
+    "category_id": "karty-pamieci",
+    "tags": [
+      "SD",
+      "UHS-I"
+    ],
+    "price": 229,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/sdisk-ep256.jpg",
+    "product_url": "https://example-store.pl/product/sdisk-ep256",
+    "has_image": true,
+    "sales_30d": 0,
+    "margin_pct": 26.76,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.4,
+    "review_count": 153,
+    "created_at": "2025-03-19T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "SanDisk Extreme Pro SDXC 256GB 200MB/s",
+        "SanDisk",
+        "SDISK-EP256"
+      ],
+      "contexts": {
+        "category": [
+          "Karty pamięci"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0072",
+    "sku": "SDISK-CFE128",
+    "ean": "3143270730936",
+    "manufacturer_code": "SDISK-CFE128",
+    "model_code": null,
+    "name": "SanDisk Extreme Pro CFexpress Type B 128GB",
+    "description": "SanDisk Extreme Pro CFexpress Type B 128GB - profesjonalny sprzęt fotograficzny marki SanDisk. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "SanDisk",
+    "category": "Karty pamięci",
+    "category_path": "Karty pamięci",
+    "category_id": "karty-pamieci",
+    "tags": [
+      "CFexpress",
+      "profesjonalny"
+    ],
+    "price": 599,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sdisk-cfe128.jpg",
+    "product_url": "https://example-store.pl/product/sdisk-cfe128",
+    "has_image": true,
+    "sales_30d": 108,
+    "margin_pct": 9.5,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.8,
+    "review_count": 138,
+    "created_at": "2024-09-15T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "SanDisk Extreme Pro CFexpress Type B 128GB",
+        "SanDisk",
+        "SDISK-CFE128"
+      ],
+      "contexts": {
+        "category": [
+          "Karty pamięci"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0073",
+    "sku": "SDISK-CFA160",
+    "ean": "1396113898887",
+    "manufacturer_code": "SDISK-CFA160",
+    "model_code": null,
+    "name": "SanDisk Extreme Pro CFexpress Type A 160GB",
+    "description": "SanDisk Extreme Pro CFexpress Type A 160GB - profesjonalny sprzęt fotograficzny marki SanDisk. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "SanDisk",
+    "category": "Karty pamięci",
+    "category_path": "Karty pamięci",
+    "category_id": "karty-pamieci",
+    "tags": [
+      "CFexpress Type A",
+      "Sony"
+    ],
+    "price": 899,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sdisk-cfa160.jpg",
+    "product_url": "https://example-store.pl/product/sdisk-cfa160",
+    "has_image": true,
+    "sales_30d": 95,
+    "margin_pct": 10.72,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.2,
+    "review_count": 171,
+    "created_at": "2025-10-03T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "SanDisk Extreme Pro CFexpress Type A 160GB",
+        "SanDisk",
+        "SDISK-CFA160"
+      ],
+      "contexts": {
+        "category": [
+          "Karty pamięci"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0074",
+    "sku": "LEXAR-1066-128",
+    "ean": "5292121115434",
+    "manufacturer_code": "LEXAR-1066-128",
+    "model_code": null,
+    "name": "Lexar Professional 1066x SDXC 128GB",
+    "description": "Lexar Professional 1066x SDXC 128GB - profesjonalny sprzęt fotograficzny marki Lexar. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Lexar",
+    "category": "Karty pamięci",
+    "category_path": "Karty pamięci",
+    "category_id": "karty-pamieci",
+    "tags": [
+      "SD",
+      "UHS-I"
+    ],
+    "price": 99,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/lexar-1066-128.jpg",
+    "product_url": "https://example-store.pl/product/lexar-1066-128",
+    "has_image": true,
+    "sales_30d": 405,
+    "margin_pct": 8.17,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.6,
+    "review_count": 83,
+    "created_at": "2024-07-22T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Lexar Professional 1066x SDXC 128GB",
+        "Lexar",
+        "LEXAR-1066-128"
+      ],
+      "contexts": {
+        "category": [
+          "Karty pamięci"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0075",
+    "sku": "LEXAR-CFE256",
+    "ean": "9459839546998",
+    "manufacturer_code": "LEXAR-CFE256",
+    "model_code": null,
+    "name": "Lexar Professional CFexpress Type B 256GB",
+    "description": "Lexar Professional CFexpress Type B 256GB - profesjonalny sprzęt fotograficzny marki Lexar. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Lexar",
+    "category": "Karty pamięci",
+    "category_path": "Karty pamięci",
+    "category_id": "karty-pamieci",
+    "tags": [
+      "CFexpress",
+      "profesjonalny"
+    ],
+    "price": 799,
+    "sale_price": 647,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/lexar-cfe256.jpg",
+    "product_url": "https://example-store.pl/product/lexar-cfe256",
+    "has_image": true,
+    "sales_30d": 36,
+    "margin_pct": 34.76,
+    "is_new": true,
+    "is_high_margin": true,
+    "avg_rating": 4.8,
+    "review_count": 199,
+    "created_at": "2025-12-21T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Lexar Professional CFexpress Type B 256GB",
+        "Lexar",
+        "LEXAR-CFE256"
+      ],
+      "contexts": {
+        "category": [
+          "Karty pamięci"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0076",
+    "sku": "SONY-CEAG80",
+    "ean": "8824751205161",
+    "manufacturer_code": "SONY-CEAG80",
+    "model_code": null,
+    "name": "Sony CEA-G80T CFexpress Type A 80GB",
+    "description": "Sony CEA-G80T CFexpress Type A 80GB - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Karty pamięci",
+    "category_path": "Karty pamięci",
+    "category_id": "karty-pamieci",
+    "tags": [
+      "CFexpress Type A",
+      "Sony"
+    ],
+    "price": 599,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-ceag80.jpg",
+    "product_url": "https://example-store.pl/product/sony-ceag80",
+    "has_image": true,
+    "sales_30d": 418,
+    "margin_pct": 38.86,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.7,
+    "review_count": 103,
+    "created_at": "2025-07-17T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Sony CEA-G80T CFexpress Type A 80GB",
+        "Sony",
+        "SONY-CEAG80"
+      ],
+      "contexts": {
+        "category": [
+          "Karty pamięci"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0077",
+    "sku": "KING-CRP256",
+    "ean": "5879661185631",
+    "manufacturer_code": "KING-CRP256",
+    "model_code": null,
+    "name": "Kingston Canvas React Plus SDXC 256GB V60",
+    "description": "Kingston Canvas React Plus SDXC 256GB V60 - profesjonalny sprzęt fotograficzny marki Kingston. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Kingston",
+    "category": "Karty pamięci",
+    "category_path": "Karty pamięci",
+    "category_id": "karty-pamieci",
+    "tags": [
+      "SD",
+      "V60"
+    ],
+    "price": 179,
+    "sale_price": 166,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/king-crp256.jpg",
+    "product_url": "https://example-store.pl/product/king-crp256",
+    "has_image": true,
+    "sales_30d": 90,
+    "margin_pct": 21.6,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.6,
+    "review_count": 88,
+    "created_at": "2024-02-16T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Kingston Canvas React Plus SDXC 256GB V60",
+        "Kingston",
+        "KING-CRP256"
+      ],
+      "contexts": {
+        "category": [
+          "Karty pamięci"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0078",
+    "sku": "LOW-PT450",
+    "ean": "3157402130402",
+    "manufacturer_code": "LOW-PT450",
+    "model_code": null,
+    "name": "Lowepro ProTactic BP 450 AW II plecak fotograficzny",
+    "description": "Lowepro ProTactic BP 450 AW II plecak fotograficzny - profesjonalny sprzęt fotograficzny marki Lowepro. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Lowepro",
+    "category": "Torby i plecaki foto",
+    "category_path": "Torby i plecaki foto",
+    "category_id": "torby-i-plecaki-foto",
+    "tags": [
+      "plecak",
+      "profesjonalny"
+    ],
+    "price": 999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/low-pt450.jpg",
+    "product_url": "https://example-store.pl/product/low-pt450",
+    "has_image": true,
+    "sales_30d": 386,
+    "margin_pct": 25.05,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.2,
+    "review_count": 180,
+    "created_at": "2025-03-18T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Lowepro ProTactic BP 450 AW II plecak fotograficzny",
+        "Lowepro",
+        "LOW-PT450"
+      ],
+      "contexts": {
+        "category": [
+          "Torby i plecaki foto"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0079",
+    "sku": "LOW-ADV140",
+    "ean": "2095248427700",
+    "manufacturer_code": "LOW-ADV140",
+    "model_code": null,
+    "name": "Lowepro Adventura SH 140 III torba na aparat",
+    "description": "Lowepro Adventura SH 140 III torba na aparat - profesjonalny sprzęt fotograficzny marki Lowepro. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Lowepro",
+    "category": "Torby i plecaki foto",
+    "category_path": "Torby i plecaki foto",
+    "category_id": "torby-i-plecaki-foto",
+    "tags": [
+      "torba",
+      "kompaktowa"
+    ],
+    "price": 179,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/low-adv140.jpg",
+    "product_url": "https://example-store.pl/product/low-adv140",
+    "has_image": true,
+    "sales_30d": 87,
+    "margin_pct": 39.25,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.6,
+    "review_count": 80,
+    "created_at": "2025-03-09T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Lowepro Adventura SH 140 III torba na aparat",
+        "Lowepro",
+        "LOW-ADV140"
+      ],
+      "contexts": {
+        "category": [
+          "Torby i plecaki foto"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0080",
+    "sku": "PD-EDBP20-BK",
+    "ean": "9221161840507",
+    "manufacturer_code": "PD-EDBP20-BK",
+    "model_code": null,
+    "name": "Peak Design Everyday Backpack V2 20L czarny",
+    "description": "Peak Design Everyday Backpack V2 20L czarny - profesjonalny sprzęt fotograficzny marki Peak Design. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Peak Design",
+    "category": "Torby i plecaki foto",
+    "category_path": "Torby i plecaki foto",
+    "category_id": "torby-i-plecaki-foto",
+    "tags": [
+      "plecak",
+      "premium",
+      "miejski"
+    ],
+    "price": 1199,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/pd-edbp20-bk.jpg",
+    "product_url": "https://example-store.pl/product/pd-edbp20-bk",
+    "has_image": true,
+    "sales_30d": 339,
+    "margin_pct": 31.36,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.3,
+    "review_count": 190,
+    "created_at": "2024-07-20T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Peak Design Everyday Backpack V2 20L czarny",
+        "Peak Design",
+        "PD-EDBP20-BK"
+      ],
+      "contexts": {
+        "category": [
+          "Torby i plecaki foto"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0081",
+    "sku": "PD-EDSLING6",
+    "ean": "6773272062222",
+    "manufacturer_code": "PD-EDSLING6",
+    "model_code": null,
+    "name": "Peak Design Everyday Sling 6L",
+    "description": "Peak Design Everyday Sling 6L - profesjonalny sprzęt fotograficzny marki Peak Design. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Peak Design",
+    "category": "Torby i plecaki foto",
+    "category_path": "Torby i plecaki foto",
+    "category_id": "torby-i-plecaki-foto",
+    "tags": [
+      "sling",
+      "kompaktowy"
+    ],
+    "price": 599,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/pd-edsling6.jpg",
+    "product_url": "https://example-store.pl/product/pd-edsling6",
+    "has_image": true,
+    "sales_30d": 442,
+    "margin_pct": 36.88,
+    "is_new": true,
+    "is_high_margin": true,
+    "avg_rating": 3.9,
+    "review_count": 82,
+    "created_at": "2026-01-14T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Peak Design Everyday Sling 6L",
+        "Peak Design",
+        "PD-EDSLING6"
+      ],
+      "contexts": {
+        "category": [
+          "Torby i plecaki foto"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0082",
+    "sku": "MAN-MSGR",
+    "ean": "7772740210928",
+    "manufacturer_code": "MAN-MSGR",
+    "model_code": null,
+    "name": "Manfrotto Advanced Befree Messenger torba",
+    "description": "Manfrotto Advanced Befree Messenger torba - profesjonalny sprzęt fotograficzny marki Manfrotto. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Manfrotto",
+    "category": "Torby i plecaki foto",
+    "category_path": "Torby i plecaki foto",
+    "category_id": "torby-i-plecaki-foto",
+    "tags": [
+      "torba",
+      "messenger"
+    ],
+    "price": 449,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/man-msgr.jpg",
+    "product_url": "https://example-store.pl/product/man-msgr",
+    "has_image": true,
+    "sales_30d": 14,
+    "margin_pct": 25.56,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.9,
+    "review_count": 70,
+    "created_at": "2025-09-05T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Manfrotto Advanced Befree Messenger torba",
+        "Manfrotto",
+        "MAN-MSGR"
+      ],
+      "contexts": {
+        "category": [
+          "Torby i plecaki foto"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0083",
+    "sku": "TT-APE",
+    "ean": "0143225277977",
+    "manufacturer_code": "TT-APE",
+    "model_code": null,
+    "name": "Think Tank Photo Airport Essentials plecak",
+    "description": "Think Tank Photo Airport Essentials plecak - profesjonalny sprzęt fotograficzny marki Think Tank. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Think Tank",
+    "category": "Torby i plecaki foto",
+    "category_path": "Torby i plecaki foto",
+    "category_id": "torby-i-plecaki-foto",
+    "tags": [
+      "plecak",
+      "podróżny"
+    ],
+    "price": 799,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/tt-ape.jpg",
+    "product_url": "https://example-store.pl/product/tt-ape",
+    "has_image": true,
+    "sales_30d": 39,
+    "margin_pct": 9.95,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.6,
+    "review_count": 35,
+    "created_at": "2025-04-22T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Think Tank Photo Airport Essentials plecak",
+        "Think Tank",
+        "TT-APE"
+      ],
+      "contexts": {
+        "category": [
+          "Torby i plecaki foto"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0084",
+    "sku": "VAN-VEOSEL46",
+    "ean": "5705288488179",
+    "manufacturer_code": "VAN-VEOSEL46",
+    "model_code": null,
+    "name": "Vanguard VEO SELECT 46BR plecak",
+    "description": "Vanguard VEO SELECT 46BR plecak - profesjonalny sprzęt fotograficzny marki Vanguard. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Vanguard",
+    "category": "Torby i plecaki foto",
+    "category_path": "Torby i plecaki foto",
+    "category_id": "torby-i-plecaki-foto",
+    "tags": [
+      "plecak",
+      "budżetowy"
+    ],
+    "price": 549,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/van-veosel46.jpg",
+    "product_url": "https://example-store.pl/product/van-veosel46",
+    "has_image": true,
+    "sales_30d": 157,
+    "margin_pct": 30.14,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.4,
+    "review_count": 63,
+    "created_at": "2025-09-21T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Vanguard VEO SELECT 46BR plecak",
+        "Vanguard",
+        "VAN-VEOSEL46"
+      ],
+      "contexts": {
+        "category": [
+          "Torby i plecaki foto"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0085",
+    "sku": "HOYA-CPL77",
+    "ean": "8521094471351",
+    "manufacturer_code": "HOYA-CPL77",
+    "model_code": null,
+    "name": "Hoya HD CIR-PL 77mm filtr polaryzacyjny",
+    "description": "Hoya HD CIR-PL 77mm filtr polaryzacyjny - profesjonalny sprzęt fotograficzny marki Hoya. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Hoya",
+    "category": "Filtry optyczne",
+    "category_path": "Filtry optyczne",
+    "category_id": "filtry-optyczne",
+    "tags": [
+      "polaryzacyjny",
+      "CPL"
+    ],
+    "price": 299,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/hoya-cpl77.jpg",
+    "product_url": "https://example-store.pl/product/hoya-cpl77",
+    "has_image": true,
+    "sales_30d": 46,
+    "margin_pct": 36.44,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4,
+    "review_count": 66,
+    "created_at": "2025-04-05T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {
+      "filter_diameter": 77
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Hoya HD CIR-PL 77mm filtr polaryzacyjny",
+        "Hoya",
+        "HOYA-CPL77"
+      ],
+      "contexts": {
+        "category": [
+          "Filtry optyczne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0086",
+    "sku": "HOYA-CPL82",
+    "ean": "7686732756588",
+    "manufacturer_code": "HOYA-CPL82",
+    "model_code": null,
+    "name": "Hoya HD CIR-PL 82mm filtr polaryzacyjny",
+    "description": "Hoya HD CIR-PL 82mm filtr polaryzacyjny - profesjonalny sprzęt fotograficzny marki Hoya. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Hoya",
+    "category": "Filtry optyczne",
+    "category_path": "Filtry optyczne",
+    "category_id": "filtry-optyczne",
+    "tags": [
+      "polaryzacyjny",
+      "CPL"
+    ],
+    "price": 349,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/hoya-cpl82.jpg",
+    "product_url": "https://example-store.pl/product/hoya-cpl82",
+    "has_image": true,
+    "sales_30d": 418,
+    "margin_pct": 30.79,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.8,
+    "review_count": 54,
+    "created_at": "2025-10-30T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {
+      "filter_diameter": 82
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Hoya HD CIR-PL 82mm filtr polaryzacyjny",
+        "Hoya",
+        "HOYA-CPL82"
+      ],
+      "contexts": {
+        "category": [
+          "Filtry optyczne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0087",
+    "sku": "HOYA-ND1000-77",
+    "ean": "3592626836790",
+    "manufacturer_code": "HOYA-ND1000-77",
+    "model_code": null,
+    "name": "Hoya ProND 1000 77mm filtr szary",
+    "description": "Hoya ProND 1000 77mm filtr szary - profesjonalny sprzęt fotograficzny marki Hoya. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Hoya",
+    "category": "Filtry optyczne",
+    "category_path": "Filtry optyczne",
+    "category_id": "filtry-optyczne",
+    "tags": [
+      "ND",
+      "szary",
+      "długa ekspozycja"
+    ],
+    "price": 249,
+    "sale_price": 209,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/hoya-nd1000-77.jpg",
+    "product_url": "https://example-store.pl/product/hoya-nd1000-77",
+    "has_image": true,
+    "sales_30d": 404,
+    "margin_pct": 14.95,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.6,
+    "review_count": 185,
+    "created_at": "2025-02-14T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {
+      "filter_diameter": 77
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Hoya ProND 1000 77mm filtr szary",
+        "Hoya",
+        "HOYA-ND1000-77"
+      ],
+      "contexts": {
+        "category": [
+          "Filtry optyczne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0088",
+    "sku": "BW-NDVARIO77",
+    "ean": "6192296804050",
+    "manufacturer_code": "BW-NDVARIO77",
+    "model_code": null,
+    "name": "B+W XS-Pro Digital ND Vario 77mm MRC nano",
+    "description": "B+W XS-Pro Digital ND Vario 77mm MRC nano - profesjonalny sprzęt fotograficzny marki B+W. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "B+W",
+    "category": "Filtry optyczne",
+    "category_path": "Filtry optyczne",
+    "category_id": "filtry-optyczne",
+    "tags": [
+      "ND",
+      "zmienny",
+      "premium"
+    ],
+    "price": 599,
+    "sale_price": 503,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/bw-ndvario77.jpg",
+    "product_url": "https://example-store.pl/product/bw-ndvario77",
+    "has_image": true,
+    "sales_30d": 279,
+    "margin_pct": 16.61,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.8,
+    "review_count": 169,
+    "created_at": "2025-02-07T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {
+      "filter_diameter": 77
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "B+W XS-Pro Digital ND Vario 77mm MRC nano",
+        "B+W",
+        "BW-NDVARIO77"
+      ],
+      "contexts": {
+        "category": [
+          "Filtry optyczne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0089",
+    "sku": "NISI-V6-KIT",
+    "ean": "8005603726267",
+    "manufacturer_code": "NISI-V6-KIT",
+    "model_code": null,
+    "name": "NiSi V6 zestaw filtrów 100mm + CPL",
+    "description": "NiSi V6 zestaw filtrów 100mm + CPL - profesjonalny sprzęt fotograficzny marki NiSi. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "NiSi",
+    "category": "Filtry optyczne",
+    "category_path": "Filtry optyczne",
+    "category_id": "filtry-optyczne",
+    "tags": [
+      "system filtrów",
+      "profesjonalny"
+    ],
+    "price": 1899,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nisi-v6-kit.jpg",
+    "product_url": "https://example-store.pl/product/nisi-v6-kit",
+    "has_image": true,
+    "sales_30d": 63,
+    "margin_pct": 38.04,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.7,
+    "review_count": 134,
+    "created_at": "2026-02-03T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {
+      "filter_diameter": 100
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "NiSi V6 zestaw filtrów 100mm + CPL",
+        "NiSi",
+        "NISI-V6-KIT"
+      ],
+      "contexts": {
+        "category": [
+          "Filtry optyczne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0090",
+    "sku": "HOYA-UV67",
+    "ean": "9231694769916",
+    "manufacturer_code": "HOYA-UV67",
+    "model_code": null,
+    "name": "Hoya UV Fusion One 67mm filtr UV",
+    "description": "Hoya UV Fusion One 67mm filtr UV - profesjonalny sprzęt fotograficzny marki Hoya. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Hoya",
+    "category": "Filtry optyczne",
+    "category_path": "Filtry optyczne",
+    "category_id": "filtry-optyczne",
+    "tags": [
+      "UV",
+      "ochronny"
+    ],
+    "price": 99,
+    "sale_price": 85,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/hoya-uv67.jpg",
+    "product_url": "https://example-store.pl/product/hoya-uv67",
+    "has_image": true,
+    "sales_30d": 124,
+    "margin_pct": 36.72,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.6,
+    "review_count": 20,
+    "created_at": "2025-05-12T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {
+      "filter_diameter": 67
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Hoya UV Fusion One 67mm filtr UV",
+        "Hoya",
+        "HOYA-UV67"
+      ],
+      "contexts": {
+        "category": [
+          "Filtry optyczne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0091",
+    "sku": "KF-NDVAR58",
+    "ean": "1755892814141",
+    "manufacturer_code": "KF-NDVAR58",
+    "model_code": null,
+    "name": "K&F Concept ND2-ND400 58mm filtr szary zmienny",
+    "description": "K&F Concept ND2-ND400 58mm filtr szary zmienny - profesjonalny sprzęt fotograficzny marki K&F Concept. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "K&F Concept",
+    "category": "Filtry optyczne",
+    "category_path": "Filtry optyczne",
+    "category_id": "filtry-optyczne",
+    "tags": [
+      "ND",
+      "zmienny",
+      "budżetowy"
+    ],
+    "price": 99,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/kf-ndvar58.jpg",
+    "product_url": "https://example-store.pl/product/kf-ndvar58",
+    "has_image": true,
+    "sales_30d": 318,
+    "margin_pct": 29.73,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.5,
+    "review_count": 127,
+    "created_at": "2025-09-14T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {
+      "filter_diameter": 58
+    },
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "K&F Concept ND2-ND400 58mm filtr szary zmienny",
+        "K&F Concept",
+        "KF-NDVAR58"
+      ],
+      "contexts": {
+        "category": [
+          "Filtry optyczne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0092",
+    "sku": "CANON-LPE6NH",
+    "ean": "7283244175182",
+    "manufacturer_code": "CANON-LPE6NH",
+    "model_code": null,
+    "name": "Canon LP-E6NH akumulator",
+    "description": "Canon LP-E6NH akumulator - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Akumulatory i zasilanie",
+    "category_path": "Akumulatory i zasilanie",
+    "category_id": "akumulatory-i-zasilanie",
+    "tags": [
+      "bateria",
+      "Canon"
+    ],
+    "price": 349,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "out_of_stock",
+    "image_url": "https://placeholder.example.com/products/canon-lpe6nh.jpg",
+    "product_url": "https://example-store.pl/product/canon-lpe6nh",
+    "has_image": true,
+    "sales_30d": 17,
+    "margin_pct": 32.17,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.8,
+    "review_count": 90,
+    "created_at": "2024-05-01T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Canon LP-E6NH akumulator",
+        "Canon",
+        "CANON-LPE6NH"
+      ],
+      "contexts": {
+        "category": [
+          "Akumulatory i zasilanie"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0093",
+    "sku": "SONY-NPFZ100",
+    "ean": "4712812570164",
+    "manufacturer_code": "SONY-NPFZ100",
+    "model_code": null,
+    "name": "Sony NP-FZ100 akumulator",
+    "description": "Sony NP-FZ100 akumulator - profesjonalny sprzęt fotograficzny marki Sony. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sony",
+    "category": "Akumulatory i zasilanie",
+    "category_path": "Akumulatory i zasilanie",
+    "category_id": "akumulatory-i-zasilanie",
+    "tags": [
+      "bateria",
+      "Sony"
+    ],
+    "price": 299,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sony-npfz100.jpg",
+    "product_url": "https://example-store.pl/product/sony-npfz100",
+    "has_image": true,
+    "sales_30d": 483,
+    "margin_pct": 26.59,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.5,
+    "review_count": 112,
+    "created_at": "2024-07-08T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Sony NP-FZ100 akumulator",
+        "Sony",
+        "SONY-NPFZ100"
+      ],
+      "contexts": {
+        "category": [
+          "Akumulatory i zasilanie"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0094",
+    "sku": "NIKON-ENEL15C",
+    "ean": "5926052710269",
+    "manufacturer_code": "NIKON-ENEL15C",
+    "model_code": null,
+    "name": "Nikon EN-EL15c akumulator",
+    "description": "Nikon EN-EL15c akumulator - profesjonalny sprzęt fotograficzny marki Nikon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Nikon",
+    "category": "Akumulatory i zasilanie",
+    "category_path": "Akumulatory i zasilanie",
+    "category_id": "akumulatory-i-zasilanie",
+    "tags": [
+      "bateria",
+      "Nikon"
+    ],
+    "price": 299,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/nikon-enel15c.jpg",
+    "product_url": "https://example-store.pl/product/nikon-enel15c",
+    "has_image": true,
+    "sales_30d": 99,
+    "margin_pct": 34.34,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.9,
+    "review_count": 91,
+    "created_at": "2024-11-09T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Nikon EN-EL15c akumulator",
+        "Nikon",
+        "NIKON-ENEL15C"
+      ],
+      "contexts": {
+        "category": [
+          "Akumulatory i zasilanie"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0095",
+    "sku": "NEWELL-LPE6CH",
+    "ean": "4386705957969",
+    "manufacturer_code": "NEWELL-LPE6CH",
+    "model_code": null,
+    "name": "Newell DL-USB-C ładowarka dwukanałowa Canon LP-E6",
+    "description": "Newell DL-USB-C ładowarka dwukanałowa Canon LP-E6 - profesjonalny sprzęt fotograficzny marki Newell. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Newell",
+    "category": "Akumulatory i zasilanie",
+    "category_path": "Akumulatory i zasilanie",
+    "category_id": "akumulatory-i-zasilanie",
+    "tags": [
+      "ładowarka",
+      "Canon"
+    ],
+    "price": 99,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/newell-lpe6ch.jpg",
+    "product_url": "https://example-store.pl/product/newell-lpe6ch",
+    "has_image": true,
+    "sales_30d": 261,
+    "margin_pct": 22.05,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.1,
+    "review_count": 192,
+    "created_at": "2024-08-10T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Newell DL-USB-C ładowarka dwukanałowa Canon LP-E6",
+        "Newell",
+        "NEWELL-LPE6CH"
+      ],
+      "contexts": {
+        "category": [
+          "Akumulatory i zasilanie"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0096",
+    "sku": "CANON-RC6",
+    "ean": "0760998462029",
+    "manufacturer_code": "CANON-RC6",
+    "model_code": null,
+    "name": "Canon RC-6 pilot zdalny bezprzewodowy",
+    "description": "Canon RC-6 pilot zdalny bezprzewodowy - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Akcesoria",
+    "category_path": "Akcesoria",
+    "category_id": "akcesoria",
+    "tags": [
+      "pilot",
+      "zdalny",
+      "Canon"
+    ],
+    "price": 99,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/canon-rc6.jpg",
+    "product_url": "https://example-store.pl/product/canon-rc6",
+    "has_image": true,
+    "sales_30d": 473,
+    "margin_pct": 22.04,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.7,
+    "review_count": 35,
+    "created_at": "2025-01-03T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Canon RC-6 pilot zdalny bezprzewodowy",
+        "Canon",
+        "CANON-RC6"
+      ],
+      "contexts": {
+        "category": [
+          "Akcesoria"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0097",
+    "sku": "PD-SLIDELITE",
+    "ean": "5039017178124",
+    "manufacturer_code": "PD-SLIDELITE",
+    "model_code": null,
+    "name": "Peak Design Slide Lite pasek do aparatu",
+    "description": "Peak Design Slide Lite pasek do aparatu - profesjonalny sprzęt fotograficzny marki Peak Design. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Peak Design",
+    "category": "Akcesoria",
+    "category_path": "Akcesoria",
+    "category_id": "akcesoria",
+    "tags": [
+      "pasek",
+      "premium"
+    ],
+    "price": 249,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/pd-slidelite.jpg",
+    "product_url": "https://example-store.pl/product/pd-slidelite",
+    "has_image": true,
+    "sales_30d": 52,
+    "margin_pct": 7.03,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.8,
+    "review_count": 65,
+    "created_at": "2024-06-06T09:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Peak Design Slide Lite pasek do aparatu",
+        "Peak Design",
+        "PD-SLIDELITE"
+      ],
+      "contexts": {
+        "category": [
+          "Akcesoria"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0098",
+    "sku": "PD-CAPV3",
+    "ean": "4374574538587",
+    "manufacturer_code": "PD-CAPV3",
+    "model_code": null,
+    "name": "Peak Design Capture Clip V3 uchwyt do paska",
+    "description": "Peak Design Capture Clip V3 uchwyt do paska - profesjonalny sprzęt fotograficzny marki Peak Design. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Peak Design",
+    "category": "Akcesoria",
+    "category_path": "Akcesoria",
+    "category_id": "akcesoria",
+    "tags": [
+      "uchwyt",
+      "clip"
+    ],
+    "price": 349,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/pd-capv3.jpg",
+    "product_url": "https://example-store.pl/product/pd-capv3",
+    "has_image": true,
+    "sales_30d": 324,
+    "margin_pct": 19.7,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4,
+    "review_count": 198,
+    "created_at": "2024-11-08T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Peak Design Capture Clip V3 uchwyt do paska",
+        "Peak Design",
+        "PD-CAPV3"
+      ],
+      "contexts": {
+        "category": [
+          "Akcesoria"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0099",
+    "sku": "LP-NLP1",
+    "ean": "3376140442398",
+    "manufacturer_code": "LP-NLP1",
+    "model_code": null,
+    "name": "LENSPEN NLP-1 czyścik do obiektywów",
+    "description": "LENSPEN NLP-1 czyścik do obiektywów - profesjonalny sprzęt fotograficzny marki Lenspen. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Lenspen",
+    "category": "Czyszczenie",
+    "category_path": "Czyszczenie",
+    "category_id": "czyszczenie",
+    "tags": [
+      "czyszczenie",
+      "obiektyw"
+    ],
+    "price": 49,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/lp-nlp1.jpg",
+    "product_url": "https://example-store.pl/product/lp-nlp1",
+    "has_image": true,
+    "sales_30d": 28,
+    "margin_pct": 12.83,
+    "is_new": true,
+    "is_high_margin": false,
+    "avg_rating": 4.3,
+    "review_count": 200,
+    "created_at": "2026-01-08T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "LENSPEN NLP-1 czyścik do obiektywów",
+        "Lenspen",
+        "LP-NLP1"
+      ],
+      "contexts": {
+        "category": [
+          "Czyszczenie"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0100",
+    "sku": "VSGO-KIT9",
+    "ean": "5935335029240",
+    "manufacturer_code": "VSGO-KIT9",
+    "model_code": null,
+    "name": "Zestaw czyszczący VSGO 9-elementowy",
+    "description": "Zestaw czyszczący VSGO 9-elementowy - profesjonalny sprzęt fotograficzny marki VSGO. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "VSGO",
+    "category": "Czyszczenie",
+    "category_path": "Czyszczenie",
+    "category_id": "czyszczenie",
+    "tags": [
+      "czyszczenie",
+      "zestaw"
+    ],
+    "price": 129,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/vsgo-kit9.jpg",
+    "product_url": "https://example-store.pl/product/vsgo-kit9",
+    "has_image": true,
+    "sales_30d": 13,
+    "margin_pct": 39.39,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.7,
+    "review_count": 117,
+    "created_at": "2025-12-29T10:32:02.151Z",
+    "updated_at": "2026-02-08T10:32:02.151Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Zestaw czyszczący VSGO 9-elementowy",
+        "VSGO",
+        "VSGO-KIT9"
+      ],
+      "contexts": {
+        "category": [
+          "Czyszczenie"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0101",
+    "sku": "SR-A7IV-CAGE",
+    "ean": "6871662456665",
+    "manufacturer_code": "SR-A7IV-CAGE",
+    "model_code": null,
+    "name": "SmallRig klatka do Sony A7 IV",
+    "description": "SmallRig klatka do Sony A7 IV - profesjonalny sprzęt fotograficzny marki SmallRig. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "SmallRig",
+    "category": "Akcesoria wideo",
+    "category_path": "Akcesoria wideo",
+    "category_id": "akcesoria-wideo",
+    "tags": [
+      "cage",
+      "klatka",
+      "Sony",
+      "wideo"
+    ],
+    "price": 449,
+    "sale_price": 359,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sr-a7iv-cage.jpg",
+    "product_url": "https://example-store.pl/product/sr-a7iv-cage",
+    "has_image": true,
+    "sales_30d": 485,
+    "margin_pct": 12.42,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4,
+    "review_count": 147,
+    "created_at": "2025-10-22T09:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "SmallRig klatka do Sony A7 IV",
+        "SmallRig",
+        "SR-A7IV-CAGE"
+      ],
+      "contexts": {
+        "category": [
+          "Akcesoria wideo"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0102",
+    "sku": "DJI-RS4",
+    "ean": "2422690540402",
+    "manufacturer_code": "DJI-RS4",
+    "model_code": null,
+    "name": "DJI RS 4 gimbal",
+    "description": "DJI RS 4 gimbal - profesjonalny sprzęt fotograficzny marki DJI. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "DJI",
+    "category": "Stabilizatory",
+    "category_path": "Stabilizatory",
+    "category_id": "stabilizatory",
+    "tags": [
+      "gimbal",
+      "stabilizator",
+      "wideo"
+    ],
+    "price": 2499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/dji-rs4.jpg",
+    "product_url": "https://example-store.pl/product/dji-rs4",
+    "has_image": true,
+    "sales_30d": 57,
+    "margin_pct": 39.9,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.9,
+    "review_count": 188,
+    "created_at": "2024-11-03T10:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "DJI RS 4 gimbal",
+        "DJI",
+        "DJI-RS4"
+      ],
+      "contexts": {
+        "category": [
+          "Stabilizatory"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0103",
+    "sku": "DJI-RS3MINI",
+    "ean": "6339537781613",
+    "manufacturer_code": "DJI-RS3MINI",
+    "model_code": null,
+    "name": "DJI RS 3 Mini gimbal",
+    "description": "DJI RS 3 Mini gimbal - profesjonalny sprzęt fotograficzny marki DJI. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "DJI",
+    "category": "Stabilizatory",
+    "category_path": "Stabilizatory",
+    "category_id": "stabilizatory",
+    "tags": [
+      "gimbal",
+      "stabilizator",
+      "kompaktowy"
+    ],
+    "price": 1699,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/dji-rs3mini.jpg",
+    "product_url": "https://example-store.pl/product/dji-rs3mini",
+    "has_image": true,
+    "sales_30d": 253,
+    "margin_pct": 30.15,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 3.6,
+    "review_count": 60,
+    "created_at": "2024-12-16T10:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "DJI RS 3 Mini gimbal",
+        "DJI",
+        "DJI-RS3MINI"
+      ],
+      "contexts": {
+        "category": [
+          "Stabilizatory"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0104",
+    "sku": "DJI-MINI4PRO",
+    "ean": "0499637907354",
+    "manufacturer_code": "DJI-MINI4PRO",
+    "model_code": null,
+    "name": "DJI Mini 4 Pro dron",
+    "description": "DJI Mini 4 Pro dron - profesjonalny sprzęt fotograficzny marki DJI. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "DJI",
+    "category": "Drony",
+    "category_path": "Drony",
+    "category_id": "drony",
+    "tags": [
+      "dron",
+      "kompaktowy",
+      "4K"
+    ],
+    "price": 3999,
+    "sale_price": 3359,
+    "is_promo": true,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/dji-mini4pro.jpg",
+    "product_url": "https://example-store.pl/product/dji-mini4pro",
+    "has_image": true,
+    "sales_30d": 406,
+    "margin_pct": 25.18,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.6,
+    "review_count": 47,
+    "created_at": "2024-07-14T09:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "DJI Mini 4 Pro dron",
+        "DJI",
+        "DJI-MINI4PRO"
+      ],
+      "contexts": {
+        "category": [
+          "Drony"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0105",
+    "sku": "DJI-AIR3S",
+    "ean": "1087887540613",
+    "manufacturer_code": "DJI-AIR3S",
+    "model_code": null,
+    "name": "DJI Air 3S dron",
+    "description": "DJI Air 3S dron - profesjonalny sprzęt fotograficzny marki DJI. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "DJI",
+    "category": "Drony",
+    "category_path": "Drony",
+    "category_id": "drony",
+    "tags": [
+      "dron",
+      "4K",
+      "podwójny aparat"
+    ],
+    "price": 5499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/dji-air3s.jpg",
+    "product_url": "https://example-store.pl/product/dji-air3s",
+    "has_image": true,
+    "sales_30d": 204,
+    "margin_pct": 36.64,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.9,
+    "review_count": 173,
+    "created_at": "2024-03-18T10:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "DJI Air 3S dron",
+        "DJI",
+        "DJI-AIR3S"
+      ],
+      "contexts": {
+        "category": [
+          "Drony"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0106",
+    "sku": "DJI-MAV3PRO",
+    "ean": "8496455633917",
+    "manufacturer_code": "DJI-MAV3PRO",
+    "model_code": null,
+    "name": "DJI Mavic 3 Pro dron",
+    "description": "DJI Mavic 3 Pro dron - profesjonalny sprzęt fotograficzny marki DJI. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "DJI",
+    "category": "Drony",
+    "category_path": "Drony",
+    "category_id": "drony",
+    "tags": [
+      "dron",
+      "profesjonalny",
+      "Hasselblad"
+    ],
+    "price": 9999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/dji-mav3pro.jpg",
+    "product_url": "https://example-store.pl/product/dji-mav3pro",
+    "has_image": true,
+    "sales_30d": 50,
+    "margin_pct": 12.2,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.5,
+    "review_count": 133,
+    "created_at": "2026-01-05T10:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "DJI Mavic 3 Pro dron",
+        "DJI",
+        "DJI-MAV3PRO"
+      ],
+      "contexts": {
+        "category": [
+          "Drony"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0107",
+    "sku": "GOPRO-HERO13",
+    "ean": "7536012291820",
+    "manufacturer_code": "GOPRO-HERO13",
+    "model_code": null,
+    "name": "GoPro HERO 13 Black kamera sportowa",
+    "description": "GoPro HERO 13 Black kamera sportowa - profesjonalny sprzęt fotograficzny marki GoPro. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "GoPro",
+    "category": "Kamery sportowe",
+    "category_path": "Kamery sportowe",
+    "category_id": "kamery-sportowe",
+    "tags": [
+      "action camera",
+      "5.3K"
+    ],
+    "price": 1999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/gopro-hero13.jpg",
+    "product_url": "https://example-store.pl/product/gopro-hero13",
+    "has_image": true,
+    "sales_30d": 380,
+    "margin_pct": 39.28,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 5,
+    "review_count": 105,
+    "created_at": "2024-06-13T09:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "GoPro HERO 13 Black kamera sportowa",
+        "GoPro",
+        "GOPRO-HERO13"
+      ],
+      "contexts": {
+        "category": [
+          "Kamery sportowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0108",
+    "sku": "DJI-OA5PRO",
+    "ean": "6471621160383",
+    "manufacturer_code": "DJI-OA5PRO",
+    "model_code": null,
+    "name": "DJI Osmo Action 5 Pro kamera sportowa",
+    "description": "DJI Osmo Action 5 Pro kamera sportowa - profesjonalny sprzęt fotograficzny marki DJI. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "DJI",
+    "category": "Kamery sportowe",
+    "category_path": "Kamery sportowe",
+    "category_id": "kamery-sportowe",
+    "tags": [
+      "action camera",
+      "4K"
+    ],
+    "price": 1799,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/dji-oa5pro.jpg",
+    "product_url": "https://example-store.pl/product/dji-oa5pro",
+    "has_image": true,
+    "sales_30d": 10,
+    "margin_pct": 13.51,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 4.5,
+    "review_count": 179,
+    "created_at": "2026-02-04T10:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "DJI Osmo Action 5 Pro kamera sportowa",
+        "DJI",
+        "DJI-OA5PRO"
+      ],
+      "contexts": {
+        "category": [
+          "Kamery sportowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0109",
+    "sku": "I360-X4",
+    "ean": "9088626159457",
+    "manufacturer_code": "I360-X4",
+    "model_code": null,
+    "name": "Insta360 X4 kamera 360",
+    "description": "Insta360 X4 kamera 360 - profesjonalny sprzęt fotograficzny marki Insta360. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Insta360",
+    "category": "Kamery sportowe",
+    "category_path": "Kamery sportowe",
+    "category_id": "kamery-sportowe",
+    "tags": [
+      "360",
+      "8K",
+      "panorama"
+    ],
+    "price": 2499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": null,
+    "product_url": "https://example-store.pl/product/i360-x4",
+    "has_image": false,
+    "sales_30d": 257,
+    "margin_pct": 28.11,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.7,
+    "review_count": 138,
+    "created_at": "2025-01-09T10:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Insta360 X4 kamera 360",
+        "Insta360",
+        "I360-X4"
+      ],
+      "contexts": {
+        "category": [
+          "Kamery sportowe"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0110",
+    "sku": "CANON-EFEOSR",
+    "ean": "3279952022584",
+    "manufacturer_code": "CANON-EFEOSR",
+    "model_code": null,
+    "name": "Canon EF-EOS R adapter bagnetowy",
+    "description": "Canon EF-EOS R adapter bagnetowy - profesjonalny sprzęt fotograficzny marki Canon. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Canon",
+    "category": "Adaptery",
+    "category_path": "Adaptery",
+    "category_id": "adaptery",
+    "tags": [
+      "adapter",
+      "Canon EF",
+      "Canon RF"
+    ],
+    "price": 499,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "na_zamowienie",
+    "image_url": "https://placeholder.example.com/products/canon-efeosr.jpg",
+    "product_url": "https://example-store.pl/product/canon-efeosr",
+    "has_image": true,
+    "sales_30d": 42,
+    "margin_pct": 32.19,
+    "is_new": false,
+    "is_high_margin": true,
+    "avg_rating": 4.6,
+    "review_count": 200,
+    "created_at": "2024-02-24T10:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Canon EF-EOS R adapter bagnetowy",
+        "Canon",
+        "CANON-EFEOSR"
+      ],
+      "contexts": {
+        "category": [
+          "Adaptery"
+        ]
+      }
+    }
+  },
+  {
+    "id": "prod_0111",
+    "sku": "SIGMA-MC11",
+    "ean": "8363333430077",
+    "manufacturer_code": "SIGMA-MC11",
+    "model_code": null,
+    "name": "Sigma MC-11 adapter Canon EF na Sony E",
+    "description": "Sigma MC-11 adapter Canon EF na Sony E - profesjonalny sprzęt fotograficzny marki Sigma. Idealne rozwiązanie dla wymagających fotografów i filmowców.",
+    "brand": "Sigma",
+    "category": "Adaptery",
+    "category_path": "Adaptery",
+    "category_id": "adaptery",
+    "tags": [
+      "adapter",
+      "Canon EF",
+      "Sony E"
+    ],
+    "price": 999,
+    "sale_price": null,
+    "is_promo": false,
+    "currency": "PLN",
+    "availability": "in_stock",
+    "image_url": "https://placeholder.example.com/products/sigma-mc11.jpg",
+    "product_url": "https://example-store.pl/product/sigma-mc11",
+    "has_image": true,
+    "sales_30d": 278,
+    "margin_pct": 17.44,
+    "is_new": false,
+    "is_high_margin": false,
+    "avg_rating": 3.8,
+    "review_count": 31,
+    "created_at": "2024-10-29T10:32:02.152Z",
+    "updated_at": "2026-02-08T10:32:02.152Z",
+    "params": {},
+    "compatible_with": [],
+    "compatible_mounts": [],
+    "suggest": {
+      "input": [
+        "Sigma MC-11 adapter Canon EF na Sony E",
+        "Sigma",
+        "SIGMA-MC11"
+      ],
+      "contexts": {
+        "category": [
+          "Adaptery"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,57 @@
+# Synonimy dwukierunkowe (equivalent) — branża foto-wideo
+# Format: term1, term2, term3 (wszystkie równoważne)
+
+# Typy aparatów
+lustrzanka, dslr, lustrzanka cyfrowa, aparat lustrzankowy
+bezlusterkowiec, mirrorless, aparat bezlusterkowy, aparat systemowy
+kompakt, aparat kompaktowy, compact
+
+# Obiektywy
+obiektyw, szklo
+obiektyw staloogniskowy, stalka, prime, fix, staloogniskowy
+obiektyw zmiennoogniskowy, zoom
+obiektyw makro, makro, macro
+
+# Oświetlenie
+lampa blyskowa, flesz, flash, blysk, speedlight
+lampa studyjna, studio flash, monolight
+softbox, soft box
+stripbox, strip box
+parasol fotograficzny, parasol oswietleniowy
+
+# Stabilizacja
+statyw, tripod, trojnog
+monopod, jednonog
+gimbal, stabilizator obrazu, stabilizator kamerowy
+
+# Matryca
+pelna klatka, full frame, ff
+apsc, aps-c, crop
+micro four thirds, m43, mft, micro 4/3
+
+# Filtry
+filtr polaryzacyjny, cpl, polaryzator, filtr cpl
+filtr szary, nd, filtr nd
+filtr uv, filtr ochronny, uv
+
+# Karty pamięci
+karta pamieci, memory card
+karta sd, sdcard, sd card
+cfexpress, cf express
+karta microsd, microsd, micro sd
+
+# Torby i plecaki
+torba fotograficzna, torba na aparat, pokrowiec, case, futeral
+plecak fotograficzny, plecak na aparat, plecak foto
+
+# Akcesoria
+oslona przeciwsloneczna, lens hood, tulipan
+dekielek, zaslonka obiektywu, lens cap
+pasek do aparatu, camera strap
+pilot zdalny, wyzwalacz, remote, wyzwalacz zdalny
+akumulator, bateria
+ladowarka, charger
+
+# Wideo
+kamera sportowa, action camera, actioncam
+kamera internetowa, webcam, kamerka internetowa

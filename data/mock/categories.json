@@ -1,0 +1,95 @@
+[
+  {
+    "id": "aparaty",
+    "name": "Aparaty fotograficzne",
+    "children": [
+      { "id": "aparaty-bezlusterkowe", "name": "Aparaty bezlusterkowe" },
+      { "id": "lustrzanki-cyfrowe", "name": "Lustrzanki cyfrowe" },
+      { "id": "aparaty-kompaktowe", "name": "Aparaty kompaktowe" }
+    ]
+  },
+  {
+    "id": "obiektywy",
+    "name": "Obiektywy",
+    "children": [
+      { "id": "obiektywy-zoom", "name": "Obiektywy zmiennoogniskowe" },
+      { "id": "obiektywy-staloogniskowe", "name": "Obiektywy stałoogniskowe" },
+      { "id": "obiektywy-makro", "name": "Obiektywy makro" }
+    ]
+  },
+  {
+    "id": "statywy",
+    "name": "Statywy i głowice",
+    "children": [
+      { "id": "statywy-karbonowe", "name": "Statywy karbonowe" },
+      { "id": "statywy-aluminiowe", "name": "Statywy aluminiowe" },
+      { "id": "monopody", "name": "Monopody" },
+      { "id": "glowice-statywowe", "name": "Głowice statywowe" }
+    ]
+  },
+  {
+    "id": "oswietlenie",
+    "name": "Oświetlenie",
+    "children": [
+      { "id": "lampy-blyskowe", "name": "Lampy błyskowe" },
+      { "id": "oswietlenie-studyjne", "name": "Oświetlenie studyjne" },
+      { "id": "akcesoria-oswietleniowe", "name": "Akcesoria oświetleniowe" }
+    ]
+  },
+  {
+    "id": "filtry",
+    "name": "Filtry optyczne",
+    "children": [
+      { "id": "filtry-polaryzacyjne", "name": "Filtry polaryzacyjne (CPL)" },
+      { "id": "filtry-nd", "name": "Filtry szare (ND)" },
+      { "id": "filtry-uv", "name": "Filtry UV" },
+      { "id": "systemy-filtrow", "name": "Systemy filtrów" }
+    ]
+  },
+  {
+    "id": "karty-pamieci",
+    "name": "Karty pamięci",
+    "children": [
+      { "id": "karty-sd", "name": "Karty SD/SDXC" },
+      { "id": "karty-cfexpress", "name": "Karty CFexpress" },
+      { "id": "karty-microsd", "name": "Karty microSD" }
+    ]
+  },
+  {
+    "id": "torby-plecaki",
+    "name": "Torby i plecaki foto",
+    "children": [
+      { "id": "plecaki-foto", "name": "Plecaki fotograficzne" },
+      { "id": "torby-foto", "name": "Torby fotograficzne" },
+      { "id": "pokrowce", "name": "Pokrowce i etui" }
+    ]
+  },
+  {
+    "id": "drony",
+    "name": "Drony",
+    "children": [
+      { "id": "drony-konsumenckie", "name": "Drony konsumenckie" },
+      { "id": "drony-profesjonalne", "name": "Drony profesjonalne" }
+    ]
+  },
+  {
+    "id": "kamery-sportowe",
+    "name": "Kamery sportowe"
+  },
+  {
+    "id": "stabilizatory",
+    "name": "Gimbale i stabilizatory"
+  },
+  {
+    "id": "akcesoria",
+    "name": "Akcesoria",
+    "children": [
+      { "id": "akumulatory", "name": "Akumulatory i zasilanie" },
+      { "id": "piloty", "name": "Piloty i wyzwalacze" },
+      { "id": "paski", "name": "Paski do aparatów" },
+      { "id": "czyszczenie", "name": "Czyszczenie sprzętu" },
+      { "id": "adaptery", "name": "Adaptery bagnetowe" },
+      { "id": "akcesoria-wideo", "name": "Akcesoria wideo" }
+    ]
+  }
+]

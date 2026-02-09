@@ -1,0 +1,14 @@
+cluster.name: sugester-cluster
+node.name: sugester-node-1
+network.host: 0.0.0.0
+
+# Single node discovery for local development
+discovery.type: single-node
+
+# Disable security for local dev (re-enable for production!)
+xpack.security.enabled: false
+xpack.security.http.ssl.enabled: false
+xpack.security.transport.ssl.enabled: false
+
+# Performance
+indices.query.bool.max_clause_count: 4096

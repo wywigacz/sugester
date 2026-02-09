@@ -1,0 +1,39 @@
+# Synonimy nazw modeli (jednokierunkowe => forma kanoniczna)
+# Format: variant1, variant2, ... => canonical form
+
+# Sony Alpha series
+a7iii, a7 iii, a7m3, a7 mark 3, a7 mark iii, alpha 7 iii, alpha7iii, ilce7m3, ilce-7m3 => sony alpha 7 iii
+a7iv, a7 iv, a7m4, a7 mark 4, a7 mark iv, alpha 7 iv, alpha7iv, ilce7m4, ilce-7m4 => sony alpha 7 iv
+a7rv, a7r v, a7r5, a7r mark 5, a7r mark v, alpha 7r v, ilce7rm5, ilce-7rm5 => sony alpha 7r v
+a7siii, a7s iii, a7s3, a7s mark 3, alpha 7s iii, ilce7sm3, ilce-7sm3 => sony alpha 7s iii
+a1, alpha 1, alpha1, ilce1, ilce-1 => sony alpha 1
+a6700, alpha 6700, ilce6700, ilce-6700 => sony alpha 6700
+a6400, alpha 6400, ilce6400, ilce-6400 => sony alpha 6400
+
+# Canon EOS R series
+r5ii, r5 ii, r5 mark 2, r5 mark ii, r5 markii, eos r5 ii, eos r5 mark ii, canon r5 ii => canon eos r5 mark ii
+r5, eos r5, canon r5 => canon eos r5
+r6iii, r6 iii, r6 mark 3, r6 mark iii, eos r6 iii, eos r6 mark iii, canon r6 iii => canon eos r6 mark iii
+r6ii, r6 ii, r6 mark 2, r6 mark ii, eos r6 ii, canon r6 ii => canon eos r6 mark ii
+r8, eos r8, canon r8 => canon eos r8
+r1, eos r1, canon r1 => canon eos r1
+5d4, 5d mark 4, 5d mark iv, 5dmk4, 5dmarkiv, eos 5d mark iv => canon eos 5d mark iv
+
+# Nikon Z series
+z6iii, z6 iii, z6 mark 3, z6 mark iii, z 6 iii, nikon z 6 iii => nikon z6 iii
+z8, nikon z 8 => nikon z8
+zf, nikon z f => nikon zf
+z50ii, z50 ii, z 50 ii, nikon z 50 ii => nikon z50 ii
+
+# Fujifilm
+xt5, x t5, x-t 5, fuji xt5, fuji x-t5 => fujifilm x-t5
+xh2s, x h2s, x-h2 s, fuji xh2s, fuji x-h2s => fujifilm x-h2s
+xs20, x s20, x-s 20, fuji xs20 => fujifilm x-s20
+
+# DJI
+mini 4 pro, mini4pro, mini 4pro, dji mini4 pro => dji mini 4 pro
+air 3s, air3s, dji air3s => dji air 3s
+mavic 3 pro, mavic3pro, dji mavic3 pro => dji mavic 3 pro
+
+# GoPro
+hero 13, hero13, gopro 13, gopro hero13 => gopro hero 13 black

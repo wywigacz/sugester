@@ -1,0 +1,207 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0,
+      "max_ngram_diff": 20,
+      "similarity": {
+        "custom_bm25": {
+          "type": "BM25",
+          "k1": 0.9,
+          "b": 0.55
+        }
+      }
+    },
+    "analysis": {
+      "char_filter": {
+        "alpha_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "α",
+          "replacement": "Alpha"
+        },
+        "aperture_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "(?i)[Ff]\\s*[/:]\\s*(\\d)",
+          "replacement": "f/$1"
+        },
+        "focal_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "(\\d+)\\s*[–—-]\\s*(\\d+)\\s*mm\\b",
+          "replacement": "$1-$2mm"
+        },
+        "mark_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "(?i)\\b(?:Mark|Mk)\\s*(II|III|IV|V|2|3|4|5)\\b",
+          "replacement": "Mark$1"
+        },
+        "resolution_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "(?i)\\b(\\d+(?:\\.\\d+)?)\\s*(?:Mpx|megapixel[si]?|megapiksel[i]?)\\b",
+          "replacement": "$1MP"
+        },
+        "unicode_normalizer": {
+          "type": "mapping",
+          "mappings": [
+            "\\u2013 => -",
+            "\\u2014 => -",
+            "\\u201C => \\\"",
+            "\\u201D => \\\"",
+            "\\u201E => \\\"",
+            "\\u00A0 => \\u0020"
+          ]
+        }
+      },
+      "tokenizer": {
+        "edge_ngram_tokenizer": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 20,
+          "token_chars": ["letter", "digit"]
+        }
+      },
+      "filter": {
+        "morfologik_stem": {
+          "type": "morfologik_stem"
+        },
+        "polish_stem": {
+          "type": "polish_stem"
+        },
+        "icu_folding_preserve": {
+          "type": "icu_folding",
+          "preserve_original": true
+        },
+        "word_delimiter_custom": {
+          "type": "word_delimiter_graph",
+          "preserve_original": true,
+          "split_on_numerics": false,
+          "split_on_case_change": true,
+          "catenate_words": false,
+          "catenate_numbers": false,
+          "stem_english_possessive": false
+        },
+        "edge_ngram_filter": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 20
+        },
+        "truncate_20": {
+          "type": "truncate",
+          "length": 20
+        },
+        "synonym_search_filter": {
+          "type": "synonym_graph",
+          "synonyms_path": "analysis/synonyms_pl.txt",
+          "updateable": true,
+          "lenient": true
+        },
+        "synonym_model_filter": {
+          "type": "synonym_graph",
+          "synonyms_path": "analysis/synonyms_models.txt",
+          "updateable": true,
+          "lenient": true
+        },
+        "synonym_uni_filter": {
+          "type": "synonym_graph",
+          "synonyms_path": "analysis/synonyms_uni.txt",
+          "updateable": true,
+          "lenient": true
+        }
+      },
+      "analyzer": {
+        "polish_morfologik": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "char_filter": [
+            "alpha_normalizer",
+            "aperture_normalizer",
+            "focal_normalizer",
+            "mark_normalizer",
+            "resolution_normalizer",
+            "unicode_normalizer"
+          ],
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "morfologik_stem"
+          ]
+        },
+        "polish_stempel": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "char_filter": [
+            "alpha_normalizer",
+            "aperture_normalizer",
+            "focal_normalizer",
+            "mark_normalizer",
+            "resolution_normalizer",
+            "unicode_normalizer"
+          ],
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "polish_stem"
+          ]
+        },
+        "polish_prefix": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "char_filter": [
+            "alpha_normalizer",
+            "aperture_normalizer",
+            "focal_normalizer",
+            "mark_normalizer",
+            "unicode_normalizer"
+          ],
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "edge_ngram_filter"
+          ]
+        },
+        "polish_prefix_search": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "truncate_20"
+          ]
+        },
+        "polish_folded": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "char_filter": [
+            "alpha_normalizer",
+            "aperture_normalizer",
+            "focal_normalizer",
+            "mark_normalizer",
+            "resolution_normalizer",
+            "unicode_normalizer"
+          ],
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "word_delimiter_custom"
+          ]
+        },
+        "polish_folded_search": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "icu_folding_preserve",
+            "synonym_search_filter",
+            "synonym_model_filter",
+            "synonym_uni_filter"
+          ]
+        }
+      },
+      "normalizer": {
+        "keyword_lowercase": {
+          "type": "custom",
+          "filter": ["lowercase"]
+        }
+      }
+    }
+  }
+}

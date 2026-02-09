@@ -1,0 +1,30 @@
+{
+  "name": "sugester",
+  "version": "1.0.0",
+  "description": "Intelligent search autocomplete for Polish photo-video e-commerce",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend",
+    "scripts"
+  ],
+  "scripts": {
+    "dev": "cd backend && node src/server.js",
+    "docker:up": "docker compose -f docker/docker-compose.yml up -d",
+    "docker:down": "docker compose -f docker/docker-compose.yml down",
+    "docker:logs": "docker compose -f docker/docker-compose.yml logs -f",
+    "index:create": "node elasticsearch/scripts/create-index.js",
+    "index:test": "node elasticsearch/scripts/test-analyzers.js",
+    "data:generate": "node scripts/generate-mock-data.js",
+    "data:import": "node scripts/import-feed.js --file data/mock/products-photo.json",
+    "data:setup": "npm run index:create && npm run data:generate && npm run data:import",
+    "frontend:build": "cd frontend && node build.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@google-analytics/data": "^5.2.1"
+  }
+}
