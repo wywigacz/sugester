@@ -24,7 +24,7 @@ export class SugesterWidget {
   constructor(options = {}) {
     this.options = {
       inputSelector: '#search-input',
-      apiUrl: 'http://localhost:3000/api',
+      apiUrl: (typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000') + '/api',
       analyticsUrl: null,
       debounceMs: 200,
       minChars: 1,
