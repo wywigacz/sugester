@@ -34,6 +34,15 @@ const BODY_PRODUCT_CATEGORIES = [
   'Kamery cyfrowe', 'Kamery sportowe', 'Drony',
 ];
 
+// Low-priority categories — penalized in brand queries
+// These are typically not what users look for when they type a brand name.
+const LOW_PRIORITY_CATEGORIES = [
+  'Drukarki', 'Tusze', 'Tonery', 'Papier fotograficzny',
+  'Akcesoria drobne', 'Ładowarki', 'Zasilacze', 'Zasilanie',
+  'Kable', 'Etui', 'Czytniki', 'Osłony',
+  'Transmisja Video', 'Audio',
+];
+
 /**
  * Wrap a base ES query with function_score for business ranking.
  * @param {object} baseQuery — the ES query to wrap
@@ -43,6 +52,7 @@ export function wrapWithFunctionScore(baseQuery, intent = null) {
   const isBodyQuery = intent?.isBodyQuery === true;
   const wantsAccessories = intent?.wantsAccessories === true;
   const isSKUQuery = intent?.type === 'SKU';
+  const isBrandQuery = intent?.type === 'BRAND';
   const conditionPref = intent?.conditionPref || null; // 'used' | 'new' | null
 
   // Condition weights: default favors new, but flips when user asks for used/new
@@ -285,6 +295,7 @@ export function wrapWithFunctionScore(baseQuery, intent = null) {
         // ── Category context boosts ──
         // isBodyQuery: user wants camera/drone → boost bodies, penalize accessories
         // wantsAccessories: user explicitly wants accessories → boost accessories, penalize bodies
+        // isBrandQuery: user typed a brand name → mild boost to flagship categories
         ...(isBodyQuery ? [
           {
             filter: { terms: { category: BODY_PRODUCT_CATEGORIES } },
@@ -314,6 +325,45 @@ export function wrapWithFunctionScore(baseQuery, intent = null) {
           {
             filter: { terms: { category: BODY_PRODUCT_CATEGORIES } },
             weight: 0.1,
+          },
+        ] : isBrandQuery ? [
+          // Brand query: user typed "canon", "sony" etc.
+          // Boost flagship categories (cameras, lenses) — these are what users
+          // most likely want when browsing a brand. Mild penalty on low-value
+          // categories (printers, ink, small accessories) that clutter results.
+          {
+            filter: { terms: { category: BODY_PRODUCT_CATEGORIES } },
+            weight: 4.0,
+          },
+          {
+            filter: {
+              terms: {
+                category: [
+                  'Obiektywy do bezlusterkowców', 'Obiektywy do lustrzanek',
+                  'Obiektywy do filmowania', 'Używane obiektywy',
+                ],
+              },
+            },
+            weight: 3.0,
+          },
+          {
+            filter: {
+              terms: {
+                category: [
+                  'Kamery cyfrowe', 'Kamery sportowe',
+                  'Drony', 'Drony konsumenckie', 'Drony profesjonalne',
+                ],
+              },
+            },
+            weight: 2.5,
+          },
+          {
+            filter: {
+              terms: {
+                category: LOW_PRIORITY_CATEGORIES,
+              },
+            },
+            weight: 0.15,
           },
         ] : []),
       ],
