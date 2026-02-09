@@ -411,8 +411,75 @@ function buildIntentQuery(q, intent) {
       };
     }
 
-    case 'CATEGORY':
-      return { term: { category: intent.category } };
+    case 'CATEGORY': {
+      // Category filter + name relevance scoring.
+      // Without name matching, all products in the category get equal score (1.0),
+      // so "ochraniacze na statyw" can outrank actual "statywy" due to sales signals.
+      //
+      // Strategy: use function_score with script to check if query appears
+      // at the START of the product name (case-insensitive). Products where
+      // the category keyword IS the product type (e.g. "Statyw Vanguard...")
+      // get a much higher score than accessories that merely mention it
+      // (e.g. "KUPO Ochraniacze na statyw").
+      const qLower = q.toLowerCase();
+      return {
+        function_score: {
+          query: {
+            bool: {
+              must: [{ term: { category: intent.category } }],
+              should: [
+                // BM25 text relevance on name
+                {
+                  multi_match: {
+                    query: q,
+                    fields: ['name.folded^3', 'name.morfologik^2', 'name.stempel^1'],
+                    type: 'best_fields',
+                  },
+                },
+              ],
+            },
+          },
+          functions: [
+            // Primary product boost: name starts with the query word
+            // "Statyw Vanguard..." → ×5.0, "Ochraniacze na statyw" → ×1.0
+            {
+              script_score: {
+                script: {
+                  source: `
+                    String name = doc['name.exact'].value.toLowerCase();
+                    if (name.startsWith(params.q)) {
+                      return 5.0;
+                    }
+                    return 1.0;
+                  `,
+                  params: { q: qLower },
+                },
+              },
+            },
+            // Subcategory boost: "statywy (trójnogi)" > "pozostałe akcesoria"
+            // Uses category_path to distinguish core vs accessory subcategories
+            {
+              script_score: {
+                script: {
+                  source: `
+                    String path = '';
+                    if (doc.containsKey('category_path') && doc['category_path'].size() > 0) {
+                      path = doc['category_path'].value.toLowerCase();
+                    }
+                    if (path.contains('pozosta\u0142e') || path.contains('akcesoria drobne')) {
+                      return 0.5;
+                    }
+                    return 1.0;
+                  `,
+                },
+              },
+            },
+          ],
+          score_mode: 'multiply',
+          boost_mode: 'multiply',
+        },
+      };
+    }
 
     case 'PRICE': {
       const textPart = intent.query;
