@@ -328,12 +328,17 @@ export function wrapWithFunctionScore(baseQuery, intent = null) {
           },
         ] : isBrandQuery ? [
           // Brand query: user typed "canon", "sony" etc.
-          // Boost flagship categories (cameras, lenses) — these are what users
-          // most likely want when browsing a brand. Mild penalty on low-value
-          // categories (printers, ink, small accessories) that clutter results.
+          // Boost flagship categories — cameras are what users most likely want.
+          // Aparaty get the highest boost since they're the primary product.
+          // Lenses, camcorders, drones get a moderate boost.
+          // Low-value categories (printers, ink, cables) get penalized.
           {
-            filter: { terms: { category: BODY_PRODUCT_CATEGORIES } },
-            weight: 4.0,
+            filter: {
+              terms: {
+                category: ['Aparaty cyfrowe', 'Używane aparaty cyfrowe'],
+              },
+            },
+            weight: 5.0,
           },
           {
             filter: {
@@ -344,7 +349,7 @@ export function wrapWithFunctionScore(baseQuery, intent = null) {
                 ],
               },
             },
-            weight: 3.0,
+            weight: 3.5,
           },
           {
             filter: {
